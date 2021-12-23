@@ -62,7 +62,7 @@ not stripped
 
 ![./8.png](./8.png)
 
-# solved code (with z3)
+## solved code (with z3)
 
 ```python
 # This Python file uses the following encoding: utf-8

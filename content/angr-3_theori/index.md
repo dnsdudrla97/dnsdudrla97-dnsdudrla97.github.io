@@ -3,7 +3,7 @@ emoji: 🤬
 title: angr 바이너리 분석 활용 방안 3
 author: Zer0Luck
 date: '2020-08-14 13:00:30'
-categories: analyzing binaries
+categories: AnalyzingBinaries
 tags: angr
 ---
 
