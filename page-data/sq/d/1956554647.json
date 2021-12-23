@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Lua 언어 정리","categories":"Language"},"fields":{"slug":"/Lua/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Exploit, 취약점 ?","categories":"Talk"},"fields":{"slug":"/vuln_exploit_talk/"}}},{"node":{"frontmatter":{"title":"Lua 언어 정리","categories":"Language"},"fields":{"slug":"/Lua/"}}}]}}}
