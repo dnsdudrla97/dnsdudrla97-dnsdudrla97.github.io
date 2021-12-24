@@ -11,16 +11,16 @@ tags: Hyper-V Windows
 
 ## 윈도우 하이버바이저 기능 설정 후
 
-![./Untitled.png](./Untitled.png)
+![./0.png](./0.png)
 
 ## 윈도우 하이버바이저 관리자
 
-![./Untitled%201.png](./Untitled%201.png)
+![./1.png](./1.png)
 
 - 하이퍼관라자  에서 `빨리 만들기` 선택후 가상 컴퓨터 만들기 창으로 이동
 - `Ubuntu 20.04` 선택후 가상 컴퓨터 만들기 클릭 후 대기
 
-![./Untitled%202.png](./Untitled%202.png)
+![./2.png](./2.png)
 
 - 설치 완료후 Ubuntu 부팅 완료
 
@@ -32,7 +32,7 @@ vim /etc/default/grub
 
 - grub 설정 파일 편집
 
-![./Untitled%203.png](./Untitled%203.png)
+![./3.png](./3.png)
 
 - line 10 편집
 
@@ -40,11 +40,11 @@ vim /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080
 ```
 
-![./Untitled%204.png](./Untitled%204.png)
+![./4.png](./4.png)
 
 - 설정 편집후 업데이트 명령 실행
 
-![./Untitled%205.png](./Untitled%205.png)
+![./5.png](./5.png)
 
 
 
@@ -56,7 +56,7 @@ init 6
 
 ## 전체 화면 설정 완료
 
-![./Untitled%206.png](./Untitled%206.png)
+![./6.png](./6.png)
 
 
 ```toc

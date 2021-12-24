@@ -9,13 +9,13 @@ module.exports = {
       repo: `dnsdudrla97/dnsdudrla97.github.io`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'UA-215889404-1', // Google Analytics Tracking ID
   author: {
     name: `Zer0Luck`,
     bio: {
       role: `Hacker`,
       description: ['Play!', 'We!', 'Exploit!'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'z_l.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/dnsdudrla97`,
