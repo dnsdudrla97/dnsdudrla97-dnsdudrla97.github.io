@@ -807,7 +807,7 @@ windbg를 통해 분석하기 위해 그림 4‑1장에서 구성한 대상 서�
 
 ![](./image46.png)
 
-``` sh
+``` cpp
 .\\windbg.exe -y srv\*c:\\symbols\*http://msdl.microsoft.com/download/symbols
      -z D:\\STUDY\\PenTest_Study\\Project\\Day4_5\\report\\bluescreen_dmp\\061020-13343-01.dmp
 ```

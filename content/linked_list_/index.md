@@ -6,6 +6,8 @@ date: '2021-03-01'
 categories: AnalyzingBinaries
 tags: Algorithm reversing
 ---
+## Linekd List
+
 ### Node, Element
 
 - 리스트의 데이터

@@ -6,9 +6,6 @@ date: '2021-07-01 20:10:11'
 categories: Talk
 tags: Talk
 ---
- [HackingZone 해킹존](https://hackingzone.net/Home)
-
-# 버그바운티 플랫폼 | 해킹존 리뷰
 
 ![./hack_the_challenge.jpg](./hack_the_challenge.jpg)
 
@@ -38,7 +35,4 @@ tags: Talk
 ![./hackingzone_crowd.png](./hackingzone_crowd.png)
  최종적으로 보고한 취약점을 분석/평가 후 KISA 기준에 포상금을 산정하여 결과를 알려주며 해킹 존 보안 연구원들께서 해당 취약점이 어떤 영향을 끼치는지에 대한 내용과 평가 기준을 답변해주어 의사소통이 원활합니다.
 
- [HackingZone 해킹존](https://hackingzone.net/Home)
-
-```toc
-```
+[HackingZone 해킹존](https://hackingzone.net/Home)

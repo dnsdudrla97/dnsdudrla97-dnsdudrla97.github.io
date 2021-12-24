@@ -1,12 +1,13 @@
 ---
-emoji: 🍙
+emoji: 🥖
 title: Windows SEH (Structured Exception Handler) 1
 author: Zer0Luck
-date: '2021-01-03 08:10:10'
+date: '2021-01-03 10:10:10'
 categories: Windows
 tags: Windows Exploit
 ---
-# SEH
+
+## SEH
 
 - `exception handlers` 는 각 Thread와 관련된 `Singly-linked list` 구성된다.
 - 원칙적으로 해당 목록의 노드는 stack에 할당된다.
@@ -15,7 +16,8 @@ tags: Windows Exploit
 - 각 노드는 `_EXCEPTION_REGISTRATION_RECORD` 유형이며 핸들러의 주소와 목록의 다음 노드에 대한 포인터를 저장한다.
 - 이상하게도 목록의 마지막 노드의 "next pointer" 는 NULL이 아니지만 `0xFFFFFFFF` 와 같다.
 
-```c
+
+```cpp
 0:000> dt _EXCEPTION_REGISTRATION_RECORD
 ntdll!_EXCEPTION_REGISTRATION_RECORD
 +0x000 Next : Ptr32 _EXCEPTION_REGISTRATION_RECORD
@@ -29,14 +31,12 @@ combase!_EXCEPTION_REGISTRATION_RECORD
 
 - TEB는 FS:[0] 부터 시작하는 `selector` FS를 통해서도 액세스 할 수 있으므로 다음과 같은 코드르 보는 것이 일반적이다.
 
-```c
+
+```cpp
 mov eax, dword ptr fs:[00000000h] ; retrieve the head
 push eax ; save the old head
 lea eax, [ebp-10h]
 mov dword ptr fs:[00000000h], eax ; set the new head
-.
-.
-.
 mov ecx, dword ptr [ebp-10h] ; get the old head (NEXT field of the current head)
 mov dword ptr fs:[00000000h], ecx ; restore the old head
 ```
@@ -46,6 +46,7 @@ mov dword ptr fs:[00000000h], ecx ; restore the old head
 - TEB의 주소를 얻을려면 TEB의 Self 필드에 해당하는 `FS:[18h]`를 읽어야 한다.
 
 - TEB를 확인해 보자
+
 
 ```cpp
 0:003> !teb
