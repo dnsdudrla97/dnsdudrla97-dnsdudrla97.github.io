@@ -11,7 +11,7 @@ changefreq : always
 
 # Window Heap Management
 
-![/assets/img/posts/WindowExploit_post/HEAP/winHeapIMHO.png](/assets/img/posts/WindowExploit_post/HEAP/winHeapIMHO.png)
+![./winHeapIMHO.png](./winHeapIMHO.png)
 
 - 메모리 할당 방식이 상위일경우 더 높은 수준의 구현을 사용한다.
 
