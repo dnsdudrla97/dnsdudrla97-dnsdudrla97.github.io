@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/Dummy",
+    "result": {"pageContext":{"currentCategory":"Dummy","categories":["All","Web","Talk","troubleshooting","Windows","AnalyzingBinaries","ARM","projects","windows","1-day","CTF","Mobile","Tools","Theory","Language","Dummy"],"edges":[{"node":{"id":"292a193f-9969-583c-b9c7-a22ae3fca434","excerpt":"Dummy dummy dummy","fields":{"slug":"/dummy/"},"frontmatter":{"categories":"Dummy","title":"dummy","date":"Invalid date"}},"next":null,"previous":{"fields":{"slug":"/Lua/"}}}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
