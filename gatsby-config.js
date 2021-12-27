@@ -30,13 +30,13 @@ module.exports = {
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            sitemap: "https://dnsdudrla97.github.io/sitemap-pages.xml",
+            host: "https://dnsdudrla97.github.io/",
           },
           'deploy-preview': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            sitemap: "https://dnsdudrla97.github.io/sitemap-pages.xml",
+            host: "https://dnsdudrla97.github.io/",
           },
         },
       },
