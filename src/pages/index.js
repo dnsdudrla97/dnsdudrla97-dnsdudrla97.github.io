@@ -19,13 +19,14 @@ function HomePage({ data }) {
   return (
     <Layout>
       <Seo title="Home" />
+      <meta name="google-site-verification" content="CvtC0sASSbMS8Tt14xtB71jITvzabANsDzwmrUVJHAw" />
       <Bio author={author} language={language} />
       <PostTabs
         posts={posts}
         onChange={onTabIndexChange}
         tabs={categories}
         tabIndex={tabIndex}
-        showMoreButton
+        showMoreButtonz
       />
     </Layout>
   );

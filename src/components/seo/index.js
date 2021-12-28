@@ -28,6 +28,10 @@ function Seo({ description, title }) {
       defaultTitle={site.siteMetadata.title}
       meta={[
         {
+          name: `google-site-verification`,
+          content: `CvtC0sASSbMS8Tt14xtB71jITvzabANsDzwmrUVJHAw`
+        },
+        {
           property: `og:title`,
           content: title,
         },

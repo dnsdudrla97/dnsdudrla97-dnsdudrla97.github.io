@@ -27,16 +27,17 @@ module.exports = {
         env: {
           production: {
             policy: [{ userAgent: '*' }],
+            sitemap: "https://dnsdudrla97.github.io/sitemap.xml"
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: "https://dnsdudrla97.github.io/sitemap-pages.xml",
-            host: "https://dnsdudrla97.github.io/",
+            sitemap: null,
+            host: null,
           },
           'deploy-preview': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: "https://dnsdudrla97.github.io/sitemap-pages.xml",
-            host: "https://dnsdudrla97.github.io/",
+            sitemap: null,
+            host: null,
           },
         },
       },
