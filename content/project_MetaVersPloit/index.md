@@ -1,8 +1,8 @@
 ---
 emoji: 🔎
-title: Vulnerability analysis of commercial metaverse-based virtual office platform 
+title: "[KR]Vulnerability analysis of commercial metaverse-based virtual office platform"
 author: Zer0Luck
-date: '2020-12-24 11:01:11'
+date: '2021-12-24 11:01:11'
 categories: projects
 tags: projects MetaVersPloit MetaVerse
 ---
@@ -68,7 +68,7 @@ tags: projects MetaVersPloit MetaVerse
 
 ## Project Point
 
-![그룹 4478.png](./%EA%B7%B8%EB%A3%B9_4478.png)
+![그룹 4478.png](./_4478.png)
 
  우리는 약 4개월의 시간 동안 계층적으로 메타버스 가상오피스 플랫폼 취약점에 대해 연구를 진행했습니다. 메타버스 가상오피스 플랫폼 환경의 취약성을 판단하기 위해 웹 애플리케이션 상에서 서비스 기능과 권한 전반적인 기술 스택을 분석하였습니다. 취약성이 판단된 부분에 대해서 바이너리 애플리케이션 환경에서 해당 기능이 다른 애플리케이션에 대해 교차 검증 및 각 기술 스택에서 발생하는 취약성 및 공통적인 기능 에 대한 취약성 등을 분석하여 계층적으로 깊이 있는 분석을 진행하여 취약점을 발견할 수 있었습니다.
 
@@ -113,17 +113,14 @@ tags: projects MetaVersPloit MetaVerse
 
 선정한 5가지 플랫폼에 대한 아키텍처를 구성한 후 공통 기능 13가지 부분에 대해서는 hotspot point를 잡았고 나머지 Unique 한 기능에 대해서는 cold Spot point로 잡아 최종적인 공격 벡터를 선정하였습니다.
 
- 선정된 공격 벡터는 IPC 개념에서의 Web Socket 통신을 활용해 Avatar, Map, Theme 등 실시간으로 적용되는 콘텐츠와 Voice, Screen Sharing을 위한 WEB RTC 통신 과정에 대해 Hooking과 클라이언트 처리 과정에 대해서 Code Auditing을 진행하였습니다.
+선정된 공격 벡터는 IPC 개념에서의 Web Socket 통신을 활용해 Avatar, Map, Theme 등 실시간으로 적용되는 콘텐츠와 Voice, Screen Sharing을 위한 WEB RTC 통신 과정에 대해 Hooking과 클라이언트 처리 과정에 대해서 Code Auditing을 진행하였습니다.
 
- Origin-API, Third-Party API 개념의 공격 벡터는 각 웹/바이너리 환경에서 특정 네트워크 처리를 진행하는 부분과 base Language에 관련된 모듈을 Code Auditing과 Application Request/Response 과정을 분석하였습니다.
+Origin-API, Third-Party API 개념의 공격 벡터는 각 웹/바이너리 환경에서 특정 네트워크 처리를 진행하는 부분과 base Language에 관련된 모듈을 Code Auditing과 Application Request/Response 과정을 분석하였습니다.
 
- oculus VR 장비의 Application으로 Android APK의 전반적인 공격 벡터로 Code Auditing과 관련 모듈에 대해 JNI, Third-party lb에 대해서 Hooking을 통해 흐름 분석을 진행하였습니다.
+oculus VR 장비의 Application으로 Android APK의 전반적인 공격 벡터로 Code Auditing과 관련 모듈에 대해 JNI, Third-party lb에 대해서 Hooking을 통해 흐름 분석을 진행하였습니다.
 
 각 플랫폼별 내부 콘텐츠/오브젝트에 관해 구현된 언어와 기능적 부분을 공격 벡터로 선정하여 로직 버그 및 보호 대책 미흡 부분을 우회하는 방안으로 분석을 진행하였습니다.
 
- 
-
- 
 
 ### Kumospace
 
@@ -170,3 +167,7 @@ tags: projects MetaVersPloit MetaVerse
  특정 가상 오피스 애플리케이션 환경에서는 구현된 내부 오브젝트로 가상의 책상, 화이트보드, 화면, 화분 등이 사용되고 있습니다. 물리적 환경에서의 회사는 이러한 물건들을 대상으로 시각적인 효과 기능적인 요소로 사용되고 있지만, 가상의 공간에서는 사용자와 밀접한 연관이 있게 되며 평범한 오브젝트라도 사용자 클라이언트 측에서 자원을 사용하게 되어 같은 메모리 공간에 존재하기 때문에 해당 객체의 기능적 결함으로 인한 취약점이 발생하여 사용자에게 공격이 가능한 벡터가 존재합니다. 이번 취약점 분석에서 웹 애플리케이션 환경의 외부 콘텐츠를 불러올 수 있는 객체 기능의 보안 결함으로 XSS 취약점이 발생하여 해당 취약점을 이용해 권한 상승 및 다른 사용자들의 세션 탈취, 내부 함수를 이용한 특정 DOS 등 다양한 공격이 연계될 수 있었으며 또한 code Execution이 가능하여 실제 window/mac OS 환경에서 Remote Code Execution 취약점까지 수행이 되어 실제 가상 사무실을 이용하였을 때 크리티컬한 취약점이 수행될 수 있었습니다.
 
  본 팀은 기간 내에 성공적으로 목표 달성을 수행하며, 상용 메타버스 기반 가상 오피스 플랫폼 취약점을 연구하고 관련 취약한 부분에 대한 대응책과 취약점 분석 방법론을 공유하며 이후 계속해서 발전하는 메타버스 환경의 취약점을 분석하는 사람들에게 도움이 되었으면 합니다.
+
+
+```toc
+```
