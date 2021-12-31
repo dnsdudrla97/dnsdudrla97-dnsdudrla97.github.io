@@ -2,7 +2,7 @@ module.exports = {
   title: `Zer0Luck`,
   description: `Hacking for humans`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://dnsdudrla97.github.io/`,
+  siteUrl: `https://dnsdudrla97.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -57,7 +57,7 @@ module.exports = {
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
-        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발',
+        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발 프로젝트',
         description: '윈도우 GUI 바이너리 fuzzing을 활용하여 Exploit 진행',
         techStack: ['python', 'PyQt4'],
         thumbnailUrl: 'AAAAAAAAAAAAAAAAAAAA.png',
@@ -72,19 +72,19 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '상용 메타버스 기반 가상 오피스 플랫폼 취약점 분석',
+        title: '상용 메타버스 기반 가상 오피스 플랫폼 취약점 분석 프로젝트',
         description: 'BoB 10기 취약점 분석 MetaVersPloit 팀, ',
         techStack: ['Brain'],
         thumbnailUrl: 'BOB_MVP.png',
         links: {
-          post: '',
+          post: '/project_MetaVersPloit',
           github: '',
           demo: '',
         },
         
       },
       {
-        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발',
+        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발 프로젝트',
         description: '윈도우 GUI 바이너리 fuzzing을 활용하여 Exploit 진행',
         techStack: ['python', 'PyQt4'],
         thumbnailUrl: 'project_fuzz_fuzz.png',

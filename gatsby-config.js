@@ -26,7 +26,7 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [{ userAgent: '*', allow: '/' }],
             sitemap: "https://dnsdudrla97.github.io/sitemap.xml"
           },
           'branch-deploy': {
