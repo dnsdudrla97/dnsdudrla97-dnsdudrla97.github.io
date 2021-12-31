@@ -125,9 +125,9 @@ curl -s http://54.147.185.174/latest/meta-data/iam/security-credentials/cg-banki
 - iam Rule Enumerate를 사용하는데 있어서 밑의 enumerate-iam 오픈 소스 도구를 활용하여 정보를 확인하였습니다.
 
 ```python
-aws_access_key_id = ASIA2MALBVI5XHYO7AVL
-aws_secret_access_key = dJYSqd1azmx4UDisbXzMSpRMJXnAWOo0UGdb0zvc
-aws_session_access_key = IQoJb3JpZ2luX2VjEGAaCXVzLWVhc3QtMSJIMEYCIQDTnqAWP+dSd5zNettI/T9mL2+emlBHxsqZcUWJl0KvOQIhAJ9U6zrHzSUzDNT//FluvdCSireOGJKZjG+Nb6gEmpoZKoMECIn//////////wEQARoMNzEyOTg3NzQ4OTIzIgwESQCC8uFIH/gNgf8q1wNplMlTbN0l6ho1vQ/5kvGiZRAs4eMTVR/VSiMtXetFxr5Lg5VaxzXtqa2/3bVC+MmGXrmPPGI3aCX1FcWQFGbrOBXATELEo2TjmQcx8VRER6nHFxnMWB/OB8+DVaD4uPAiMgx8SQsNM+F5WJ/XFwmUJtf6sP+JU01InKQU6G9ElDWWX6DjIuK9QXtUElf0NR3sXfYbmHzijmnvfD+Ry+HQJ7Uh85EoiM2pDxB48iSUYOozh49NkKxdsxmG6d4iNSOsMYRkDnm2Wjt+dnQpJ5ycqiopArwdty2D/8Cfvus8HIa7SO+stP0lTbHcyk+vd2LbE2SW2oVdk3LomHoRv6hVlxPg7ySH/V+mACdwrqutyHn5cv/LMWvKHKdj711zB1rtTAbKQUSuMxi3JLnHUaB97tGtvm1kCT6cFPOcB01qtLnDmf9DobW7/Oca4C/ySy0G9LX9hu8lM5lu8RwXJwwNNcxwvg+pnxHiFqyBgur9nV00NR/zthqH29rM2fDFWhLhZnKLIrlLqqWMNM8SVN17dNNnKYegMhfb8mZUV5Jq+DlnzEs5TCfIrG2JhsosAqhpeg3nQ6DwYWL63SpXwgBvsv56VIM4SdcZ0iFXLAIpo65H7vIkgnQwpfjyiAY6pAEfzDCwkoFG+8Pfc0LEWm2q/ukL5UI2/Vl0hZJNQNgHJq97LYUv2YEyddRxhdclm8HFXR2U34sc7XCycFUo/A/HBJ7FchD0aS1uoHK8iOTaRols6a3AkOH/lVB0y4FneRz4HgFSf9hEhhDXaSElRqD1QdcvKR9HL/EaEAR065zUxM+ZiOACKXd664L/dG52BH5l6HY4+QmAuMqAqFXIXNgEeYnUKg==
+aws_access_key_id = <ACCESS_KEY>
+aws_secret_access_key = <ACCESS_SECRET_KEY>
+aws_session_access_key = <ACCESS_SESSION_KEY>
 ```
 
 ```bash

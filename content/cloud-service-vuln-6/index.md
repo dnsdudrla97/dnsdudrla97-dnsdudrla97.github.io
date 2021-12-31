@@ -85,9 +85,10 @@ Wrex <-
 - Pacu를 통해서 lambda service 에서 `cg-lambda-id` 호출하는 값이 있는 지 확인한 결과 ENV 값으로 EC2_ACCESS_KEY_ID, SECRET_KEY_ID 가 있는 것을 확인할 수 있었습니다.
 
 ```jsx
-[+] Secret (ENV): EC2_ACCESS_KEY_ID= AKIA2MALBVI5TDLVHMEE
-[+] Secret (ENV): EC2_SECRET_KEY_ID= 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
+[+] Secret (ENV): EC2_ACCESS_KEY_ID= <ACCESS_KEY>
+[+] Secret (ENV): EC2_SECRET_KEY_ID= <ACCESS_SECRET_KEY>
 ```
+
 
 - 대상 람다 함수는 AWS 계정에 존재하고 lambda 함수의 환경변수에 일부 하드 코딩이 되었이기 떄문에 이는 AWS Security Credential이 있는 것을 확인할 수 있습니다.
 
@@ -158,9 +159,9 @@ cg-ec2-role-ec2_ssrf_cgid84kpkl3ssy
 { "Code" : "Success",
 "LastUpdated" : "2021-08-13T12:26:30Z",
 "Type" : "AWS-HMAC",
-"AccessKeyId" : "ASIA2MALBVI5X6AMJP4Q",
-"SecretAccessKey" : "lRltyfpeVd7kZgRU3YBmC1vjQyYjIBElPJDUmTBw",
-"Token" : "IQoJb3JpZ2luX2VjEO3//////////wEaCXVzLWVhc3QtMSJHMEUCIApGWPrGUAqRVXl3tfnuJVosN7uNFtaQhVFbHWNZYUiJAiEA1epIk6RW7GrdHDNp2f7839ZTMExA/nw2jhjQJ82m+G4q+gMIFhABGgw3MTI5ODc3NDg5MjMiDE9fkBzfZ5IRS2b2cSrXAz88k6FsGWeuALIfbncPNdvLIRkcLia458kV/0xhmR9RBZUoCXR75HD/DUEepprPNbY8przbHcYoOZ0ezFNBgju4qrYDlx4m+dM6xXdPg7V89S2qceNKs45SCn6xP7jVUQB1UF4z11wMLMcI3mp/fiDfEq5Rnu2BvXVgE+RrgiCG7zVRbAcUMq1Y5koHutG6AsNDxLjQRQNhwpt7+SP9D10PWQbIDAPS/5X88LMNqKcco5XpAsiLG8QtylXVo07vwocPYRfeON04wsOaX3eNbH0ktmoOMnzb7ZlHvV0DRL/hQkgYzPhxJKxxR48Zg3VZMKYhfdsQtfhNxMJNMWq88KSBLpVs/WHu+HiNst1fSYLn8V3Hd6STfW/d5ld8erx7ZWzDu1RLZyqlFndG8TNmDcYdrFXBgSwgHZlRFo1ke5UWcMAXVTh/gyNkjU8WMpsvyNnCp3c8bfTdlBcbzUfcYfiYFs04XLySKWL6muvXBw16DRv9vQ3MJsKFR5PTvah/X54gaC6uD51SgXdb2KwyzpHf2jC8iyZ2kUCQI2zXs1/PXkXU9fhJT2i+eYZnajvZLeyHArf5u+wMukRL4XT3WK8wzKV15SXq8sv7xIOrm3hOnN3DElCa+TCHytmIBjqlAfMKdg0Q7d5HtuIik+EOpUy/8x2dAa+xGgs/DEP+lTd869idZDpFvHzxdZXN/EILGvh/uRXSMdrbA6HjPh3T6yElvZuu7Iv/clDDmpRapJicoW6ldRzIY2mrs4fH33ZNgiLXL1+lXxIbDV5R+RaFsEia8Sbu9I1a1H+3k/GMdyQ+P48pr0dYlRjVRZWK1rVNgC3/Y2DVM2tVHaKAQvCvS5jM8jdhIA==",
+"AccessKeyId" : "<ACCESS_KEY>",
+"SecretAccessKey" : "<ACCESS_SECRET_KEY>",
+"Token" : "<ACCESS_SESSION_KEY>",
 "Expiration" : "2021-08-13T18:44:43Z" }
 ```
 

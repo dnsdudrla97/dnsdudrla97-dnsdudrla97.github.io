@@ -90,11 +90,11 @@ Command: $ ./cloudgoat.py create rce_web_app
 ![Untitled](./1.png)
 
 ```python
-cloudgoat_output_aws_account_id = 712987748923
-cloudgoat_output_lara_access_key_id = AKIA2MALBVI5YAO7B4DO
-cloudgoat_output_lara_secret_key = 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
-cloudgoat_output_mcduck_access_key_id = AKIA2MALBVI5X7OK4FG5
-cloudgoat_output_mcduck_secret_key = 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
+cloudgoat_output_aws_account_id = 111111111111
+cloudgoat_output_lara_access_key_id = <ACCESS_KEY>
+cloudgoat_output_lara_secret_key = <ACCESS_SECRET_KEY>
+cloudgoat_output_mcduck_access_key_id = <ACCESS_KEY>
+cloudgoat_output_mcduck_secret_key = <ACCESS_SECRET_KEY>
 ```
 
 ![Untitled](./2.png)

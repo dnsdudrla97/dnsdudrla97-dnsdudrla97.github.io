@@ -43,7 +43,7 @@ Command: $ ./cloudgoat.py create codebuild_secrets
 
 ### exploit 흐름도
 
-![./_33.png](./_33.png)
+![./M33.png](./M33.png)
 
 ### 시나리오 환경설정
 
@@ -95,16 +95,16 @@ Command: $ ./cloudgoat.py create codebuild_secrets
 ### IAM Solo 사용자의 AWS Credential 정보 노출
 
 ```python
-cloudgoat_output_aws_account_id = "712987748923"
-cloudgoat_output_solo_access_key_id = "AKIA2MALBVI55UJ4E7ET"
+cloudgoat_output_aws_account_id = "111111111111"
+cloudgoat_output_solo_access_key_id = <ACCESS_KEY>
 cloudgoat_output_solo_secret_key = <sensitive>
 
 [cloudgoat] terraform apply completed with no error code.
 
 [cloudgoat] terraform output completed with no error code.
-cloudgoat_output_aws_account_id = 712987748923
-cloudgoat_output_solo_access_key_id = AKIA2MALBVI55UJ4E7ET
-cloudgoat_output_solo_secret_key = 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
+cloudgoat_output_aws_account_id = 111111111111
+cloudgoat_output_solo_access_key_id = <ACCESS_KEY>
+cloudgoat_output_solo_secret_key = <sensitive>
 ```
 
 - 노출된 AWS Credentials 정보를 토대로 사용할 수 있는 권한이 무엇이 있는지 열거하였습니다.
@@ -719,9 +719,9 @@ aws ssm get-parameter \
   "Code" : "Success",
   "LastUpdated" : "2021-08-14T20:45:23Z",
   "Type" : "AWS-HMAC",
-  "AccessKeyId" : "ASIA2MALBVI55PNSV5I5",
-  "SecretAccessKey" : "eYHXs8D0gD0vXyE16mPZnSraOKc1QtFC8K7RUW58",
-  "Token" : "IQoJb3JpZ2luX2VjEA0aCXVzLWVhc3QtMSJHMEUCIBvvZnlQFlk9qIgrWw3RlfuVl3SBW7gezxpasvf8zfHbAiEAlPIrexkKk776uqjXQCD3UffiZF6jb85tYV54BevKXH8q+gMINhABGgw3MTI5ODc3NDg5MjMiDP6ejyqMyj7EORf3gyrXA5MLuFEeRLOUO+T4zKIIPlyVk9Kz7DAUSEIZ+5ZG/sG6PjzEA0M2PE2/OiRI+tinf13vBN594UjU8B8LuZCqcq01mMsQEW+SqswnLKiZAFpWp4BjBUCCxxsNWSZ3r/pinjidLekVYKskEJJqDKIEBA2aRyXs/Oq7ZriySWR4l2JNbOSzeJUnrf89UoMVSpP9UxGZGxMxT0Vx1G/wkBHX51i9PuOHALQ+y3uj0sDlndgz+mIJbNTBffkOHs8exkc1ctX31Le21yjr6BMsgxZ/8iXtYQ8iRR++N5ku550Ajvru5csF0qPF0WvmrYC2GLKwrTR09NZmPqfak2/JaBPjDvpCSDum4vkbFgTl7HPRYX3EE6c264n797eiTgl1qC//4HpOnQbIr2S6IwqCnOsaHmUU1l0MBn3HyO0pHk/x6hmrig0LDBmWJ02LKE4JpBWOG1IGCWLXo71z3kCQSz1e8yfzJ1JPKmkVdnLdpUWHBSjhJL6st+r45LMWaNVb9bHN8o9CbcZRDkiCgmtUSthQViXliBYuQlIq7U7l/Jx/gSirJMO8P5h3sL+9fVMFFyigwq9CfVVTrUCr3xGkpniF87uMDdhRboxL/hM53J1dCmMn6Xl9XfnHBTCM1+CIBjqlAZH62L+sMh97d30f/tmcCeBA4NV8ePtTmVUYmYbKzDPr5w9z/aDDZo0uaxGh+zOo85XXPpeXp4eFB2nxJkv3z9iawZCQKSCAO2uE8q7BVqpYmiXYlpas+U2k/CH8m/nxsDLKS5kfDrl6cUHjAhot5nQMW5ZFxVH3BXtru0akqEvLk1Jynf5PodBpI5qICH2jqZ1G57X6iEIrLI60rShJoTQTRKb+7g==",
+  "AccessKeyId" : "<ACCESS_KEY>",
+  "SecretAccessKey" : "<ACCESS_SECRET_KEY>",
+  "Token" : "<ACCESS_SESSION_KEY>",
   "Expiration" : "2021-08-15T03:11:47Z"
 ```
 
@@ -772,7 +772,7 @@ Command: $ ./cloudgoat.py create ecs_efs_attack
 
 ### exploit 흐름도
 
-![./_26.png](./_26.png)
+![./M26.png](./M26.png)
 
 ### 시나리오 환경설정
 
@@ -870,7 +870,7 @@ aws ec2 describe-instances --query 'Reservations[*].Instances[*].[Tags]'
 
 ### ECS 권한 상승
 
-![./_34.png](./_34.png)
+![./M34.png](./M34.png)
 
 - Elastic Container Services(ECS) Container는 orchestration 을 구현하는 AWS 서비스들 중 하나 입니다.
 - ECS는 Cluster, Service, Task 해당 3가지 주요 부분으로 구성되며 Cluster는 ECS에서 가장 높은 수준의 추상화 방법입니다.

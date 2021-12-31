@@ -73,8 +73,8 @@ Command: $ ./cloudgoat.py create iam_privesc_by_attachment
 
 ```bash
 cloudgoat_output_aws_account_id = 712987748923
-cloudgoat_output_kerrigan_access_key_id = AKIA2MALBVI5TYHTBKW5
-cloudgoat_output_kerrigan_secret_key = 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
+cloudgoat_output_kerrigan_access_key_id = <ACCESS_KEY>
+cloudgoat_output_kerrigan_secret_key = <ACCESS_SECRET_KEY>
 ```
 
 - AWS Security Credential을 토대로 enumeration 한 결과 좀더 조사할 가치가 있음을 확인하였습니다.

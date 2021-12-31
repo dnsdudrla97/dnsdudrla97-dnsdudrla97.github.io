@@ -57,8 +57,8 @@ $ aws configure --profile cloudgoat
 
 cat ~/.aws/credentials
 [cloudgoat]
-aws_access_key_id = AKIA2MALBVI5QLOGHLZI
-aws_secret_access_key = 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
+aws_access_key_id = <ACCESS_KEY>
+aws_secret_access_key = <ACCESS_SECRET_KEY>
 cat ~/.aws/config
 [cloudgoat]
 region = us-east-1
