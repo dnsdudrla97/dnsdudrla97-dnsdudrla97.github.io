@@ -72,7 +72,7 @@ Command: $ ./cloudgoat.py create iam_privesc_by_attachment
 - 해당 AWS 정보를 이용하여 enumeration 정보를 확인해 봤습니다.
 
 ```bash
-cloudgoat_output_aws_account_id = 712987748923
+cloudgoat_output_aws_account_id = <USERID>
 cloudgoat_output_kerrigan_access_key_id = <ACCESS_KEY>
 cloudgoat_output_kerrigan_secret_key = <ACCESS_SECRET_KEY>
 ```
@@ -391,14 +391,14 @@ aws ec2 create-key-pair \
 aws ec2 run-instances \
     --image-id ami-0a313d6098716f372 \
     --instance-type t2.micro \
-    --iam-instance-profile Arn=arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu \
+    --iam-instance-profile Arn=arn:aws:iam::<USERID>:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu \
     --key-name fake-ec2 \
     --subnet-id subnet-04d05182b53c1ff11 \
     --security-group-ids sg-04ffcf8e873ee2103 \
     --region us-east-1 \
     --profile kerrigan
 
-arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu
+arn:aws:iam::<USERID>:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu
 ```
 
 ![](./13.png)
@@ -444,7 +444,7 @@ arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_priv
             "EnaSupport": true,
             "Hypervisor": "xen",
             "IamInstanceProfile": {
-                "Arn": "arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu",
+                "Arn": "arn:aws:iam::<USERID>:instance-profile/cg-ec2-meek-instance-profile-iam_privesc_by_attachment_cgidmbi301d8zu",
                 "Id": "AIPA2MALBVI5RQHINFLHJ"
             },
             "NetworkInterfaces": [
@@ -467,7 +467,7 @@ arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_priv
                     "Ipv6Addresses": [],
                     "MacAddress": "0a:fc:1e:7d:bf:59",
                     "NetworkInterfaceId": "eni-0aad79f50a762977a",
-                    "OwnerId": "712987748923",
+                    "OwnerId": "<USERID>",
                     "PrivateDnsName": "ip-10-0-10-102.ec2.internal",
                     "PrivateIpAddress": "10.0.10.102",
                     "PrivateIpAddresses": [
@@ -516,7 +516,7 @@ arn:aws:iam::712987748923:instance-profile/cg-ec2-meek-instance-profile-iam_priv
             }
         }
     ],
-    "OwnerId": "712987748923",
+    "OwnerId": "<USERID>",
     "ReservationId": "r-04495e19ef68a6678"
 }
 ```

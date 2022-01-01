@@ -133,7 +133,7 @@ aws codebuild batch-get-projects --names cg-codebuild-codebuild_secrets_cgidq5cx
     "projects": [
         {
             "name": "cg-codebuild-codebuild_secrets_cgidq5cx1pvldn",
-            "arn": "arn:aws:codebuild:us-east-1:712987748923:project/cg-codebuild-codebuild_secrets_cgidq5cx1pvldn",
+            "arn": "arn:aws:codebuild:us-east-1:<USERID>:project/cg-codebuild-codebuild_secrets_cgidq5cx1pvldn",
             "source": {
                 "type": "NO_SOURCE",
                 "gitCloneDepth": 0,
@@ -166,10 +166,10 @@ aws codebuild batch-get-projects --names cg-codebuild-codebuild_secrets_cgidq5cx
                 "privilegedMode": false,
                 "imagePullCredentialsType": "CODEBUILD"
             },
-            "serviceRole": "arn:aws:iam::712987748923:role/code-build-cg-codebuild_secrets_cgidq5cx1pvldn-service-role",
+            "serviceRole": "arn:aws:iam::<USERID>:role/code-build-cg-codebuild_secrets_cgidq5cx1pvldn-service-role",
             "timeoutInMinutes": 20,
             "queuedTimeoutInMinutes": 480,
-            "encryptionKey": "arn:aws:kms:us-east-1:712987748923:alias/aws/s3",
+            "encryptionKey": "arn:aws:kms:us-east-1:<USERID>:alias/aws/s3",
             "tags": [
                 {
                     "key": "Name",
@@ -288,7 +288,7 @@ aws rds create-db-snapshot --db-snapshot-identifier secrets-snapshot --db-instan
         "PercentProgress": 0,
         "StorageType": "gp2",
         "Encrypted": false,
-        "DBSnapshotArn": "arn:aws:rds:us-east-1:712987748923:snapshot:secrets-snapshot",
+        "DBSnapshotArn": "arn:aws:rds:us-east-1:<USERID>:snapshot:secrets-snapshot",
         "IAMDatabaseAuthenticationEnabled": false,
         "ProcessorFeatures": [],
         "DbiResourceId": "db-3MLI3HBAAWNMRIHBDXYVCHUIWQ",
@@ -328,7 +328,7 @@ aws rds describe-db-subnet-groups --query "DBSubnetGroups[?contains(DBSubnetGrou
                 "SubnetStatus": "Active"
             }
         ],
-        "DBSubnetGroupArn": "arn:aws:rds:us-east-1:712987748923:subgrp:cloud-goat-rds-subnet-group-codebuild_secrets_cgidq5cx1pvldn"
+        "DBSubnetGroupArn": "arn:aws:rds:us-east-1:<USERID>:subgrp:cloud-goat-rds-subnet-group-codebuild_secrets_cgidq5cx1pvldn"
     },
     {
         "DBSubnetGroupName": "cloud-goat-rds-testing-subnet-group-codebuild_secrets_cgidq5cx1pvldn",
@@ -353,7 +353,7 @@ aws rds describe-db-subnet-groups --query "DBSubnetGroups[?contains(DBSubnetGrou
                 "SubnetStatus": "Active"
             }
         ],
-        "DBSubnetGroupArn": "arn:aws:rds:us-east-1:712987748923:subgrp:cloud-goat-rds-testing-subnet-group-codebuild_secrets_cgidq5cx1pvldn"
+        "DBSubnetGroupArn": "arn:aws:rds:us-east-1:<USERID>:subgrp:cloud-goat-rds-testing-subnet-group-codebuild_secrets_cgidq5cx1pvldn"
     }
 ]
 ```
@@ -396,7 +396,7 @@ aws ec2 describe-security-groups --query "SecurityGroups[?contains(Description,'
                 "UserIdGroupPairs": []
             }
         ],
-        "OwnerId": "712987748923",
+        "OwnerId": "<USERID>",
         "GroupId": "sg-08cf0063172ca84b3",
         "IpPermissionsEgress": [
             {
@@ -505,7 +505,7 @@ aws rds restore-db-instance-from-db-snapshot \
         "DomainMemberships": [],
         "CopyTagsToSnapshot": false,
         "MonitoringInterval": 0,
-        "DBInstanceArn": "arn:aws:rds:us-east-1:712987748923:db:secrets-instance",
+        "DBInstanceArn": "arn:aws:rds:us-east-1:<USERID>:db:secrets-instance",
         "IAMDatabaseAuthenticationEnabled": false,
         "PerformanceInsightsEnabled": false,
         "DeletionProtection": false,
@@ -618,7 +618,7 @@ aws rds modify-db-instance \
         "DomainMemberships": [],
         "CopyTagsToSnapshot": false,
         "MonitoringInterval": 0,
-        "DBInstanceArn": "arn:aws:rds:us-east-1:712987748923:db:secrets-instance",
+        "DBInstanceArn": "arn:aws:rds:us-east-1:<USERID>:db:secrets-instance",
         "IAMDatabaseAuthenticationEnabled": false,
         "PerformanceInsightsEnabled": false,
         "DeletionProtection": false,
@@ -792,14 +792,14 @@ Command: $ ./cloudgoat.py create ecs_efs_attack
 ### ruse EC2 SSH 접속
 
 ```python
-cloudgoat_output_aws_account_id = "712987748923"
+cloudgoat_output_aws_account_id = "<USERID>"
 ruse_box_IP = "18.215.179.159"
 ssh_command = "ssh -i cloudgoat ubuntu@\\18.215.179.159"
 
 [cloudgoat] terraform apply completed with no error code.
 
 [cloudgoat] terraform output completed with no error code.
-cloudgoat_output_aws_account_id = 712987748923
+cloudgoat_output_aws_account_id = <USERID>
 ruse_box_IP = 18.215.179.159
 ssh_command = ssh -i cloudgoat ubuntu@\18.215.179.159
 ```
@@ -817,7 +817,7 @@ ssh_command = ssh -i cloudgoat ubuntu@\18.215.179.159
 
 ![Untitled](./21.png)
 
-- 전체적으로 구성이 완료된다면 해당 IAM 권한들에 대해서 나열이 가능하며 AWS 관리형 정책과 `cg-ec2-ruse-policy-cgid` 를 성생한 다른 사용자들의 두 가지 정책을 확인할 수  있었고 해당 사용자 지정 정책을 확인하고자 `arn:aws:iam::712987748923:policy/cg-ec2-ruse-role-policy-ecs_efs_attack_cgidzng5qpdu9q` 해당 리소스 정보에 대한 정책 버전 정보를 나열하였습니다.
+- 전체적으로 구성이 완료된다면 해당 IAM 권한들에 대해서 나열이 가능하며 AWS 관리형 정책과 `cg-ec2-ruse-policy-cgid` 를 성생한 다른 사용자들의 두 가지 정책을 확인할 수  있었고 해당 사용자 지정 정책을 확인하고자 `arn:aws:iam::<USERID>:policy/cg-ec2-ruse-role-policy-ecs_efs_attack_cgidzng5qpdu9q` 해당 리소스 정보에 대한 정책 버전 정보를 나열하였습니다.
 
 ![Untitled](./22.png)
 
@@ -924,8 +924,8 @@ aws ecs describe-task-definition --task-definition webapp:1
         }
     ],
     "family": "webapp",
-    "taskRoleArn": "arn:aws:iam::712987748923:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
-    "executionRoleArn": "arn:aws:iam::712987748923:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
+    "taskRoleArn": "arn:aws:iam::<USERID>:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
+    "executionRoleArn": "arn:aws:iam::<USERID>:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
     "networkMode": "awsvpc",
     "volumes": [],
     "placementConstraints": [],
@@ -955,7 +955,7 @@ aws ecs describe-task-definition --task-definition webapp:1
 ```python
 {
     "taskDefinition": {
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:3",
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:3",
         "containerDefinitions": [
             {
                 "name": "webapp",
@@ -984,8 +984,8 @@ aws ecs describe-task-definition --task-definition webapp:1
             }
         ],
         "family": "webapp",
-        "taskRoleArn": "arn:aws:iam::712987748923:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
-        "executionRoleArn": "arn:aws:iam::712987748923:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
+        "taskRoleArn": "arn:aws:iam::<USERID>:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
+        "executionRoleArn": "arn:aws:iam::<USERID>:role/cg-ecs-role-ecs_efs_attack_cgidzng5qpdu9q",
         "networkMode": "awsvpc",
         "revision": 3,
         "volumes": [],
@@ -1015,7 +1015,7 @@ aws ecs describe-task-definition --task-definition webapp:1
         "cpu": "256",
         "memory": "512",
         "registeredAt": "2021-08-18T06:44:41.447000+00:00",
-        "registeredBy": "arn:aws:sts::712987748923:assumed-role/cg-ec2-role-ecs_efs_attack_cgidzng5qpdu9q/i-0a14dcbb45885cb69"
+        "registeredBy": "arn:aws:sts::<USERID>:assumed-role/cg-ec2-role-ecs_efs_attack_cgidzng5qpdu9q/i-0a14dcbb45885cb69"
     }
 }
 ```
@@ -1025,12 +1025,12 @@ aws ecs describe-task-definition --task-definition webapp:1
 ![Untitled](./29.png)
 
 ```python
-ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1:712987748923:service/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q/cg-webapp-ecs_efs_attack_cgidzng5qpdu9q --cluster arn:aws:ecs:us-east-1:712987748923:cluster/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q --task-definition arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:3
+ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1:<USERID>:service/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q/cg-webapp-ecs_efs_attack_cgidzng5qpdu9q --cluster arn:aws:ecs:us-east-1:<USERID>:cluster/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q --task-definition arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:3
 {
     "service": {
-        "serviceArn": "arn:aws:ecs:us-east-1:712987748923:service/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q/cg-webapp-ecs_efs_attack_cgidzng5qpdu9q",
+        "serviceArn": "arn:aws:ecs:us-east-1:<USERID>:service/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q/cg-webapp-ecs_efs_attack_cgidzng5qpdu9q",
         "serviceName": "cg-webapp-ecs_efs_attack_cgidzng5qpdu9q",
-        "clusterArn": "arn:aws:ecs:us-east-1:712987748923:cluster/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q",
+        "clusterArn": "arn:aws:ecs:us-east-1:<USERID>:cluster/cg-cluster-ecs_efs_attack_cgidzng5qpdu9q",
         "loadBalancers": [],
         "serviceRegistries": [],
         "status": "ACTIVE",
@@ -1039,7 +1039,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
         "pendingCount": 1,
         "launchType": "FARGATE",
         "platformVersion": "LATEST",
-        "taskDefinition": "arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:3",
+        "taskDefinition": "arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:3",
         "deploymentConfiguration": {
             "deploymentCircuitBreaker": {
                 "enable": false,
@@ -1052,7 +1052,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
             {
                 "id": "ecs-svc/9719804482648596889",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:3",
+                "taskDefinition": "arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:3",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 0,
@@ -1078,7 +1078,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
             {
                 "id": "ecs-svc/4820190458051897207",
                 "status": "ACTIVE",
-                "taskDefinition": "arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:2",
+                "taskDefinition": "arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:2",
                 "desiredCount": 1,
                 "pendingCount": 1,
                 "runningCount": 0,
@@ -1104,7 +1104,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
             {
                 "id": "ecs-svc/4824857400021118616",
                 "status": "ACTIVE",
-                "taskDefinition": "arn:aws:ecs:us-east-1:712987748923:task-definition/webapp:1",
+                "taskDefinition": "arn:aws:ecs:us-east-1:<USERID>:task-definition/webapp:1",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 1,
@@ -1128,7 +1128,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
                 "rolloutStateReason": "ECS deployment ecs-svc/4824857400021118616 completed."
             }
         ],
-        "roleArn": "arn:aws:iam::712987748923:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "roleArn": "arn:aws:iam::<USERID>:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
                 "id": "ea4ed3a7-b03d-4c6e-9133-6d076dcefe1d",
@@ -1236,7 +1236,7 @@ ubuntu@ip-10-10-10-133:~$ aws ecs update-service --service arn:aws:ecs:us-east-1
             }
         },
         "schedulingStrategy": "REPLICA",
-        "createdBy": "arn:aws:iam::712987748923:user/cloudgoat",
+        "createdBy": "arn:aws:iam::<USERID>:user/cloudgoat",
         "enableECSManagedTags": false,
         "propagateTags": "NONE",
         "enableExecuteCommand": false

