@@ -231,7 +231,7 @@ Command: $ ./cloudgoat.py create iam_privesc_by_rollback</code></pre></div>
       />
     </span></p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token string">"Arn"</span><span class="token builtin class-name">:</span> 
-	<span class="token string">"arn:aws:iam::712987748923:user
+	<span class="token string">"arn:aws:iam::&lt;USERID>:user
 	raynor-iam_privesc_by_rollback_cgidesxwoc66a4"</span></code></pre></div>
 <ul>
 <li>IAM Credentials 에 대한 보안적 요소들을 평가할 때 정책 및 권한에 대해 리스트하여 나열하는 것은 필수적인 단게입니다.</li>
@@ -313,7 +313,7 @@ aws iam list-attached-user-policies --user-name raynor-iam_privesc_by_rollback_c
 <li>정책에 대한 권한에 대한 충분한 정책 세부 정보들을 해당 <code class="language-text">v1</code> 버전에 맞게 정책 권한들을 나열하였습니다. 해당 형태의 format은 <code class="language-text">json</code> 에 따릅니다.</li>
 </ul>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">aws iam get-policy-version <span class="token punctuation">\</span>
---policy-arn arn:aws:iam::712987748923:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 <span class="token punctuation">\</span> 
+--policy-arn arn:aws:iam::<span class="token operator">&lt;</span>USERID<span class="token operator">></span>:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 <span class="token punctuation">\</span> 
 --version-id <span class="token string">"v1"</span> <span class="token punctuation">\</span> 
 --profile bob1 <span class="token punctuation">\</span></code></pre></div>
 <p><span
@@ -418,7 +418,7 @@ aws iam list-attached-user-policies --user-name raynor-iam_privesc_by_rollback_c
 <li>각 정책 버전을 나열하고 추가 권한에 대한 액세스 권한을 얻을 수 있는지 확인해보겠습니다.</li>
 </ul>
 <h3 id="취약한-정책-버전" style="position:relative;"><a href="#%EC%B7%A8%EC%95%BD%ED%95%9C-%EC%A0%95%EC%B1%85-%EB%B2%84%EC%A0%84" aria-label="취약한 정책 버전 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>취약한 정책 버전</h3>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">aws iam get-policy-version --policy-arn arn:aws:iam::712987748923:policy
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">aws iam get-policy-version --policy-arn arn:aws:iam::<span class="token operator">&lt;</span>USERID<span class="token operator">></span>:policy
 /cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 --version-id <span class="token string">"v4"</span> --profile bob1</code></pre></div>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -450,7 +450,7 @@ aws iam list-attached-user-policies --user-name raynor-iam_privesc_by_rollback_c
 </ul>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">aws iam <span class="token punctuation">\</span>
  set-default-policy-version <span class="token punctuation">\</span> 
---policy-arn arn:aws:iam::712987748923:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 <span class="token punctuation">\</span> 
+--policy-arn arn:aws:iam::<span class="token operator">&lt;</span>USERID<span class="token operator">></span>:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidesxwoc66a4 <span class="token punctuation">\</span> 
 --version-id v4 --profile bob1</code></pre></div>
 <ul>
 <li><code class="language-text">pacu</code> open source tools 를 이용하여 IAM enumerating을 하여 추가 사용 권한을 획득하겠습니다.</li>

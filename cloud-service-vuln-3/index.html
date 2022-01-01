@@ -201,15 +201,15 @@ Command<span class="token punctuation">:</span> $ <span class="token punctuation
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">ofile chris
 <span class="token punctuation">{</span>
     <span class="token string">"UserId"</span><span class="token punctuation">:</span> <span class="token string">"AIDA2MALBVI56QS3BF452"</span><span class="token punctuation">,</span>
-    <span class="token string">"Account"</span><span class="token punctuation">:</span> <span class="token string">"712987748923"</span><span class="token punctuation">,</span>
-    <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:user/chris-lambda_privesc_cgidejvizwx9mo"</span>
+    <span class="token string">"Account"</span><span class="token punctuation">:</span> <span class="token string">"&lt;USERID>"</span><span class="token punctuation">,</span>
+    <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:user/chris-lambda_privesc_cgidejvizwx9mo"</span>
 <span class="token punctuation">}</span></code></pre></div>
 <ul>
 <li>chris의 Amazon AWS Resource Name(ARN) 고유한 리소스정보 에대해서 알 수 가 있기 때문에 해당 데이터를 통해 정확한 리소스를 구분이 가능합니다.</li>
 </ul>
 <h3 id="lambda-정책-과-관련된-기능-나열" style="position:relative;"><a href="#lambda-%EC%A0%95%EC%B1%85-%EA%B3%BC-%EA%B4%80%EB%A0%A8%EB%90%9C-%EA%B8%B0%EB%8A%A5-%EB%82%98%EC%97%B4" aria-label="lambda 정책 과 관련된 기능 나열 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>lambda 정책 과 관련된 기능 나열</h3>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has <span class="token number">1</span> attached policies
-Policy <span class="token string">"cg-chris-policy-lambda_privesc_cgidejvizwx9mo"</span> <span class="token punctuation">(</span>arn<span class="token punctuation">:</span>aws<span class="token punctuation">:</span>iam<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">712987748923</span><span class="token punctuation">:</span>policy<span class="token operator">/</span>cg<span class="token operator">-</span>chris<span class="token operator">-</span>policy<span class="token operator">-</span>lambda_privesc_cgidejvizwx9mo<span class="token punctuation">)</span>
+Policy <span class="token string">"cg-chris-policy-lambda_privesc_cgidejvizwx9mo"</span> <span class="token punctuation">(</span>arn<span class="token punctuation">:</span>aws<span class="token punctuation">:</span>iam<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">&lt;</span>USERID<span class="token operator">></span><span class="token punctuation">:</span>policy<span class="token operator">/</span>cg<span class="token operator">-</span>chris<span class="token operator">-</span>policy<span class="token operator">-</span>lambda_privesc_cgidejvizwx9mo<span class="token punctuation">)</span>
 User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has <span class="token number">0</span> inline policies
 User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has <span class="token number">0</span> groups associated</code></pre></div>
 <ul>
@@ -219,7 +219,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
     <span class="token string">"AttachedPolicies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
         <span class="token punctuation">{</span>
             <span class="token string">"PolicyName"</span><span class="token punctuation">:</span> <span class="token string">"cg-chris-policy-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
-            <span class="token string">"PolicyArn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo"</span>
+            <span class="token string">"PolicyArn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:policy/cg-chris-policy-lambda_privesc_cgidejvizwx9mo"</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">]</span>
 <span class="token punctuation">}</span></code></pre></div>
@@ -262,7 +262,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/aws-service-role/elasticloadbalancing.amazonaws.com/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"AWSServiceRoleForElasticLoadBalancing"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI57ZZNFYMTY"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2021-08-14T04:51:17+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -283,7 +283,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/aws-service-role/rds.amazonaws.com/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"AWSServiceRoleForRDS"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI5TMWNAS337"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2021-08-14T04:51:19+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -304,7 +304,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/aws-service-role/support.amazonaws.com/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"AWSServiceRoleForSupport"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI52DTL4XEGY"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2020-09-10T02:27:38+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -325,7 +325,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/aws-service-role/trustedadvisor.amazonaws.com/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"AWSServiceRoleForTrustedAdvisor"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI5WDUNGWNAK"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2020-09-10T02:27:38+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -346,7 +346,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI566QQGU2JJ"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2021-08-18T01:11:47+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -367,7 +367,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
             <span class="token string">"Path"</span><span class="token punctuation">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
             <span class="token string">"RoleId"</span><span class="token punctuation">:</span> <span class="token string">"AROA2MALBVI52NOERA357"</span><span class="token punctuation">,</span>
-            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
+            <span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
             <span class="token string">"CreateDate"</span><span class="token punctuation">:</span> <span class="token string">"2021-08-18T01:11:56+00:00"</span><span class="token punctuation">,</span>
             <span class="token string">"AssumeRolePolicyDocument"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
                 <span class="token string">"Version"</span><span class="token punctuation">:</span> <span class="token string">"2012-10-17"</span><span class="token punctuation">,</span>
@@ -376,7 +376,7 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
                         <span class="token string">"Sid"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
                         <span class="token string">"Effect"</span><span class="token punctuation">:</span> <span class="token string">"Allow"</span><span class="token punctuation">,</span>
                         <span class="token string">"Principal"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-                            <span class="token string">"AWS"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:user/chris-lambda_privesc_cgidejvizwx9mo"</span>
+                            <span class="token string">"AWS"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:user/chris-lambda_privesc_cgidejvizwx9mo"</span>
                         <span class="token punctuation">}</span><span class="token punctuation">,</span>
                         <span class="token string">"Action"</span><span class="token punctuation">:</span> <span class="token string">"sts:AssumeRole"</span>
                     <span class="token punctuation">}</span>
@@ -389,11 +389,11 @@ User <span class="token string">"chris-lambda_privesc_cgidejvizwx9mo"</span> has
 <h3 id="lambda-manager-debug-정책-조회-및-분석" style="position:relative;"><a href="#lambda-manager-debug-%EC%A0%95%EC%B1%85-%EC%A1%B0%ED%9A%8C-%EB%B0%8F-%EB%B6%84%EC%84%9D" aria-label="lambda manager debug 정책 조회 및 분석 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lambda Manager, debug 정책 조회 및 분석</h3>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">lambdaManager
 <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
-<span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
+<span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/cg-lambdaManager-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
 
 Debug
 <span class="token string">"RoleName"</span><span class="token punctuation">:</span> <span class="token string">"cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span>
-<span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::712987748923:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span></code></pre></div>
+<span class="token string">"Arn"</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:iam::&lt;USERID>:role/cg-debug-role-lambda_privesc_cgidejvizwx9mo"</span><span class="token punctuation">,</span></code></pre></div>
 <ul>
 <li>앞에서 분석하였던 두 데이터를 통해 각각 접근된 정책들에대해 조회를 하였습니다.</li>
 </ul>
@@ -603,7 +603,7 @@ Debug
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">aws <span class="token keyword">lambda</span> create<span class="token operator">-</span>function \
 	<span class="token operator">-</span><span class="token operator">-</span>function<span class="token operator">-</span>name admin_function \
 	<span class="token operator">-</span><span class="token operator">-</span>runtime python3<span class="token punctuation">.</span><span class="token number">6</span> \
-	<span class="token operator">-</span><span class="token operator">-</span>role arn<span class="token punctuation">:</span>aws<span class="token punctuation">:</span>iam<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">712987748923</span><span class="token punctuation">:</span>role<span class="token operator">/</span>cg<span class="token operator">-</span>debug<span class="token operator">-</span>role<span class="token operator">-</span>lambda_privesc_cgidejvizwx9mo \
+	<span class="token operator">-</span><span class="token operator">-</span>role arn<span class="token punctuation">:</span>aws<span class="token punctuation">:</span>iam<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">&lt;</span>USERID<span class="token operator">></span><span class="token punctuation">:</span>role<span class="token operator">/</span>cg<span class="token operator">-</span>debug<span class="token operator">-</span>role<span class="token operator">-</span>lambda_privesc_cgidejvizwx9mo \
 	<span class="token operator">-</span><span class="token operator">-</span>handler lambda_function<span class="token punctuation">.</span>lambda_handler \
 	<span class="token operator">-</span><span class="token operator">-</span><span class="token builtin">zip</span><span class="token operator">-</span><span class="token builtin">file</span> fileb<span class="token punctuation">:</span><span class="token operator">//</span>lambda_function<span class="token punctuation">.</span>py<span class="token punctuation">.</span><span class="token builtin">zip</span> \
 	<span class="token operator">-</span><span class="token operator">-</span>profile lambdaManager</code></pre></div>
