@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://dnsdudrla97.github.io/sitemap.xml
-Host: https://dnsdudrla97.github.io
+Host: https://zer0luck.kr
