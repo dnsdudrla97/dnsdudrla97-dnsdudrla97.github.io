@@ -2,7 +2,7 @@ module.exports = {
   title: `Zer0Luck`,
   description: `Hacking for humans`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://dnsdudrla97.github.io`,
+  siteUrl: `https://zer0luck.kr/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
