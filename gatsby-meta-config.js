@@ -43,12 +43,30 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.07 ~',
-        activity: 'Best of the Best 10th 취약점 분석 트랙',
+        date: '2016.08 ~ 2016.11',
+        activity: 'Nurilab Digital Forensics Intern',
+        links: {
+          post: '',
+          github: 'https://www.nurilab.com/',
+          demo: 'https://www.nurilab.com/',
+        },
+      },
+      {
+        date: '2021.07 ~ 2022.04',
+        activity: 'Best of the Best 10th Vulnerability Analysis Track',
         links: {
           post: '',
           github: 'https://www.kitribob.kr/',
           demo: 'https://www.kitribob.kr/',
+        },
+      },
+      {
+        date: '2022.05 ~ ',
+        activity: 'SCVSoft Blockchain Researcher',
+        links: {
+          post: '',
+          github: 'https://scvsoft.net/',
+          demo: 'https://scvsoft.net/',
         },
       },
     ],
@@ -57,9 +75,9 @@ module.exports = {
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
-        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발 프로젝트',
-        description: '윈도우 GUI 바이너리 fuzzing을 활용하여 Exploit 진행',
-        techStack: ['python', 'PyQt4'],
+        title: 'Development of window GUI binary fuzzing using the dump fuzzing theory.',
+        description: 'Exploit progress using Windows GUI binary fuzzing',
+        techStack: ['python', 'PyQt4', 'fuzz', 'win-driver', 'kernel'],
         thumbnailUrl: 'AAAAAAAAAAAAAAAAAAAA.png',
         links: {
           post: '/project_fuzz_',
@@ -72,9 +90,9 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '상용 메타버스 기반 가상 오피스 플랫폼 취약점 분석 프로젝트',
-        description: 'BoB 10기 취약점 분석 MetaVersPloit 팀, ',
-        techStack: ['Brain'],
+        title: 'Vulnerability analysis of commercial metaverse-based virtual office platform',
+        description: "[Application Portal feature (Portal to another space) SandBox Escape RCE] <br> [Exposing API Sensitive Data via Redux Trick and Manipulating During Rendering] <br>[Vulnerability of XSS attack-based unsafe token theft and elevated authority] <br> [Iframe plugin XSS vulnerability] <br> [Picket Static Object XSS Vulnerability] <br> [CSRF-token bypass CSRF attack using apiCall.] <br> [[Android][ENG] Forced exploitation of Pro (Use Speech Captions, Host Settings) based on Pro Feature Bypass[High]] <br> [[Android][ENG] Forced exploitation of HostSettings(Mute,unMute,remove,respwan..) based on Client Owner bypass[High]] <br> [[Android][ENG] Application Level DOS attack based on Pro Feature(Congregate Around Actor, Respawn)[High]] <br> [[Android][ENG] Vulnerability of forcibly tampering and deleting contents based on room contents save function / Contents Object Version Null Exception DOS attack[High]] <br> [[Android][ENG] Exposing 3D face modeling data External stored in Android storage[Low]] <br> [[Android][ENG] Task Hijacking attack based on unsafe task management.[Medium]] <br>",
+        techStack: ['Photon', "webGL", "web3", "ElectronJS", "Unity", "Javascript"],
         thumbnailUrl: 'BOB_MVP.png',
         links: {
           post: '/project_MetaVersPloit',
@@ -84,9 +102,22 @@ module.exports = {
         
       },
       {
-        title: 'dumb fuzzing 이론을 적용한 윈도우 GUI 바이너리 fuzzing 개발 프로젝트',
-        description: '윈도우 GUI 바이너리 fuzzing을 활용하여 Exploit 진행',
-        techStack: ['python', 'PyQt4'],
+        title: 'onthelook GraphQL Injection Code Execution',
+        description: 'onthelook GraphQL Injection Code Execution',
+        techStack: ['react-native', 'graphql', 'nodejs', 'express'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      }, 
+      {
+        title: 'Development of window GUI binary fuzzing using the dump fuzzing theory.',
+        description: 'Exploit progress using Windows GUI binary fuzzing',
+        techStack: ['python', 'PyQt4', 'fuzz', 'win-driver', 'kernel'],
         thumbnailUrl: 'project_fuzz_fuzz.png',
         links: {
           post: '/project_fuzz_',
@@ -95,8 +126,7 @@ module.exports = {
           appStore: '',
           demo: 'https://github.com/dnsdudrla97/Fuzz/releases',
         },
-      },
-      
+      }, 
     ],
   },
 };
