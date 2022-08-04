@@ -106,3 +106,6 @@ n*Hosts = n*DOS
 
 - In the internal structure of the spatial server, it operates in the form of RN-side calling the internal Function Service implemented as Unity Engine through RPC communication, and functions requiring actual authentication use RESET API (Unity Request), but functions that do not require authentication are based on RN-side.
 - If the process of verifying authentication rights using the RESET API is omitted, the Third Party RPC can be used to call the Google Cloud PubSub API to prevent attacks by returning it as an authentication error unless the code is corrected on the RN-side.
+
+```toc
+```

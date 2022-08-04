@@ -108,3 +108,6 @@ I will continue to post auditing and research on 12 challenge defi Smart Contrac
 
 Thank you for the @tinchoabbate that made a good wargame.
 [Damn Vunlerable Defi](https://www.damnvulnerabledefi.xyz/)
+
+```toc
+```

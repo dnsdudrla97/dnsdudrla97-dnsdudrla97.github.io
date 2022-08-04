@@ -188,3 +188,6 @@ UserProfile object check function (v) and return value for each object are modul
 ### Mitigation 2: Vulnerability of insufficient server profile inspection
 
 - The server conducts a User Profile inspection on the user, manages the permissions and various sessions in the room, and performs some functions using third party api, but after the User Profile inspection, the attacker can bypass some functions through client injection.
+
+```toc
+```
