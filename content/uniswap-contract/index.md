@@ -676,12 +676,12 @@ function multiSwapExactInput(MultiSwapParams memory params)
 }
 ```
 
-- 앞서 싱글 과 동일한 기능의 멀티 토큰을 지원하는 형태로 구성하였다. `SwapStep` 으로 멀티 토큰 페어 에 해당하는 데이터를 구성한 후 배열 형태로 값을 저장 한후 해당 배열의 길이 만큼 앞서 진행했던 로직을 수행해 순차적으로 Swapping을 진행한다.
-- WETH 를 un-wrapping 해 ETH 로 교환이 필요하기 때문에 ether로 스와핑할 때 주소를 이 계약의 주소로 변경한 다음 사용자에게 전달
+- It was configured in a form that supports multi-tokens with the same function as the single above. After composing the data corresponding to the multi-token pair with `SwapStep`, the value is stored in the form of an array, and then the previous logic is executed as much as the length of the array to sequentially perform swapping.
+- Since it is necessary to un-wrapping WETH and exchange it for ETH, when swapping with ether, the address is changed to the address of this contract and then delivered to the user
 
-✅ 두 번째 require 조건은 대상 토큰이 스왑이고 마지막 토큰과 일치하는지 확인한 후 대상 토큰이 ETH인지 확인 및 멀티 토큰 배열의 주소 중 마지막 토큰이 WETH 여야 한다.
+✅ The second require condition is to check if the target token is swap and match the last token, then check if the target token is ETH, and the last token in the address of the multi-token array must be WETH.
 
-- 동일하게
+- equally
 
 ### Util Functions
 

@@ -356,7 +356,7 @@ services:
 > graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Uniswap
 ```
 
-- 최종적으로 완료가 되면 해당 노드에서 시퀸스를 전송해 트랜잭션상에서 발생하는 이벤트를 쿼리하여 데이터 수집이 가능하다.
+- When it is finally completed, it is possible to collect data by sending a sequence from the node and querying the events that occur in the transaction.
 - https://thegraph.com/studio/
     - Create subgraph
         
