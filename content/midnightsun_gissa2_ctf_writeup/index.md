@@ -2,7 +2,7 @@
 emoji: 🥙
 title: Midnight sun 2019 gissa2 취약점 분석
 author: Zer0Luck
-date: '2020-09-18 11:01:10'
+date: '2020-09-18'
 categories: CTF
 tags: pwn Midnight sun ctf
 ---

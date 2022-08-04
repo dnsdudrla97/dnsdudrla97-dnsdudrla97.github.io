@@ -2,7 +2,7 @@
 emoji: 🦩
 title: CodeGate2017 angrybird 분석
 author: Zer0Luck
-date: '2020-08-15 13:12:21'
+date: '2020-08-15'
 categories: CTF
 tags: reversing CodeGate CTF
 ---

@@ -2,7 +2,7 @@
 emoji: 🧊
 title: PEB (Process Environment Block)
 author: Zer0Luck
-date: '2021-01-03 15:10:11'
+date: '2021-01-03'
 categories: Windows
 tags: Windows Exploit
 ---

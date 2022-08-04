@@ -2,7 +2,7 @@
 emoji: 🧻
 title: DEFCON 2016 xkcd 취약점 분석
 author: Zer0Luck
-date: '2020-09-18 02:10:11'
+date: '2020-09-18'
 categories: CTF
 tags: pwn DEFCON 2016 CTF
 ---

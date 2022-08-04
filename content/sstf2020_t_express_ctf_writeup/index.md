@@ -2,7 +2,7 @@
 emoji: 🥛
 title: SSTF 2020 t_express
 author: Zer0Luck
-date: '2020-09-18 01:10:11'
+date: '2020-09-18'
 categories: CTF
 tags: pwn SSTF 2020 CTF
 ---

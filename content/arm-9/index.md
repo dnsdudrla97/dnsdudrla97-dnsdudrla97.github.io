@@ -2,7 +2,7 @@
 emoji: 🍆
 title: ARM Load,Store Multi Register Instruction
 author: Zer0Luck
-date: '2021-02-10 20:10:11'
+date: '2021-02-10'
 categories: ARM
 tags: ARM
 ---

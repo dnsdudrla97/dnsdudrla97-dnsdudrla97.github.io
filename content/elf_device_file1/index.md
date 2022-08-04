@@ -2,7 +2,7 @@
 emoji: 💋
 title: ELF 분석에 유용한 디바이스 파일 (Device File)
 author: Zer0Luck
-date: '2020-08-16 12:01:01'
+date: '2020-08-16'
 categories: AnalyzingBinaries
 tags: ELF
 ---

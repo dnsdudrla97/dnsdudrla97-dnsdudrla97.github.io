@@ -2,7 +2,7 @@
 emoji: 🍹
 title: ARM Register
 author: Zer0Luck
-date: '2021-02-09 10:12:10'
+date: '2021-02-09'
 categories: ARM
 tags: ARM
 ---

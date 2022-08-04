@@ -2,7 +2,7 @@
 emoji: 🤭
 title: "클라우드 서비스 취약점 분석 6 (CloudGoat: EC2 SSRF)"
 author: Zer0Luck
-date: '2021-12-31 13:12:21'
+date: '2021-12-31'
 categories: CLOUD
 tags: Cloud Vulnerability Security
 ---

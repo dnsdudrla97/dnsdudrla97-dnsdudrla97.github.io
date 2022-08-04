@@ -2,7 +2,7 @@
 emoji: 🥓
 title: zer0pts ctf 2020 - musicBlof 취약점 분석
 author: Zer0Luck
-date: '2020-08-24 03:10:20'
+date: '2020-08-24'
 categories: CTF
 tags: Web Zer0pts CTF
 ---

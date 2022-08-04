@@ -2,7 +2,7 @@
 emoji: 🍗
 title: CSAW 2019 small_boi 취약점 분석
 author: Zer0Luck
-date: '2020-09-18 07:10:20'
+date: '2020-09-18'
 categories: CTF
 tags: pwn CSAW CTF
 ---

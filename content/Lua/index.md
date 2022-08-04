@@ -1,7 +1,7 @@
 ---
 emoji: 🧤
 title: Lua 언어 정리
-date: '2020-05-29 23:00:00'
+date: '2020-05-29'
 author: Zer0Luck
 tags: Language Lua
 categories: Language

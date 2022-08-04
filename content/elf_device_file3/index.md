@@ -2,7 +2,7 @@
 emoji: 🎁
 title: 리눅스 링커 환경 변수 
 author: Zer0Luck
-date: '2020-08-16 12:01:10'
+date: '2020-08-16'
 categories: AnalyzingBinaries
 tags: ELF
 ---

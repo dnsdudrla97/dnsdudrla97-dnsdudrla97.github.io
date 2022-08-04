@@ -2,7 +2,7 @@
 emoji: 🥖
 title: Windows SEH (Structured Exception Handler) 1
 author: Zer0Luck
-date: '2021-01-03 10:10:10'
+date: '2021-01-03'
 categories: Windows
 tags: Windows Exploit
 ---

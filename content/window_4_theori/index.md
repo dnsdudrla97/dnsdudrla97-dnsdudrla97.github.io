@@ -2,7 +2,7 @@
 emoji: 🍬
 title: TEB (Thread Environment Block)
 author: Zer0Luck
-date: '2021-01-03 04:10:10'
+date: '2021-01-03'
 categories: Windows
 tags: Windows Exploit
 ---

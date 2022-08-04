@@ -2,7 +2,7 @@
 emoji: 🍤
 title: ARM hack overview
 author: Zer0Luck
-date: '2021-02-09 11:11:12'
+date: '2021-02-09'
 categories: ARM
 tags: ARM
 ---

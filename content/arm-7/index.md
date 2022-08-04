@@ -2,7 +2,7 @@
 emoji: 🥔
 title: ARM data Transfer (POST,Pre-index Method, STR/LDR Instruction)
 author: Zer0Luck
-date: '2021-02-10 02:10:50'
+date: '2021-02-10'
 categories: ARM
 tags: ARM
 ---

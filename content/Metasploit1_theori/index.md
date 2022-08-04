@@ -2,7 +2,7 @@
 emoji: 🎮
 title: Metasploit 환경 구성
 author: Zer0Luck
-date: '2020-06-05 11:01:00'
+date: '2020-06-05'
 categories: Tools
 tags: Metasploit 
 ---

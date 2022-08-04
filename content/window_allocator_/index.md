@@ -2,7 +2,7 @@
 emoji: 🍃
 title: 윈도우 힙 관리자
 author: Zer0Luck
-date: '2021-03-30 12:30:10'
+date: '2021-03-30'
 categories: Windows 
 tags: Windows Exploit Alloc
 thumbnail: /assets/img/posts/reversing/LinkedList/intelintel.png

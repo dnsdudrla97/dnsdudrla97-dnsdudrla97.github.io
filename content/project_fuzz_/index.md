@@ -2,7 +2,7 @@
 emoji: 🔎
 title: Development of window GUI binary fuzzing using the dump fuzzing theory.
 author: Zer0Luck
-date: '2020-12-20 11:01:10'
+date: '2020-12-20'
 categories: projects
 tags: projects fuzz
 ---

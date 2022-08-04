@@ -2,7 +2,7 @@
 emoji: 📱
 title: Droid APK 취약점 연구
 author: Zer0Luck
-date: '2020-08-14 12:00:30'
+date: '2020-08-14'
 categories: Mobile
 tags: Android
 ---

@@ -2,7 +2,7 @@
 emoji: ⚔
 title: GDB cheat sheet
 author: Zer0Luck
-date: '2020-06-09 14:44:44'
+date: '2020-06-09'
 categories: Tools
 tag: gdb
 ---

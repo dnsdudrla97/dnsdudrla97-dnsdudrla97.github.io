@@ -2,7 +2,7 @@
 emoji: 📠
 title: ELF 프로그램 헤더 (ELF Program Header)
 author: Zer0Luck
-date: '2020-08-16 01:10:00'
+date: '2020-08-16'
 categories: AnalyzingBinaries
 tags: ELF
 ---

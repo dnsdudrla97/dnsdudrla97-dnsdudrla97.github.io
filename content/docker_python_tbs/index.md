@@ -2,7 +2,7 @@
 emoji: 🛠
 title: Docker Ubuntu 환경 Python pip locale 에러 해결 방안
 author: Zer0Luck
-date: '2020-08-15 08:31:10'
+date: '2020-08-15'
 categories: troubleshooting
 tags: python pip local error
 ---

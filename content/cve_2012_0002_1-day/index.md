@@ -2,7 +2,7 @@
 emoji: 🥤
 title: CVE-2012-0002 1-day 취약점 분석
 author: Zer0Luck
-date: '2020-12-07 01:10:11'
+date: '2020-12-07'
 categories: windows 1-day
 tags: cve-2012-0002
 ---

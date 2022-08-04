@@ -2,7 +2,7 @@
 emoji: 🥶
 title: Web Application SSRF/XXE/SSTI 취약점 연구
 author: Zer0Luck
-date: '2021-12-26 05:10:00'
+date: '2021-12-26'
 categories: Web
 tags: SSRF XXE SSTI Tutorial
 ---

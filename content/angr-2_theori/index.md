@@ -2,7 +2,7 @@
 emoji: 🤬
 title: angr 바이너리 분석 활용 방안 2
 author: Zer0Luck
-date: '2020-08-14 13:00:30'
+date: '2020-08-14'
 categories: AnalyzingBinaries
 tags: angr
 ---

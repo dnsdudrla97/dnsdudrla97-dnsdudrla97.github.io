@@ -2,7 +2,7 @@
 emoji: 💸
 title: CodeGate2018 RedVelvet write-up
 author: Zer0Luck
-date: '2020-08-14 11:11:12'
+date: '2020-08-14'
 categories: CTF
 tags: reversing Codegate2018
 ---

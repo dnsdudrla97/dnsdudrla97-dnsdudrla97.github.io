@@ -2,7 +2,7 @@
 emoji: 🥕
 title: ARM and THUMB Instruction
 author: Zer0Luck
-date: '2021-02-09 03:41:20'
+date: '2021-02-09'
 categories: ARM
 tags: ARM
 ---

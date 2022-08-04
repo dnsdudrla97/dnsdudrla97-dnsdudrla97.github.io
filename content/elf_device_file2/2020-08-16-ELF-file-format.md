@@ -2,7 +2,7 @@
 emoji: 🧨
 title: ELF 파일 형식 (ELF file format)
 author: Zer0Luck
-date: '2020-08-16 03:10:12'
+date: '2020-08-16'
 categories: AnalyzingBinaries
 tags: ELF
 ---

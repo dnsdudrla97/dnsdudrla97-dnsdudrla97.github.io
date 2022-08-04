@@ -2,7 +2,7 @@
 emoji: 🍜
 title: ARM Conditional Execution
 author: Zer0Luck
-date: '2021-02-09 12:10:11'
+date: '2021-02-09'
 categories: ARM
 tags: ARM
 ---

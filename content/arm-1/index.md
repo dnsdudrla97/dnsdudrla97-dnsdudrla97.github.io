@@ -2,7 +2,7 @@
 emoji: ☕
 title: ARM Assembly 1
 author: Zer0Luck
-date: '2021-02-09 01:20:11'
+date: '2021-02-09'
 categories: ARM
 tags: ARM
 ---

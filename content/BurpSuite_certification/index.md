@@ -2,7 +2,7 @@
 emoji: 🛠
 title: BurpSuite 인증서 설치 방법
 author: Zer0Luck
-date: '2020-06-06 12:00:30'
+date: '2020-06-06'
 categories: troubleshooting
 tags: BurpSuite troubleshooting
 ---

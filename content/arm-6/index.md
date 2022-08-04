@@ -2,7 +2,7 @@
 emoji: 🍃
 title: ARM Register const load
 author: Zer0Luck
-date: '2021-02-10 05:10:21'
+date: '2021-02-10'
 categories: ARM
 tags: ARM
 ---

@@ -2,7 +2,7 @@
 emoji: 🦈
 title: Sharky CTF Z3 Robot
 author: Zer0Luck
-date: '2020-08-14 08:20:01'
+date: '2020-08-14'
 categories: CTF
 tags: reversing Sharky CTF 
 ---

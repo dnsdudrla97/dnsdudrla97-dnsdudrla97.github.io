@@ -2,7 +2,7 @@
 emoji: 🍯
 title: TLS(Thread Local Storage CallBack)
 author: Zer0Luck
-date: '2021-01-03 03:10:12'
+date: '2021-01-03'
 categories: Windows
 tags: Windows Exploit
 ---

@@ -2,7 +2,7 @@
 emoji: 🗂
 title: ELF 분석 도구
 author: Zer0Luck
-date: '2020-08-16 02:10:10'
+date: '2020-08-16'
 categories: AnalyzingBinaries
 tags: ELF
 ---

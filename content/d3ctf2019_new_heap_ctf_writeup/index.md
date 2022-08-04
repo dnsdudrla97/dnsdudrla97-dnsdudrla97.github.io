@@ -2,7 +2,7 @@
 emoji: 🍣
 title: d3ctf 2019 new_heap 취약점 분석
 author: Zer0Luck
-date: '2020-09-18 23:00:30'
+date: '2020-09-18'
 categories: CTF
 tags: pwn d3ctf ctf
 ---

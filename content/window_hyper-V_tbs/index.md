@@ -2,7 +2,7 @@
 emoji: 🥔
 title: 윈도우 하이버파이저 Ubuntu 20.04 전체 화면 설정 (오류 해결)
 author: Zer0Luck
-date: '2021-04-01 20:10:12'
+date: '2021-04-01'
 categories: troubleshooting
 tags: Hyper-V Windows
 ---

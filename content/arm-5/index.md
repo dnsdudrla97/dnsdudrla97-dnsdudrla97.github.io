@@ -2,7 +2,7 @@
 emoji: 🍄
 title: ARM Register Address load
 author: Zer0Luck
-date: '2021-02-10 05:10:41'
+date: '2021-02-10'
 categories: ARM
 tags: ARM
 ---

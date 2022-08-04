@@ -2,7 +2,7 @@
 emoji: 🥑
 title: ARM LDR Rd, =const (constant)
 author: Zer0Luck
-date: '2021-02-10 06:12:12'
+date: '2021-02-10'
 categories: ARM
 tags: ARM
 ---

@@ -2,7 +2,7 @@
 emoji: 🔎
 title: "[KR]Vulnerability analysis of commercial metaverse-based virtual office platform"
 author: Zer0Luck
-date: '2021-12-24 11:01:11'
+date: '2021-12-24'
 categories: projects
 tags: projects MetaVersPloit MetaVerse
 ---

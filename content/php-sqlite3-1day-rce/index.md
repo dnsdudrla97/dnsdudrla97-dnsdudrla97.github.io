@@ -2,7 +2,7 @@
 emoji: 🥙
 title: SQLite3 fts3_tokenizer() Remote Code Execution 취약점 연구
 author: Zer0Luck
-date: '2020-12-20 03:01:10'
+date: '2020-12-20'
 categories: Web
 tags: PHP fts3_tokenizer SQLite3 RCE 1-day
 ---

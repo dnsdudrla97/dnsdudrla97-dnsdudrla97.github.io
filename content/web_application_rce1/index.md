@@ -2,7 +2,7 @@
 emoji: 📣
 title: Web Application RCE Case
 author: Zer0Luck
-date: '2021-12-25 05:00:00'
+date: '2021-12-25'
 categories: Web
 tags: RCE tutorial
 ---

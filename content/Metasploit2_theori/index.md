@@ -1,7 +1,7 @@
 ---
 title: Metasploit 아키텍처 및 파일 시스템 구조 이해
 author: Zer0Luck
-date: '2020-06-05 23:00:01'
+date: '2020-06-05'
 categories: Tools
 tags: Metasploit 
 ---

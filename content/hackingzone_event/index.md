@@ -2,7 +2,7 @@
 emoji: 🍉
 title: 버그바운티 플랫폼 HackingZone 리뷰
 author: Zer0Luck
-date: '2021-07-01 20:10:11'
+date: '2021-07-01'
 categories: Talk
 tags: Talk
 ---

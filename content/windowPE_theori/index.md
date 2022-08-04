@@ -2,7 +2,7 @@
 emoji: 🧩
 title: Windows PE
 author: Zer0Luck
-date: '2020-06-02 15:30:12'
+date: '2020-06-02'
 categories: Windows Theory
 tags: Windows PE
 ---
