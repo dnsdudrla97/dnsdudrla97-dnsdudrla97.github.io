@@ -9,7 +9,7 @@ module.exports = {
       repo: `dnsdudrla97/dnsdudrla97.github.io`,
     },
   },
-  ga: 'UA-215889404-1', // Google Analytics Tracking ID
+  ga: 'G-BC5GW33NZV', // Google Analytics Tracking ID
   author: {
     name: `Zer0Luck`,
     bio: {
