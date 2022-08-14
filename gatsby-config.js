@@ -27,7 +27,7 @@ module.exports = {
         env: {
           production: {
             policy: [{ userAgent: '*', allow: '/' }],
-            sitemap: "https://dnsdudrla97.github.io/sitemap.xml"
+            sitemap: "https://zer0luck.kr/sitemap.xml"
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
